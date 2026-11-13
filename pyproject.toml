@@ -1,0 +1,22 @@
+[project]
+name = "otn-enhanced"
+version = "0.1.0"
+description = "Over the Nexus Vanilla+ / Enhanced ROM hack and randomiser"
+requires-python = ">=3.14,<3.15"
+# Pinned exactly: ndspy and capstone change the built ROM's bytes (docs/SETUP.md).
+dependencies = [
+    "ndspy==4.2.0",
+    "capstone==5.0.9",
+    "pillow>=13.0",
+    "numpy>=2.5",
+    "pandas>=3.1",
+    "pyyaml>=6.0",
+    "pyinstaller>=6.22",
+]
+
+[tool.uv]
+package = false
+
+[project.optional-dependencies]
+# make_card_art --character: background removal (also needs ~/.u2net/isnet-general-use.onnx)
+bgremove = ["onnxruntime>=1.20"]

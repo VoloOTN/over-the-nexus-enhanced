@@ -1,0 +1,29 @@
+# Eclipse Wyvern discard/mill probe  (2026-08-13 08:51:30)
+# transcript -> notes/eclipse-wyvern-gdb-reloc.txt
+connecting to the melonDS stub on 127.0.0.1:3333 ...
+halted (S02)
+
+*** EMULATOR IS PAUSED -- DO NOT PLAY YET. Reading tables ... ***
+
+preflight: overlay 3 resident
+preflight: mask row[37] 0x1859 mask=0x0800 (ECLIPSE WYVERN (donor))  -- to-GY, no other requirement
+preflight: mask row[47] 0x19fe mask=0x0800 (DANDYLION (control))  -- to-GY, no other requirement
+preflight: cls2[165] +04=0x0221cd29 +0C=0x00000000 +10=0x00000000
+preflight: criteria[333] filt=0xffff h=0x0223cad9 flags=0x0002 extra=0x085c (race=1 Lv>=7)
+
+armed: 0x021d1d58 RELOC-POST-GATE
+
+>>> You have ~120s. DISCARD the Eclipse Wyvern, then DISCARD the Dandylion.
+>>> (Every card leaving hits mask-lookup, so unrelated hits are filtered out.)
+
+  [  1] reloc-post cid=0x19fe [sp+0x14]=0x1 -> POSTS the event   <<< DANDYLION (control)
+  [  2] reloc-post cid=0x1859 [sp+0x14]=0x0 -> SKIPS (gate rejects)   <<< ECLIPSE WYVERN (donor)
+(no further stops: no data from GDB stub)
+
+====================================================================
+total stops seen: 2
+ECLIPSE WYVERN (donor) (0x1859): gate-rejected
+DANDYLION (control) (0x19fe): posts
+====================================================================
+VERDICT: armed but never dispatched to the resolver -- the divergence is
+         between the arming store and find_event_handler.

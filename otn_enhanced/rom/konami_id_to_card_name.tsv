@@ -1,0 +1,4309 @@
+konami_id    card_name
+0D48    Speed World 2
+0D49    Speed Spell - Soul Release
+0D4A    Speed Spell - Confiscation
+0D4B    Speed Spell - The Forceful Sentry
+0D4C    Speed Spell - Insect Imitation
+0D4D    Speed Spell - Reinforcement of the Army
+0D4E    Speed Spell - The Warrior Returning Alive
+0D4F    Speed Spell - A Wingbeat of Giant Dragon
+0D50    Speed Spell - Stamping Destruction
+0D51    Speed Spell - Book of Life
+0D52    Speed Spell - Diffusion Wave-Motion
+0D53    Speed Spell - Wild Nature's Release
+0D54    Speed Spell - Salvage
+0D55    Speed Spell - Dark Factory of Mass Production
+0D56    Speed Spell - Monster Reincarnation
+0D57    Speed Spell - Overload Fusion
+0D58    Speed Spell - Tail Swipe
+0D59    Speed Spell - Instant Fusion
+0D5A    Speed Spell - Burial from a Different Dimension
+0D5B    Speed Spell - Destiny Draw
+0D5C    Speed Spell - Trade-In
+0D5D    Speed Spell - Swing of Memories
+0D5E    Speed Spell - Fires of Doomsday
+0D5F    Speed Spell - Gladiator Proving Ground
+0D60    Speed Spell - Allure of Darkness
+0D61    Speed Spell - Solar Recharge
+0D62    Speed Spell - Emergency Teleport
+0D63    Speed Spell - Charge of the Light Brigade
+0D64    Speed Spell - One for One
+0D65    Speed Spell - Forbidden Chalice
+0D66    Speed Spell - Saber Slash
+0D67    Speed Spell - Ancient Leaf
+0D68    Speed Spell - Earthbound Whirlwind
+0D69    Speed Spell - Moray of Greed
+0D6A    Speed Spell - Faustian Bargain
+0D6B    Speed Spell - Deceased Synchron
+0D6C    Speed Spell - Tyrant Force
+0D6D    Speed Spell - Ignition
+0D6E    Speed Spell - Speed Force
+0D6F    Speed Spell - Star Force
+0D70    Speed Spell - Overtune
+0D71    Speed Spell - Contract with the Abyss
+0D72    Speed Spell - Final Countdown
+0D73    Speed Spell - Earth Chant
+0D74    Speed Spell - Advanced Ritual Art
+0D75    Speed Spell - Recycling Batteries
+0D76    Speed Spell - Psychokinesis
+0D77    Speed Spell - Telekinetic Power Well
+0D78    Speed Spell - Rekindling
+0D79    Speed Spell - Swallow's Nest
+0D7A    Speed Spell - Preparation of Rites
+0D7B    Speed Spell - Cards of Consonance
+0D7C    Speed Spell - Dawn of the Herald
+0D7D    Speed Spell - Scrapstorm
+0D7E    Speed Spell - Miracle Synchro Fusion
+0D7F    Speed Spell - Pot of Duality
+0D80    Speed Spell - Tuning
+0D81    Speed Spell - Stardust Shimmer
+0D82    Speed Spell - Forbidden Lance
+0DAC    Speed World
+0DAD    Speed Spell - Vision Wind
+0DAE    Speed Spell - Angel Baton
+0DAF    Speed Spell - Gap Storm
+0DB0    Speed Spell - Shift Down
+0DB1    Speed Spell - Silver Contrails
+0DB2    Speed Spell - Synchro Return
+0DB3    Speed Spell - Speed Energy
+0DB4    Speed Spell - Zero Reverse
+0DB5    Speed Spell - Dash Pilfer
+0DB6    Speed Spell - Final Attack
+0DB7    Speed Spell - Reactor Pod
+0DB8    Speed Spell - Overboost
+0DB9    Speed Spell - The End of the Storm
+0DBA    Speed Spell - Speed Fusion
+0DBB    Speed Spell - Sonic Buster
+0DBC    Speed Spell - Rapid Shotwing
+0DBD    Speed Spell - Accelerator Draw
+0DBE    Speed Spell - Summon Speeder
+0DBF    Speed Spell - Power Baton
+0DC0    Slip Stream
+0DC1    Speed Booster
+0DC2    Acceleration Zone
+0DC3    Des Accelerator
+0DC4    Speed Spell - Speed Jammer
+0DC5    Speed Spell - Acceleration Limiter
+0DC6    Speed Spell - Slowdown Machine
+0DC7    Speed Spell - Wheelie Breaker
+0DC8    Speed Spell - Raigeki
+0DC9    Speed Spell - Tremendous Fire
+0DCA    Speed Spell - Harpie's Feather Duster
+0DCB    Speed Spell - Brain Control
+0DCC    Speed Spell - Mind Control
+0DCD    Speed Spell - Scapegoat
+0DCE    Speed Spell - Card Destruction
+0DCF    Speed Spell - Fissure
+0DD0    Speed Spell - Monster Reborn
+0DD1    Speed Spell - Tribute to The Doomed
+0DD2    Speed Spell - Last Will
+0DD3    Speed Spell - Heavy Storm
+0DD4    Speed Spell - Upstart Goblin
+0DD5    Speed Spell - Final Destiny
+0DD6    Speed Spell - Delinquent Duo
+0DD7    Speed Spell - Mystical Space Typhoon
+0DD8    Speed Spell - Giant Trunade
+0DD9    Speed Spell - Painful Choice
+0DDA    Speed Spell - Nobleman of Crossout
+0DDB    Speed Spell - Nobleman of Extermination
+0DDC    Speed Spell - The Shallow Grave
+0DDD    Speed Spell - Riryoku
+0DDE    Speed Spell - Soul Exchange
+0DDF    Speed Spell - De-Fusion
+0DE0    Speed Spell - Cold Wave
+0DE1    Speed Spell - Limiter Removal
+0DE2    Speed Spell - Creature Swap
+0DE3    Speed Spell - Mystic Box
+0DE4    Speed Spell - Offerings to the Doomed
+0DE5    Speed Spell - Foolish Burial
+0DE6    Speed Spell - Bait Doll
+0DE7    Speed Spell - Shrink
+0DE8    Speed Spell - Book of Moon
+0DE9    Speed Spell - Enemy Controller
+0DEA    Speed Spell - Metamorphosis
+0DEB    Speed Spell - Dark Core
+0DEC    Speed Spell - Fiend's Sanctuary
+0DED    Speed Spell - My Body as a Shield
+0DEE    Speed Spell - Soul Taker
+0DEF    Speed Spell - Chaos End
+0DF0    Speed Spell - Reload
+0DF1    Speed Spell - Stray Lambs
+0DF2    Speed Spell - Smashing Ground
+0DF3    Speed Spell - Shield Crush
+0DF4    Speed Spell - Special Hurricane
+0DF5    Speed Spell - Hammer Shot
+0DF6    Speed Spell - Gold Sarcophagus
+0DF7    Speed Spell - Back to Square One
+0DF8    Speed Spell - Miracle Fusion
+0DF9    Speed Spell - Pot of Avarice
+0DFA    Speed Spell - Magical Mallet
+0DFB    Speed Spell - Inferno Reckless Summon
+0DFC    Speed Spell - Chain Strike
+0DFD    Speed Spell - Ancient Rules
+0DFE    Speed Spell - Twister
+0DFF    Speed Spell - Tornado
+0E00    Speed Spell - Double Summon
+0E01    Speed Spell - Summoner's Art
+0E02    Speed Spell - Battle Tuned
+0E03    Speed Spell - Curse of Fate
+0E04    Speed Spell - Half Seize
+0E05    Speed Spell - Tune Up 123
+0E06    Speed Spell - Count Up
+0E07    Speed Spell - High Speed Crash
+0E08    Speed Spell - Synchro Defuse
+0E09    Speed Spell - Speed Storm
+0E0A    Speed Spell - Summon Close
+0E0B    Speed Edge
+0E0C    Full Throttle
+0E0D    Slowdown Trap
+0ED9    Blue-Eyes White Dragon
+0EE0    Dark Magician
+0EE9    Red-Eyes B. Dragon
+0EF9    Dark Magician Girl
+0EFE    Gilford the Lightning
+0F06    Winged Kuriboh
+0F07    Cyber Dragon
+0F08    Cyber End Dragon
+0F09    Blue-Eyes White Dragon
+0F0A    Summoned Skull
+0F0B    Dark Magician
+0F0D    Red-Eyes B. Dragon
+0F11    Buster Blader
+0F12    Obelisk the Tormentor
+0F13    The Winged Dragon of Ra
+0F3C    Insect Monster Token
+0F3D    Kuriboh Token
+0F3E    Sheep Token
+0F3F    Sheep Token
+0F40    Sheep Token
+0F41    Sheep Token
+0F42    Army Ant Token
+0F43    Slime Token
+0F44    Wicked Token
+0F45    Poisonous Snake Token
+0F46    Lekunga Token
+0F47    Clone Token
+0F48    Wicked Plant Token
+0F49    Mirage Token
+0F4A    Metal Fiend Token
+0F4B    Ojama Token
+0F4C    Ojama Token
+0F4D    Ojama Token
+0F4E    Lamb Token
+0F4F    Lamb Token
+0F50    Tricky Token
+0F51    Block Token
+0F52    Emissary of Darkness Token
+0F53    Phantasm Token
+0F54    Phantasmal Martyr Token
+0F55    Fluff Token
+0F56    Fluff Token
+0F57    Option Token
+0F59    Double Dude Token
+0F5B    Fireball Token
+0F5D    Cloudian Token
+0F5E    Engine Token
+0F5F    Skyblaster Token
+0F60    Grinder Token
+0F61    Regenerating Rose Token
+0F62    Thunder Option Token
+0F63    Evil Token
+0F64    Doomsday Token
+0F65    Sinister Seed Token
+0F66    Moon Token
+0F67    Metabo Token
+0F68    Oyster Token
+0F69    Ice Coffin Token
+0F6A    Ivy Token
+0F6B    Horseytail Token
+0F6C    Rose Token
+0F6D    Gift Fiend Token
+0F6E    Plant Token
+0F6F    Seed Token
+0F70    Needle Token
+0F71    Nightmare Archfiend Token
+0F72    Spinos Token
+0F73    Rockstone Token
+0F74    Asmo Token
+0F75    Deus Token
+0F76    Ghost Token
+0F77    Jurrac Token
+0F78    Worm Token
+0F79    Multi Token
+0F7A    Reptilianne Token
+0F7B    Spider Token
+0F7C    Soul Token
+0F7D    Ceremonial Token
+0F7E    Grain Corn Token
+0F7F    Laval Token
+0F81    Siphon Token
+0F82    Waltz Token
+0F83    Compass Token
+0F84    Doppel Token
+0F85    Nordic Beast Token
+0F86    Einherjar Token
+0F87    Malus Token
+0FA7    Blue-Eyes White Dragon
+0FA8    Mystical Elf
+0FA9    Hitotsu-Me Giant
+0FAA    Baby Dragon
+0FAB    Ryu-Kishin
+0FAC    Feral Imp
+0FAD    Winged Dragon, Guardian of the Fortress #1
+0FAE    Mushroom Man
+0FB0    Blackland Fire Dragon
+0FB1    Sword Arm of Dragon
+0FB2    Swamp Battleguard
+0FB3    Tyhone
+0FB4    Battle Steer
+0FB5    Flame Swordsman
+0FB6    Time Wizard
+0FB7    Right Leg of the Forbidden One
+0FB8    Left Leg of the Forbidden One
+0FB9    Right Arm of the Forbidden One
+0FBA    Left Arm of the Forbidden One
+0FBB    Exodia the Forbidden One
+0FBC    Summoned Skull
+0FBD    The Wicked Worm Beast
+0FBE    Skull Servant
+0FBF    Horn Imp
+0FC0    Battle Ox
+0FC1    Beaver Warrior
+0FC2    Rock Ogre Grotto #1
+0FC4    Zombie Warrior
+0FC5    Koumori Dragon
+0FC6    Two-Headed King Rex
+0FC7    Judge Man
+0FC8    Saggi the Dark Clown
+0FC9    Dark Magician
+0FCA    The Snake Hair
+0FCB    Gaia the Dragon Champion
+0FCC    Gaia The Fierce Knight
+0FCD    Curse of Dragon
+0FCE    Dragon Piper
+0FCF    Celtic Guardian
+0FD0    Illusionist Faceless Mage
+0FD1    Karbonala Warrior
+0FD2    Rogue Doll
+0FD3    Wattkid
+0FD4    Griffore
+0FD5    Torike
+0FD6    Sangan
+0FD7    Big Insect
+0FD8    Basic Insect
+0FD9    Armored Lizard
+0FDA    Hercules Beetle
+0FDB    Killer Needle
+0FDC    Gokibore
+0FDD    Giant Flea
+0FDE    Larvae Moth
+0FDF    Great Moth
+0FE0    Kuriboh
+0FE1    Mammoth Graveyard
+0FE2    Great White
+0FE3    Wolf
+0FE4    Harpie Lady
+0FE5    Harpie Lady Sisters
+0FE6    Tiger Axe
+0FE7    Silver Fang
+0FE8    Kojikocy
+0FE9    Perfectly Ultimate Great Moth
+0FEA    Garoozis
+0FEB    Thousand Dragon
+0FEC    Fiend Kraken
+0FED    Jellyfish
+0FEE    Cocoon of Evolution
+0FEF    Kairyu-Shin
+0FF0    Giant Soldier of Stone
+0FF2    Krokodilus
+0FF3    Grappler
+0FF4    Axe Raider
+0FF5    Megazowler
+0FF6    Uraby
+0FF7    Crawling Dragon #2
+0FF8    Red-Eyes B. Dragon
+0FF9    Castle of Dark Illusions
+0FFA    Reaper of the Cards
+0FFB    King of Yamimakai
+0FFC    Barox
+0FFD    Dark Chimera
+0FFE    Metal Guardian
+0FFF    Catapult Turtle
+1000    Gyakutenno Megami
+1001    Mystic Horseman
+1002    Rabid Horseman
+1003    Zanki
+1004    Crawling Dragon
+1005    Crass Clown
+1006    Armored Zombie
+1007    Dragon Zombie
+1008    Clown Zombie
+1009    Pumpking the King of Ghosts
+100A    Battle Warrior
+100C    Mask of Darkness
+1013    Goddess with the Third Eye
+1018    White Magical Hat
+1019    Kamionwizard
+101E    Dream Clown
+1023    Faith Bird
+102B    Charubin the Fire Knight
+1034    Flame Manipulator
+104C    Mysterious Puppeteer
+104E    Darkfire Dragon
+1050    Spirit of the Harp
+1051    Big Eye
+1063    Fusionist
+106C    Happy Lover
+106D    Penguin Knight
+106E    Petit Dragon
+1070    Archfiend Marmot of Nefariousness
+107B    Aqua Madoor
+107D    Flame Ghost
+107F    B. Skull Dragon
+1082    Masked Sorcerer
+1086    Trap Master
+108C    Rare Fish
+1090    Beautiful Headhuntress
+10A5    Prevent Rat
+10A6    D.D. Warrior
+10A8    Beastking of the Swamps
+10AC    The Little Swordsman of Aile
+10B0    Princess of Tsurugi
+10B3    Versago the Destroyer
+10B6    Mavelus
+10BC    Petit Moth
+10BE    Protector of the Throne
+10C6    Dark Artist
+10CB    Masaki the Legendary Swordsman
+10CC    Dragoness the Wicked Knight
+10D3    Legendary Sword
+10D4    Sword of Dark Destruction
+10D5    Dark Energy
+10D6    Axe of Despair
+10D7    Laser Cannon Armor
+10D8    Insect Armor with Laser Cannon
+10D9    Elf's Light
+10DA    Beast Fangs
+10DB    Steel Shell
+10DC    Vile Germs
+10DD    Black Pendant
+10DE    Silver Bow and Arrow
+10DF    Horn of Light
+10E0    Horn of the Unicorn
+10E1    Dragon Treasure
+10E2    Electro-Whip
+10E3    Cyber Shield
+10E4    Elegant Egotist
+10E5    Mystical Moon
+10E6    Stop Defense
+10E7    Malevolent Nuzzler
+10E8    Violet Crystal
+10E9    Book of Secret Arts
+10EA    Invigoration
+10EB    Machine Conversion Factory
+10EC    Raise Body Heat
+10ED    Follow Wind
+10EE    Power of Kaishin
+10EF    Dragon Capture Jar
+10F0    Forest
+10F1    Wasteland
+10F2    Mountain
+10F3    Sogen
+10F4    Umi
+10F5    Yami
+10F6    Dark Hole
+10F7    Raigeki
+10F8    Mooyan Curry
+10F9    Red Medicine
+10FA    Goblin's Secret Remedy
+10FB    Soul of the Pure
+10FC    Dian Keto the Cure Master
+10FD    Sparks
+10FE    Hinotama
+10FF    Final Flame
+1100    Ookazi
+1101    Tremendous Fire
+1102    Swords of Revealing Light
+1103    Spellbinding Circle
+1104    Dark-Piercing Light
+1106    Kanan the Swordmistress
+110E    Zera the Mant
+1110    Millennium Shield
+1112    Black Luster Soldier
+1113    Fiend's Mirror
+1114    Labyrinth Wall
+1115    Jirai Gumo
+1116    Shadow Ghoul
+1117    Wall Shadow
+1118    Labyrinth Tank
+1119    Sanga of the Thunder
+111A    Kazejin
+111B    Suijin
+111C    Gate Guardian
+111D    Dungeon Worm
+111E    Monster Tamer
+111F    Ryu-Kishin Powered
+1120    Swordstalker
+1121    La Jinn the Mystical Genie of the Lamp
+1122    Blue-Eyes Ultimate Dragon
+1123    Toon Alligator
+1124    Rude Kaiser
+1125    Parrot Dragon
+1126    Dark Rabbit
+1127    Bickuribox
+1128    Harpie's Pet Dragon
+112A    Pendulum Machine
+112B    Giltia the D. Knight
+112C    Launcher Spider
+112D    Zoa
+112E    Metalzoa
+1130    Steel Scorpion
+1137    Ushi Oni
+113D    Machine King
+1145    Mechanicalchaser
+114A    Cyber-Stein
+114C    Jinzo #7
+114F    Thunder Dragon
+1152    Magician of Faith
+1153    Goddess of Whim
+115B    Deepsea Shark
+115E    7 Colored Fish
+115F    Mech Bass
+1160    Aqua Dragon
+1165    Giant Red Seasnake
+1170    Kaminari Attack
+1174    The Immortal of Thunder
+1179    Crimson Sunbird
+117B    Armed Ninja
+117F    Vermillion Sparrow
+1181    Sinister Serpent
+1185    Cockroach Knight
+1188    Pragtical
+118A    Ameba
+118D    Flower Wolf
+1192    Hoshiningen
+1193    Maha Vailo
+1195    Musician King
+119A    Dragon Seeker
+119B    Man-Eater Bug
+11A0    Gale Dogra
+11A2    Cyber Saurus
+11A3    Bracchio-raidus
+11A6    Cannon Soldier
+11A9    The Statue of Easter Island
+11AA    Muka Muka
+11B1    The Bistro Butcher
+11B2    Star Boy
+11B5    Milus Radiant
+11B7    Flame Cerebrus
+11BA    Gemini Elf
+11BC    Minar
+11C2    Skelengel
+11C3    Hane-Hane
+11CD    Dark Elf
+11D0    Lava Battleguard
+11D8    Needle Worm
+11DB    Man-eating Black Shark
+11E4    Witch of the Black Forest
+11ED    Weather Report
+11F0    Greenkappa
+11F5    Morphing Jar
+11FC    Little Chimera
+1200    Penguin Soldier
+1207    Bladefly
+1209    Hiro's Shadow Scout
+120B    Twin-Headed Thunder Dragon
+120F    Marine Beast
+1218    Amazon of the Seas
+121A    Witch's Apprentice
+1225    Amphibious Bugroth
+1227    Invader of the Throne
+1228    Mystical Sheep #1
+122C    Gruesome Goo
+1230    Whiptail Crow
+1231    Kunai with Chain
+1232    Magical Labyrinth
+1233    Warrior Elimination
+1234    Salamandra
+1236    Eternal Rest
+1237    Megamorph
+1238    Metalmorph
+123A    Acid Rain
+123B    Crush Card Virus
+123C    Eradicating Aerosol
+123D    Breath of Light
+123E    Eternal Draught
+1242    Shine Palace
+1243    Shadow Spell
+1244    Black Luster Ritual
+1245    Zera Ritual
+1246    Harpie's Feather Duster
+1248    Beastly Mirror Ritual
+124B    Hamburger Recipe
+124F    House of Adhesive Tape
+1250    Eatgaboon
+1253    Acid Trap Hole
+1254    Widespread Ruin
+1255    Goblin Fan
+1256    Bad Reaction to Simochi
+1257    Reverse Trap
+1258    Fake Trap
+125C    Resurrection of Chakra
+125F    Garma Sword Oath
+1261    Revival of Dokurorider
+1262    Fortress Whale's Oath
+1264    Hungry Burger
+1265    Sengenjin
+1267    Tri-Horned Dragon
+126A    Cosmo Queen
+126B    Chakra
+126E    Meteor Dragon
+126F    Meteor B. Dragon
+1270    Firewing Pegasus
+1272    Garma Sword
+1274    Fortress Whale
+1275    Dokurorider
+1277    Black Magic Ritual
+1278    Magician of Black Chaos
+1279    Slot Machine
+127B    Red Archery Girl
+127C    Ryu-Ran
+127D    Manga Ryu-Ran
+127E    Toon Mermaid
+127F    Toon Summoned Skull
+1281    Relinquished
+1282    Jigen Bakudan
+1283    Thousand-Eyes Idol
+1284    Thousand-Eyes Restrict
+1285    Steel Ogre Grotto #2
+1286    Blast Sphere
+1288    Alpha The Magnet Warrior
+128A    Invitation to a Dark Sleep
+128B    Lord of D.
+128C    Red-Eyes Black Metal Dragon
+128D    Barrel Dragon
+128E    Hannibal Necromancer
+128F    Panther Warrior
+1290    Three-Headed Geedo
+1291    Gazelle the King of Mythical Beasts
+1292    Stone Statue of the Aztecs
+1293    Berfomet
+1294    Chimera the Flying Mythical Beast
+1295    Gear Golem the Moving Fortress
+1296    Jinzo
+1297    Swordsman of Landstar
+1298    Cyber Raider
+1299    The Fiend Megacyber
+129A    Reflect Bounder
+129B    Beta The Magnet Warrior
+129C    Big Shield Gardna
+129E    Dark Magician Girl
+129F    Alligator's Sword
+12A0    Insect Queen
+12A1    Parasite Paracide
+12A2    Skull-Mark Ladybug
+12A3    Little-Winguard
+12A4    Pinch Hopper
+12A5    Blue-Eyes Toon Dragon
+12A7    Drill Bug
+12AC    Satellite Cannon
+12B1    The Last Warrior from Another Planet
+12B2    Dunames Dark Witch
+12B6    Cyber-Tech Alligator
+12B8    Gamma The Magnet Warrior
+12BA    Time Machine
+12BB    Copycat
+12BE    Toon World
+12BF    Gorgon's Eye
+12C2    Black Illusion Ritual
+12C3    Brain Control
+12C4    Negate Attack
+12C5    Multiply
+12C6    7 Completed
+12C8    Lightforce Sword
+12CA    The Flute of Summoning Dragon
+12CB    Shield & Sword
+12CC    Graceful Charity
+12CD    Chain Destruction
+12CE    Mesmeric Control
+12CF    Graceful Dice
+12D0    Skull Dice
+12D1    Mind Control
+12D2    Scapegoat
+12D3    Amplifier
+12D5    Card Destruction
+12D7    Tragedy
+12DA    Mystical Refpanel
+12DC    Ectoplasmer
+12DE    Dark Magic Curtain
+12E0    Insect Barrier
+12E2    Magical Arm Shield
+12E3    Fissure
+12E4    Trap Hole
+12E5    Polymerization
+12E6    Remove Trap
+12E7    Two-Pronged Attack
+12E8    Blue Medicine
+12E9    Raimei
+12EA    Monster Reborn
+12EB    De-Spell
+12EC    Pot of Greed
+12ED    Gravedigger Ghoul
+12EE    Burning Spear
+12EF    Gust Fan
+12F0    The Inexperienced Spy
+12F1    Reinforcements
+12F2    Castle Walls
+12F3    Ultimate Offering
+12F4    Ancient Telescope
+12F5    White Hole
+12F6    Call of the Grave
+12F7    Anti Raigeki
+12F8    Tribute to The Doomed
+12F9    Soul Release
+12FA    The Cheerful Coffin
+12FB    Call of Darkness
+12FC    Change of Heart
+12FD    Solemn Judgment
+12FE    Magic Jammer
+12FF    Seven Tools of the Bandit
+1300    Horn of Heaven
+1301    Just Desserts
+1302    Royal Decree
+1304    Last Day of Witch
+1305    Exile of the Wicked
+1306    Magical Thorn
+1307    Restructer Revolution
+1308    Fusion Sage
+1309    Sword of Deep-Seated
+130A    Block Attack
+130B    The Unhappy Maiden
+130C    Robbin' Goblin
+130D    Germ Infection
+130E    Paralyzing Potion
+1310    Wall of Illusion
+1311    Neo the Magic Swordsman
+1312    Baron of the Fiend Sword
+1313    Man-Eating Treasure Chest
+1314    Sorcerer of the Doomed
+1315    Last Will
+1316    Waboku
+1317    Mirror Force
+1318    Ring of Magnetism
+1319    Share the Pain
+131A    Stim-Pack
+131B    Heavy Storm
+131C    Gryphon Wing
+131D    Gravekeeper's Servant
+131E    Curse of Fiend
+131F    Upstart Goblin
+1320    Toll
+1321    Final Destiny
+1322    Snatch Steal
+1323    Chorus of Sanctuary
+1324    Confiscation
+1325    Delinquent Duo
+1326    Darkness Approaches
+1327    Fairy's Hand Mirror
+1328    Tailor of the Fickle
+1329    Rush Recklessly
+132A    The Reliable Guardian
+132B    The Forceful Sentry
+132C    Chain Energy
+132D    Mystical Space Typhoon
+132E    Giant Trunade
+132F    Painful Choice
+1330    Snake Fang
+1331    Cyber Jar
+1332    Banisher of the Light
+1333    Giant Rat
+1334    Senju of the Thousand Hands
+1335    UFO Turtle
+1336    Flash Assailant
+1339    Giant Germ
+133A    Nimble Momonga
+133B    Spear Cretin
+133C    Shining Angel
+133E    Mother Grizzly
+133F    Flying Kamakiri #1
+1340    Ceremonial Bell
+1341    Sonic Bird
+1342    Mystic Tomato
+1343    Kotodama
+1344    Gaia Power
+1345    Umiiruka
+1346    Molten Destruction
+1347    Rising Air Current
+1348    Luminous Spark
+1349    Mystic Plasma Zone
+134A    Messenger of Peace
+134B    Michizure
+134C    Gust
+134D    Driving Snow
+134E    Armored Glass
+134F    World Suppression
+1350    Mystic Probe
+1351    Metal Detector
+1352    Numinous Healer
+1353    Appropriate
+1354    Forced Requisition
+1355    Minor Goblin Official
+1356    Gamble
+1357    DNA Surgery
+1358    The Regulation of Tribe
+1359    Backup Soldier
+135A    Attack and Receive
+135B    Major Riot
+135C    Ceasefire
+135D    Light of Intervention
+135E    Respect Play
+1360    Imperial Order
+1361    Skull Invitation
+1362    Magical Hats
+1363    Nobleman of Crossout
+1364    Nobleman of Extermination
+1365    The Shallow Grave
+1366    Premature Burial
+1367    Inspection
+1368    Prohibition
+1369    Morphing Jar #2
+136A    Bubonic Vermin
+1377    Buster Blader
+1378    Time Seal
+1379    Graverobber
+137A    Gift of The Mystical Elf
+137B    The Eye of Truth
+137C    Dust Tornado
+137D    Call of the Haunted
+137E    Solomon's Lawbook
+137F    Earthshaker
+1380    Enchanted Javelin
+1381    Mirror Wall
+1386    Obelisk the Tormentor
+1387    Slifer the Sky Dragon
+1388    The Winged Dragon of Ra
+1389    Windstorm of Etaqua
+138A    Valkyrion the Magna Warrior
+138B    Alligator's Sword Dragon
+138C    Vorse Raider
+138D    Ring of Destruction
+138E    Aqua Chorus
+138F    Sebek's Blessing
+1390    Anti-Spell Fragrance
+1391    Riryoku
+1392    Sword of Dragon's Soul
+1393    Seal of the Ancients
+1397    Luminous Soldier
+1398    King Tiger Wanghu
+1399    Command Knight
+139A    Wolf Axwielder
+139B    The Illusory Gentleman
+139C    Patrician of Darkness
+139D    Birdface
+139E    Kryuel
+139F    Airknight Parshath
+13A0    Fairy King Truesdale
+13A1    Serpentine Princess
+13A2    Maiden of the Aqua
+13A3    Robotic Knight
+13A4    Thunder Nyan Nyan
+13A5    Molten Behemoth
+13A6    Twin-Headed Behemoth
+13A7    Injection Fairy Lily
+13A8    Woodland Sprite
+13A9    Arsenal Bug
+13AA    Kinetic Soldier
+13AB    Jowls of Dark Demise
+13AC    Souleater
+13AD    Slate Warrior
+13AE    Shapesnatch
+13B0    Electromagnetic Bagworm
+13B1    Timeater
+13B2    Mucus Yolk
+13B3    Servant of Catabolism
+13B4    Rigorous Reaver
+13B5    Moisture Creature
+13B6    Boneheimer
+13B8    Flame Dancer
+13BD    Sonic Jammer
+13C3    Gearfried the Iron Knight
+13C4    Humanoid Slime
+13C5    Worm Drake
+13C6    Humanoid Worm Drake
+13C7    Revival Jam
+13CA    Amphibian Beast
+13CB    Rocket Warrior
+13CD    The Legendary Fisherman
+13E2    Shining Abyss
+13E3    Archfiend of Gilfer
+13E4    Gadget Soldier
+13E5    Grand Tiki Elder
+13E6    The Masked Beast
+13E7    Melchid the Four-Face Beast
+13E8    Nuvia the Wicked
+13E9    Masked Beast Des Gardius
+13EA    The Mask of Remnants
+13EB    Soul Exchange
+13ED    Chosen One
+13EE    Mask of Weakness
+13EF    Curse of the Masked Beast
+13F0    Mask of Dispel
+13F2    Mask of Restrict
+13F3    Mask of the Accursed
+13F4    Mask of Brutality
+13F5    Return of the Doomed
+13F6    Lightning Blade
+13F7    Tornado Wall
+13F8    Infinite Dismissal
+13F9    Fairy Box
+13FA    Torrential Tribute
+13FC    Multiplication of Ants
+13FE    De-Fusion
+13FF    Jam Breeding Machine
+1400    Nightmare's Steelcage
+1401    Infinite Cards
+1402    Jam Defender
+1403    Card of Safe Return
+1404    Magic Cylinder
+1405    Solemn Wishes
+1406    Burning Land
+1407    Cold Wave
+1408    Fairy Meteor Crush
+1409    Limiter Removal
+140A    Shift
+140B    Insect Imitation
+140C    Dimensionhole
+140D    Magic Drain
+140E    Gravity Bind
+140F    Shadow of Eyes
+1411    Hayabusa Knight
+1412    Bombardment Beetle
+1413    4-Starred Ladybug of Doom
+1414    Gradius
+1415    Red-Moon Baby
+1416    Mad Sword Beast
+1419    Goblin Attack Force
+141F    Rain of Mercy
+1420    Monster Recovery
+1421    Type Zero Magic Crusher
+1429    Yellow Luster Shield
+142A    Creature Swap
+142C    Spring of Rebirth
+142D    Dark Magician
+142E    Thousand Knives
+1430    Mystic Box
+1432    Ground Collapse
+144A    The Unfriendly Amazon
+144B    Amazoness Archer
+144D    Fire Princess
+144E    Lady Assailant of Flames
+1450    Spirit of the Breeze
+1451    Dancing Fairy
+1454    Cure Mermaid
+1455    Hysteric Fairy
+1457    The Forgiving Maiden
+1458    St. Joan
+1459    Marie the Fallen One
+145A    Jar of Greed
+145B    Scroll of Bewitchment
+145C    United We Stand
+145D    Mage Power
+145E    Offerings to the Doomed
+1460    Meteor of Destruction
+1461    Lightning Vortex
+1462    Exchange
+1463    The Portrait's Secret
+1464    The Gross Ghost of Fled Dreams
+1465    Headless Knight
+1466    Dark Necrofear
+1467    Magic Formula
+1468    Destiny Board
+1469    The Dark Door
+146B    Dark Spirit of the Silent
+146D    The Earl of Demise
+146E    Dark Sage
+146F    Temple of the Kings
+1470    Judgment of Anubis
+1472    Embodiment of Apophis
+1474    Foolish Burial
+1475    Makiu, the Magical Mist
+1476    Ancient Lamp
+1477    Cyber Harpie Lady
+147A    Mystical Beast of Serket
+147B    Swift Gaia the Fierce Knight
+147C    Obnoxious Celtic Guard
+147D    Zombyra the Dark
+147E    Spiritualism
+147F    Jowgen the Spiritualist
+1480    Kycoo the Ghost Destroyer
+1481    Summoner of Illusions
+1482    Bazoo the Soul-Eater
+1483    Soul of Purity and Light
+1484    Spirit of Flames
+1485    Aqua Spirit
+1486    The Rock Spirit
+1487    Garuda the Wind Spirit
+1488    Gilasaurus
+1489    Tornado Bird
+148A    Dreamsprite
+148B    Supply
+148C    Maryokutai
+148D    Collected Power
+148E    Royal Command
+148F    Riryoku Field
+1490    Skull Lair
+1491    Graverobber's Retribution
+1492    Deal of Phantom
+1493    Destruction Punch
+1494    Blind Destruction
+1495    The Emperor's Holiday
+1496    Cyclon Laser
+1497    Spirit Message "I"
+1498    Spirit Message "N"
+1499    Spirit Message "A"
+149A    Spirit Message "L"
+149B    Bait Doll
+149C    Fusion Gate
+149D    Ekibyo Drakmord
+149E    Miracle Dig
+149F    Dragonic Attack
+14A1    Vengeful Bog Spirit
+14A4    Amazoness Swords Woman
+14A5    Makyura the Destructor
+14A6    Amazoness Archers
+14A7    Rope of Life
+14AA    Spell Shattering Arrow
+14AB    Amazoness Chain Master
+14AC    Viser Des
+14AF    Amazoness Fighter
+14B0    Amazoness Spellcaster
+14B2    Nightmare Wheel
+14B3    Dramatic Rescue
+14B4    Byser Shock
+14B5    Dark Ruler Ha Des
+14B6    Dark Balter the Terrible
+14BE    Bark of Dark Ruler
+14BF    Fatal Abacus
+14C0    Life Absorbing Machine
+14C1    The Puppet Magic of Dark Ruler
+14C2    Soul Demolition
+14C3    Double Snare
+14C4    Freed the Matchless General
+14C6    Marauding Captain
+14C7    Ryu Senshi
+14C9    Mysterious Guard
+14CB    Exiled Force
+14CD    Shadow Tamer
+14CE    Dragon Manipulator
+14CF    The A. Forces
+14D0    Reinforcement of the Army
+14D1    Array of Revealing Light
+14D2    The Warrior Returning Alive
+14D3    Ready for Intercepting
+14D4    A Feint Plan
+14D5    Tyrant Dragon
+14D6    Spear Dragon
+14D8    The Dragon Dwelling in the Cave
+14DA    Fiend Skull Dragon
+14DE    The Dragon's Bead
+14DF    A Wingbeat of Giant Dragon
+14E0    Dragon's Gunfire
+14E1    Stamping Destruction
+14E2    Super Rejuvenation
+14E3    Dragon's Rage
+14E4    Burst Breath
+14E5    Luster Dragon #2
+14E6    Emergency Provisions
+14E8    Dragged Down into the Grave
+14EA    Spell Reproduction
+14EB    Shrink
+14EC    Mudora
+14ED    Cestus of Dagla
+14EE    Virus Cannon
+14F0    Exchange of the Spirit
+14F1    Kelbek
+14F2    Null and Void
+14F3    Zolga
+14F5    Blast Held by a Tribute
+14F6    Agido
+14F7    Silent Doom
+14FB    Fiber Jar
+14FC    Gradius' Option
+14FD    Maharaghi
+14FE    Inaba White Rabbit
+14FF    Yata-Garasu
+1501    Yamata Dragon
+1503    Otohime
+1504    Hino-Kagu-Tsuchi
+1505    Asura Priest
+1509    Fengsheng Mirror
+150A    Heart of Clear Water
+150B    A Legendary Ocean
+150C    Fusion Sword Murasame Blade
+150D    Smoke Grenade of the Thief
+150E    Spiritual Energy Settle Machine
+150F    Second Coin Toss
+1510    Convulsion of Nature
+1511    The Secret of the Bandit
+1512    After the Struggle
+1513    Magic Reflector
+1514    Blast with Chain
+1515    Disappear
+1516    Bubble Crash
+1517    Royal Oppression
+1518    Bottomless Trap Hole
+1519    Ominous Fortunetelling
+151A    Spirit's Invitation
+151B    Nutrient Z
+151C    Drop Off
+151D    Fiend Comedian
+151E    Last Turn
+1521    Kaiser Sea Horse
+1522    Vampire Lord
+1523    Gora Turtle
+1524    Sasuke Samurai
+1526    Dark Dust Spirit
+152A    Swarm of Scarabs
+152B    Swarm of Locusts
+152E    Guardian Sphinx
+152F    Pyramid Turtle
+1530    Dice Jar
+1531    Dark Scorpion Burglars
+1532    Don Zaloog
+1533    Des Lacooda
+1536    Book of Life
+1537    Book of Taiyou
+1538    Book of Moon
+1539    Mirage of Nightmare
+153B    Call of the Mummy
+153C    Timidity
+153D    Pyramid Energy
+153E    Tutan Mask
+153F    Ordeal of a Traveler
+1540    Bottomless Shifting Sand
+1541    Curse of Royal
+1542    Needle Ceiling
+1543    Statue of the Wicked
+1544    Dark Coffin
+1545    Needle Wall
+1546    Trap Dustshoot
+1547    Pyro Clock of Destiny
+1548    Reckless Greed
+1549    Pharaoh's Treasure
+154A    Toon Dark Magician Girl
+154B    Gilford the Lightning
+154C    Exarion Universe
+154D    Legendary Fiend
+1561    Toon Defense
+1562    Toon Table of Contents
+1563    Toon Masked Sorcerer
+1564    Toon Gemini Elf
+1565    Toon Cannon Soldier
+1566    Toon Goblin Attack Force
+1567    Card of Sanctity
+1568    Dark Designator
+156A    Puppet Master
+156B    Gernia
+156C    Newdoria
+156D    Lord Poison
+156E    Spell of Pain
+1570    Blade Knight
+1571    Helpoemer
+1572    Hidden Soldiers
+1573    Gil Garth
+1574    Coffin Seller
+1575    Malevolent Catastrophe
+1576    Question
+1578    Lava Golem
+1579    Relieve Monster
+157A    Machine Duplication
+157B    Dark Jeroid
+157D    Dragon Master Knight
+157E    Five-Headed Dragon
+157F    Queen's Knight
+1580    X-Head Cannon
+1581    Enemy Controller
+1582    Master Kyonshee
+1583    Kabazauls
+1584    Inpachi
+1585    Gravekeeper's Spy
+1586    Gravekeeper's Curse
+1587    Gravekeeper's Guard
+1588    Gravekeeper's Spear Soldier
+1589    Gravekeeper's Vassal
+158A    Gravekeeper's Watcher
+158B    Gravekeeper's Chief
+158C    Gravekeeper's Cannonholder
+158D    Gravekeeper's Assailant
+158E    A Man with Wdjat
+158F    Mystical Knight of Jackal
+1590    A Cat of Ill Omen
+1591    Yomi Ship
+1592    Winged Sage Falcos
+1593    An Owl of Luck
+1594    Charm of Shabti
+1595    Cobra Jar
+1596    Spirit Reaper
+1597    Nightmare Horse
+1598    Reaper on the Nightmare
+1599    Card Shuffle
+159A    Reasoning
+159B    Dark Room of Nightmare
+159C    Different Dimension Capsule
+159D    Necrovalley
+159E    Buster Rancher
+159F    Hieroglyph Lithograph
+15A0    Dark Snake Syndrome
+15A1    Terraforming
+15A2    Banner of Courage
+15A3    Metamorphosis
+15A4    Royal Tribute
+15A5    Reversal Quiz
+15A6    Curse of Aging
+15A7    Barrel Behind the Door
+15A8    Raigeki Break
+15A9    Narrow Pass
+15AA    Disturbance Strategy
+15AB    Trap of Board Eraser
+15AC    Rite of Spirit
+15AD    Non Aggression Area
+15AE    D. Tribe
+15B0    Y-Dragon Head
+15B1    XY-Dragon Cannon
+15B3    Z-Metal Tank
+15B4    XYZ-Dragon Cannon
+15B5    Soul Rope
+15B6    King's Knight
+15B7    Jack's Knight
+15B8    Interdimensional Matter Transporter
+15B9    Goblin Zombie
+15BA    Drillago
+15BC    Lekunga
+15C6    Cloning
+15C7    Cost Down
+15CD    Dark Blade
+15CE    Pitch-Dark Dragon
+15CF    Kiryu
+15D2    Giant Orc
+15D3    Second Goblin
+15D4    Vampire Orchis
+15D5    Des Dendle
+15D6    Burning Beast
+15D7    Freezing Beast
+15D8    Union Rider
+15D9    D.D. Crazy Beast
+15DA    Spell Canceller
+15DB    Neko Mane King
+15DC    Helping Robo For Combat
+15DD    Dimension Jar
+15DE    Great Phantom Thief
+15DF    Roulette Barrel
+15E0    Paladin of White Dragon
+15E1    White Dragon Ritual
+15E2    Frontline Base
+15E3    Demotion
+15E4    Combination Attack
+15E5    Kaiser Colosseum
+15E6    Autonomous Action Unit
+15E7    Poison of the Old Man
+15E8    Ante
+15E9    Dark Core
+15EA    Raregold Armor
+15EC    Kishido Spirit
+15ED    Tribute Doll
+15EE    Wave-Motion Cannon
+15F0    Thunder of Ruler
+15F1    Spell Shield Type-8
+15F2    Meteorain
+15F3    Pineapple Blast
+15F4    Secret Barrel
+15F5    Physical Double
+15F6    Rivalry of Warlords
+15F7    Formation Union
+15F8    Adhesion Trap Hole
+15F9    XZ-Tank Cannon
+15FA    YZ-Tank Dragon
+15FB    Final Attack Orders
+15FC    Dark Paladin
+15FD    Double Spell
+15FE    Spell Absorption
+15FF    Diffusion Wave-Motion
+1600    Fiend's Sanctuary
+1609    Great Angus
+160A    Aitsu
+160B    Sonic Duck
+160C    Luster Dragon
+160D    Amazoness Paladin
+160E    Amazoness Blowpiper
+160F    Amazoness Tiger
+1610    Skilled White Magician
+1611    Skilled Dark Magician
+1612    Apprentice Magician
+1613    Old Vindictive Magician
+1614    Chaos Command Magician
+1615    Magical Marionette
+1616    Pixie Knight
+1617    Breaker the Magical Warrior
+1618    Magical Plant Mandragola
+1619    Magical Scientist
+161A    Royal Magical Library
+161B    Armor Exe
+161C    Tribe-Infecting Virus
+161D    Des Koala
+161E    Cliff the Trap Remover
+161F    Magical Merchant
+1620    Koitsu
+1621    Cat's Ear Tribe
+1622    Ultimate Obedient Fiend
+1623    Dark Cat with White Tail
+1624    Pitch-Black Power Stone
+1625    Big Bang Shot
+1626    Gather Your Mind
+1627    Mass Driver
+1628    Senri Eye
+1629    Emblem of Dragon Destroyer
+162A    Jar Robber
+162B    My Body as a Shield
+162C    Pigeonholing Books of Spell
+162D    Mega Ton Magical Cannon
+162E    Continuous Destruction Punch
+162F    Exhausting Spell
+1630    Hidden Book of Spell
+1631    Miracle Restoring
+1632    Remove Brainwashing
+1633    Disarmament
+1634    Anti-Spell
+1635    The Spell Absorbing Life
+1636    Metal Reflect Slime
+1637    Bowganian
+1638    Magical Stone Excavation
+163F    Granadora
+1640    Different Dimension Dragon
+1641    Shinato, King of a Higher Plane
+1642    Dark Flare Knight
+1643    Mirage Knight
+1644    Berserk Dragon
+1645    Exodia Necross
+1646    Battle Footballer
+1647    Arsenal Summoner
+1649    Acrobat Monkey
+1651    Gyaku-Gire Panda
+1652    Blindly Loyal Goblin
+1653    Despair from the Dark
+1656    Dark Scorpion - Chick the Yellow
+1657    D.D. Warrior Lady
+1659    Shinato's Ark
+165A    A Deal with Dark Ruler
+165B    Contract with Exodia
+165C    Butterfly Dagger - Elma
+165D    Shooting Star Bow - Ceal
+165E    Gravity Axe - Grarl
+165F    Wicked-Breaking Flamberge - Baou
+1660    Rod of Silence - Kay'est
+1661    Twin Swords of Flashing Light - Tryce
+1662    Precious Cards from Beyond
+1663    Rod of the Mind's Eye
+1664    Fairy of the Spring
+1665    Token Thanksgiving
+1666    Morale Boost
+1667    Non-Spellcasting Area
+1668    Different Dimension Gate
+1669    Staunch Defender
+166A    Ojama Trio
+166B    Arsenal Robber
+166C    Skill Drain
+166D    Really Eternal Rest
+166F    Soul Taker
+1678    Magical Dimension
+1679    Judgment of Pharaoh
+167A    Yu-Jo Friendship
+167B    Unity
+167E    Sage's Stone
+167F    Gagagigo
+1680    Gagagigo
+1681    Ojama Green
+1682    Archfiend Soldier
+1683    Pandemonium Watchbear
+1684    Sasuke Samurai #2
+1685    Dark Scorpion - Gorg the Strong
+1686    Dark Scorpion - Meanae the Thorn
+1687    Outstanding Dog Marron
+1688    Great Maju Garzett
+1689    Iron Blacksmith Kotetsu
+168A    Goblin of Greed
+168B    Mefist the Infernal General
+168D    Shadowknight Archfiend
+168E    Darkbishop Archfiend
+168F    Desrook Archfiend
+1690    Infernalqueen Archfiend
+1691    Terrorking Archfiend
+1692    Skull Archfiend of Lightning
+1693    Metallizing Parasite - Lunatite
+1694    Tsukuyomi
+1696    Dark Master - Zorc
+1698    Contract with the Abyss
+1699    Contract with the Dark Master
+169A    Falling Down
+169B    Checkmate
+169C    Final Countdown
+169D    Archfiend's Oath
+169E    Mustering of the Dark Scorpions
+169F    Pandemonium
+16A0    Altar for Tribute
+16A1    Frozen Soul
+16A2    Battle-Scarred
+16A3    Dark Scorpion Combination
+16A4    Archfiend's Roar
+16A5    Dice Re-Roll
+16A6    Spell Vanishing
+16A7    Sakuretsu Armor
+16A8    Ray of Hope
+16AB    Nightmare Penguin
+16AC    Perfect Machine King
+16B2    Chiron the Mage
+16B3    Ojama Yellow
+16B4    Ojama Black
+16B6    Big Koala
+16B7    Des Kangaroo
+16B8    Crimson Ninja
+16B9    Strike Ninja
+16BA    Gale Lizard
+16BB    Spirit of the Pot of Greed
+16BC    Chopman the Desperate Outlaw
+16BD    Sasuke Samurai #3
+16BE    D.D. Scout Plane
+16BF    Berserk Gorilla
+16C0    Freed the Brave Wanderer
+16C3    Chaos Necromancer
+16C4    Chaosrider Gustaph
+16C5    Inferno
+16C6    Fenrir
+16C7    Gigantes
+16C8    Silpheed
+16C9    Chaos Sorcerer
+16CA    Gren Maju Da Eiza
+16CB    Black Luster Soldier - Envoy of the Beginning
+16CC    Fuhma Shuriken
+16CD    Heart of the Underdog
+16CE    Wild Nature's Release
+16CF    Ojama Delta Hurricane!!
+16D0    Stumbling
+16D1    Chaos End
+16D2    Chaos Greed
+16D3    D.D. Designator
+16D4    D.D. Borderline
+16D5    Recycle
+16D6    Primal Seed
+16D7    Thunder Crash
+16D8    Dimension Distortion
+16D9    Reload
+16DA    Soul Absorption
+16DB    Big Burn
+16DC    Blasting the Ruins
+16DD    Cursed Seal of the Forbidden Spell
+16DE    Tower of Babel
+16DF    Spatial Collapse
+16E0    Chain Disappearance
+16E1    Zero Gravity
+16E2    Dark Mirror Force
+16E3    Energy Drain
+16E4    Chaos Emperor Dragon - Envoy of the End
+16EC    Victory Dragon
+16ED    Magician's Valkyria
+16EF    Giga Gagagigo
+16F0    Mad Dog of Darkness
+16F1    Neo Bug
+16F2    Sea Serpent Warrior of Darkness
+16F3    Sea Serpent Warrior of Darkness
+16F4    Blazing Inpachi
+16F6    The Thing in the Crater
+16F7    Molten Zombie
+16F8    Dark Magician of Chaos
+16F9    Manticore of Darkness
+16FA    Stealth Bird
+16FB    Sacred Crane
+16FC    Enraged Battle Ox
+16FF    Dark Driceratops
+1700    Hyper Hammerhead
+1701    Black Tyranno
+1704    Insect Princess
+1705    Amphibious Bugroth MK-3
+1706    Torpedo Fish
+1707    Levia-Dragon - Daedalus
+1708    Orca Mega-Fortress of Darkness
+1709    Cannonball Spear Shellfish
+170A    Mataza the Zapper
+170B    Guardian Angel Joan
+170C    Manju of the Ten Thousand Hands
+170D    Getsu Fuhma
+170E    Ryu Kokki
+170F    Gryphon's Feather Duster
+1710    Stray Lambs
+1711    Smashing Ground
+1712    Dimension Fusion
+1713    Dedication through Light and Darkness
+1714    Salvage
+1715    Ultra Evolution Pill
+1716    Earth Chant
+1717    Jade Insect Whistle
+1718    Destruction Ring
+1719    Fiend's Hand Mirror
+171A    Compulsory Evacuation Device
+171B    A Hero Emerges
+171C    Self-Destruct Button
+171D    Curse of Darkness
+171E    Begone, Knave!
+171F    DNA Transplant
+1720    Robbin' Zombie
+1721    Trap Jammer
+1723    Twinheaded Beast
+1724    Winged Rhynos
+1726    Brain Crusher
+1727    Abyss Soldier
+1728    Bitelon
+172A    Inferno Hammer
+172B    Emes the Infinity
+172C    D.D. Assailant
+172F    Zoma the Spirit
+1738    Dangerous Machine Type-6
+1739    Sixth Sense
+173A    Gogiga Gagagigo
+173D    Mystical Shine Ball
+173F    The Agent of Judgment - Saturn
+1740    The Agent of Wisdom - Mercury
+1741    The Agent of Creation - Venus
+1742    The Agent of Force - Mars
+1743    The Unhappy Girl
+1744    Soul-Absorbing Bone Tower
+1745    The Kick Man
+1746    Vampire Lady
+1749    Legendary Jujitsu Master
+174A    KA-2 Des Scissors
+174B    Needle Burrower
+174C    Blowback Dragon
+174D    Zaborg the Thunder Monarch
+174F    Mermaid Knight
+1753    Arcane Archer of the Forest
+1754    Lady Ninja Yae
+1755    Goblin King
+1756    Solar Flare Dragon
+1757    White Magician Pikeru
+1759    Opti-Camouflage Armor
+175A    Mystik Wok
+175B    Burst Stream of Destruction
+175C    Monster Gate
+175D    Weapon Change
+175E    The Sanctuary in the Sky
+175F    Earthquake
+1761    Goblin Thief
+1762    Backfire
+1763    Micro Ray
+1764    Light of Judgment
+1766    Wall of Revealing Light
+1767    Solar Ray
+1768    Ninjitsu Art of Transformation
+1769    Beckoning Light
+176A    Draining Shield
+176B    Armor Break
+1770    Marshmallon
+1771    Doomcaliber Knight
+1773    Shield Crush
+1776    Legacy of Yata-Garasu
+1777    Marshmallon Glasses
+177A    Call of the Earthbound
+1782    Mokey Mokey
+1783    Gigobyte
+1788    Spirit of the Pharaoh
+178A    Aswan Apparition
+178B    Protector of the Sanctuary
+178D    Legacy Hunter
+1791    Ghost Knight of Jackal
+1792    Absorbing Kid from the Sky
+1793    Elephant Statue of Blessing
+1794    Elephant Statue of Disaster
+1796    Emissary of the Afterlife
+1797    Grave Protector
+1798    Double Coston
+1799    Regenerating Mummy
+179A    Night Assailant
+179B    Man-Thro' Tro'
+179C    King of the Swamp
+179E    Special Hurricane
+179F    Order to Charge
+17A0    Sword of the Soul-Eater
+17A1    Dust Barrier
+17A2    Soul Reversal
+17A3    Spell Economics
+17A4    Blessings of the Nile
+17A5    7
+17A6    Level Limit - Area B
+17A7    Enchanting Fitting Room
+17A8    The Law of the Normal
+17A9    Dark Magic Attack
+17AA    Delta Attacker
+17AB    Thousand Energy
+17AC    Triangle Power
+17AD    The Third Sarcophagus
+17AE    The Second Sarcophagus
+17AF    The First Sarcophagus
+17B0    Dora of Fate
+17B1    Judgment of the Desert
+17B2    Human-Wave Tactics
+17B3    Curse of Anubis
+17B4    Desert Sunlight
+17B5    Des Counterblow
+17B6    Labyrinth of Nightmare
+17B7    Soul Resurrection
+17B8    Order to Smash
+17B9    The End of Anubis
+17BB    Necroface
+17BC    Gandora the Dragon of Destruction
+17BE    Return from the Different Dimension
+17BF    Pyramid of Light
+17C2    Blue-Eyes Shining Dragon
+17C3    Familiar Knight
+17C4    Rare Metal Dragon
+17C5    Peten the Dark Clown
+17C6    Sorcerer of Dark Magic
+17C7    Andro Sphinx
+17C8    Sphinx Teleia
+17C9    Theinen the Great Sphinx
+17CA    Inferno Tempest
+17CC    Watapon
+17CD    Charcoal Inpachi
+17CE    Neo Aqua Madoor
+17CF    Skull Dog Marron
+17D1    Ultimate Insect LV1
+17D2    Horus the Black Flame Dragon LV4
+17D3    Horus the Black Flame Dragon LV6
+17D4    Horus the Black Flame Dragon LV8
+17D5    Dark Mimic LV1
+17D6    Dark Mimic LV3
+17D7    Mystic Swordsman LV2
+17D8    Mystic Swordsman LV4
+17D9    Armed Dragon LV3
+17DA    Armed Dragon LV5
+17DB    Armed Dragon LV7
+17DD    Red-Eyes B. Chick
+17DE    Malice Doll of Demise
+17DF    Ninja Grandmaster Sasuke
+17E1    Ultimate Baseball Kid
+17E2    Mobius the Frost Monarch
+17E3    Element Dragon
+17E5    Howling Insect
+17E6    Masked Dragon
+17E7    Mind on Air
+17E8    Unshaven Angler
+17E9    The Trojan Horse
+17EB    Enraged Muka Muka
+17EE    Ojama King
+17EF    Master of Oz
+17F1    Dark Factory of Mass Production
+17F2    Hammer Shot
+17F3    Mind Wipe
+17F4    Abyssal Designator
+17F5    Level Up!
+17F6    Inferno Fire Blast
+17F7    The Graveyard in the Fourth Dimension
+17F8    Two-Man Cell Battle
+17F9    Big Wave Small Wave
+17FA    Fusion Weapon
+17FB    Ritual Weapon
+17FC    Taunt
+17FD    Absolute End
+17FE    Spirit Barrier
+17FF    Ninjitsu Art of Decoy
+1800    Enervating Mist
+1801    Heavy Slump
+1802    Greed
+1803    Mind Crush
+1804    Cemetary Bomb
+1805    Hallowed Life Barrier
+1806    The Tricky
+1807    Green Gadget
+1809    Stronghold the Moving Fortress
+180B    Red Gadget
+180C    Yellow Gadget
+180E    Tricky Spell 4
+180F    Shattered Axe
+1810    Blockman
+1811    Gold Sarcophagus
+1812    Silent Swordsman LV3
+1814    Silent Swordsman LV5
+1816    Silent Swordsman LV7
+1817    Silent Magician LV4
+1818    Magician's Circle
+1819    Magicians Unite
+181A    Silent Magician LV8
+181C    Woodborg Inpachi
+181F    Harpie Girl
+1820    The Creator
+1821    The Creator Incarnate
+1822    Ultimate Insect LV3
+1823    Mystic Swordsman LV6
+1825    Heavy Mech Support Platform
+1828    Roc from the Valley of Haze
+1829    Sasuke Samurai #4
+182A    Harpie Lady 1
+182B    Harpie Lady 2
+182C    Harpie Lady 3
+182D    Raging Flame Sprite
+182E    Thestalos the Firestorm Monarch
+1832    Creeping Doom Manta
+1833    Pitch-Black Warwolf
+1834    Mirage Dragon
+1835    Gaia Soul the Combustible Collective
+1836    Fox Fire
+1837    Big Core
+1838    Fusilier Dragon, the Dual-Mode Beast
+1839    Dekoichi the Battlechanted Locomotive
+183A    A-Team: Trap Disposal Unit
+183B    Homunculus the Alchemic Being
+183C    Dark Blade the Dragon Knight
+183D    Mokey Mokey King
+183E    Serial Spell
+183F    Harpies' Hunting Ground
+1840    Triangle Ecstasy Spark
+1841    Necklace of Command
+1842    Flint
+1843    Mokey Mokey Smackdown
+1844    Back to Square One
+1845    Monster Reincarnation
+1846    Ballista of Rampart Smashing
+1847    Lighten the Load
+1848    Malice Dispersion
+1849    Divine Wrath
+184A    Xing Zhen Hu
+184B    Rare Metalmorph
+184C    Fruits of Kozaky's Studies
+184D    Mind Haxorz
+184E    Fuh-Rin-Ka-Zan
+184F    Chain Burst
+1850    Pikeru's Circle of Enchantment
+1851    Spell Purification
+1852    Astral Barrier
+1853    Covering Fire
+1855    Castle Gate
+1857    Owner's Seal
+1858    Space Mambo
+1859    Divine Dragon Ragnarok
+185B    Insect Knight
+185C    Sacred Phoenix of Nephthys
+185D    Hand of Nephthys
+185E    Ultimate Insect LV5
+185F    Granmarg the Rock Monarch
+1862    Maji-Gire Panda
+1863    Catnipped Kitty
+1864    Behemoth the King of All Animals
+1867    Hyena
+1868    Blade Rabbit
+1869    Mecha-Dog Marron
+186A    Blast Magician
+186B    Gearfried the Swordmaster
+186C    Armed Samurai - Ben Kei
+186E    Golem Sentry
+186F    Golem Sentry
+1870    The Light - Hex-Sealed Fusion
+1871    The Dark - Hex-Sealed Fusion
+1872    The Earth - Hex-Sealed Fusion
+1873    Whirlwind Prodigy
+1874    Flame Ruler
+1876    Rescue Cat
+1877    Brain Jacker
+1878    Gatling Dragon
+1879    King Dragun
+187A    A Feather of the Phoenix
+187B    Poison Fangs
+187C    Swords of Concealing Light
+187D    Spiral Spear Strike
+187E    Release Restraint
+187F    Centrifugal Field
+1880    Fulfillment of the Contract
+1881    Re-Fusion
+1882    The Big March of Animals
+1883    Cross Counter
+1885    Penalty Game!
+1886    Threatening Roar
+1887    Phoenix Wing Wind Blast
+1888    Good Goblin Housekeeping
+1889    Beast Soul Swap
+188A    Assault on GHQ
+188B    D.D. Dynamite
+188C    Deck Devastation Virus
+188D    Elemental Burst
+188E    Forced Ceasefire
+188F    Vampire's Curse
+1890    Union Attack
+1891    Blood Sucker
+1893    Overpowering Eye
+1894    Red-Eyes Darkness Dragon
+1895    Vampire Genesis
+189A    Kaibaman
+189E    Machina Soldier
+189F    Machina Defender
+18A0    Machina Sniper
+18A3    Commander Covington
+18A4    Machina Force
+18A6    Elemental Hero Avian
+18A7    Elemental Hero Burstinatrix
+18A8    Elemental Hero Clayman
+18A9    Elemental Hero Sparkman
+18AA    Winged Kuriboh
+18AB    Ancient Gear Golem
+18AC    Ancient Gear Beast
+18AD    Ancient Gear Soldier
+18AF    Ultimate Insect LV7
+18B0    Lost Guardian
+18B1    Hieracosphinx
+18B2    Criosphinx
+18B3    Moai Interceptor Cannons
+18B4    Megarock Dragon
+18B5    Dummy Golem
+18B7    Mine Golem
+18BA    Guardian Statue
+18BB    Medusa Worm
+18BC    D.D. Survivor
+18BE    White Ninja
+18BF    Aussa the Earth Charmer
+18C0    Eria the Water Charmer
+18C1    Hiita the Fire Charmer
+18C2    Wynn the Wind Charmer
+18C3    Batteryman AA
+18C4    Des Wombat
+18C5    King of the Skull Servants
+18C6    Reshef the Dark Being
+18C7    Elemental Mistress Doriado
+18C8    Elemental Hero Flame Wingman
+18C9    Elemental Hero Thunder Giant
+18CA    Gift of the Martyr
+18CB    Double Attack
+18CC    Battery Charger
+18CE    Doriado's Blessing
+18CF    Final Ritual of the Ancients
+18D1    Nitro Unit
+18D2    Shifting Shadows
+18D3    Impenetrable Formation
+18D4    Hero Signal
+18D5    Pikeru's Second Sight
+18D6    Minefield Eruption
+18D7    Kozaky's Self-Destruct Button
+18D8    Mispolymerization
+18D9    Level Conversion Lab
+18DA    Rock Bombardment
+18DB    Grave Lure
+18DC    Token Feastevil
+18DD    Spell-Stopping Statute
+18DE    Royal Surrender
+18E0    Infernal Flame Emperor
+18E6    Divine Knight Ishzark
+18E8    Ocean Dragon Lord - Neo-Daedalus
+18EC    Green Baboon, Defender of the Forest
+18F0    Patroid
+18F1    Gyroid
+18F2    Steamroid
+18F3    Drillroid
+18F4    UFOroid
+18F5    Jetroid
+18F6    Cyber Dragon
+18F7    Wroughtweiler
+18F9    Elemental Hero Bubbleman
+18FA    Steam Gyroid
+18FB    UFOroid Fighter
+18FC    Cyber Twin Dragon
+18FD    Cyber End Dragon
+18FE    Power Bond
+18FF    Skyscraper
+1900    Summoner Monk
+1905    The Wicked Dreadroot
+1906    Winged Kuriboh LV10
+1907    Transcendent Wings
+1908    Bubble Shuffle
+1909    Spark Blaster
+190A    Van'Dalgyon the Dark Dragon Lord
+190B    Soitsu
+190C    Mad Lobster
+190D    Jerry Beans Man
+190E    Cybernetic Magician
+1910    Mechanical Hound
+1911    Cyber Archfiend
+1912    Goblin Elite Attack Force
+1913    B.E.S. Crystal Core
+1914    Giant Kozaky
+1917    Doitsu
+1918    Des Frog
+1919    T.A.D.P.O.L.E.
+191A    Poison Draw Frog
+191B    Tyranno Infinity
+191C    Batteryman C
+191D    Ebon Magician Curran
+191E    D.D.M. - Different Dimension Master
+191F    Fusion Recovery
+1920    Miracle Fusion
+1921    Dragon's Mirror
+1922    System Down
+1923    Des Croaking
+1924    Pot of Generosity
+1925    Shien's Spy
+1926    Fire Darts
+1927    Spiritual Earth Art - Kurogane
+1928    Spiritual Water Art - Aoi
+1929    Spiritual Fire Art - Kurenai
+192A    Spiritual Wind Art - Miyabi
+192B    A Rival Appears!
+192C    Magical Explosion
+192D    Rising Energy
+192E    D.D. Trap Hole
+192F    Conscription
+1930    Dimension Wall
+1931    Prepare to Strike Back
+1932    The Selection
+1935    Trap of Darkness
+1936    Arcana Knight Joker
+1938    Gilford the Legend
+1939    Warrior Lady of the Wasteland
+193A    Divine Sword - Phoenix Blade
+1943    Elemental Hero Shining Flare Wingman
+1944    Level Modulation
+1945    Ojamuscle
+1946    Ojamagic
+1947    V-Tiger Jet
+1948    Blade Skater
+1949    Reborn Zombie
+194B    W-Wing Catapult
+194D    Elemental Hero Bladedge
+194E    Elemental Hero Wildheart
+194F    Hydrogeddon
+1950    Oxygeddon
+1951    Water Dragon
+1952    Etoile Cyber
+1953    VW-Tiger Catapult
+1954    VWXYZ-Dragon Catapult Cannon
+1955    Cyber Blader
+1956    Elemental Hero Rampart Blaster
+1957    Elemental Hero Tempest
+1958    Elemental Hero Wildedge
+1959    Chthonian Alliance
+195B    Feather Shot
+195C    Bonding - H2O
+195D    Chthonian Polymer
+195E    Chthonian Blast
+195F    Hero Barrier
+1960    Feather Wind
+1961    Zure, Knight of Dark World
+1962    B.E.S. Tetran
+1963    Nanobreaker
+1964    Rapid-Fire Magician
+1965    Beiige, Vanguard of Dark World
+1966    Broww, Huntsman of Dark World
+1967    Brron, Mad King of Dark World
+1968    Sillva, Warlord of Dark World
+1969    Goldd, Wu-Lord of Dark World
+196A    Scarr, Scout of Dark World
+196B    Familiar-Possessed - Aussa
+196C    Familiar-Possessed - Eria
+196D    Familiar-Possessed - Hiita
+196E    Familiar-Possessed - Wynn
+196F    Pot of Avarice
+1970    Dark World Lightning
+1971    Branch!
+1972    Boss Rush
+1973    Gateway to Dark World
+1974    The Forces of Darkness
+1975    Dark Deal
+1976    Simultaneous Loss
+1977    Weed Out
+1978    The League of Uniform Nomenclature
+1979    Roll Out!
+197A    Non-Fusion Area
+197B    Level Limit - Area A
+197C    Armed Changer
+197D    Tualatin
+197F    Elemental Hero Necroshade
+1980    Hero Ring
+1981    Elemental Hero Mudballman
+1982    Dark Eradicator Warlock
+1983    Mythical Beast Cerberus
+1984    Magical Blast
+1987    Elemental Hero Steam Healer
+1988    Burst Return
+1989    Bubble Blaster
+198A    Bubble Illusion
+198B    Clay Charge
+198C    Armed Dragon LV10
+198D    Magical Mallet
+198E    Inferno Reckless Summon
+198F    Ring of Defense
+1990    The Grave of Enkindling
+1991    Rancer Dragonute
+1992    Mist Body
+1993    Axe Dragonute
+1996    White-Horned Dragon
+199B    Dark Red Enchanter
+199E    Gorz the Emissary of Darkness
+19A3    Uria, Lord of Searing Flames
+19A4    Hamon, Lord of Striking Thunder
+19A5    Raviel, Lord of Phantasms
+19A6    Elemental Hero Bubbleman
+19A7    Hero Kid
+19A9    Cyber Laser Dragon
+19AA    Ancient Gear
+19AB    Hero Heart
+19AC    Magnet Circle LV2
+19AD    Ancient Gear Factory
+19AE    Ancient Gear Drill
+19AF    Phantasmal Martyrs
+19B0    Cyclone Boomerang
+19B1    Photon Generator Unit
+19B2    Ancient Gear Castle
+19B3    Super Junior Confrontation
+19B4    Miracle Kids
+19B6    Damage Condenser
+19B7    Treasure Map
+19B8    Hero Spirit
+19BB    Ancient Gear Cannon
+19BC    Cyber Dragon
+19BD    Adhesive Explosive
+19BF    B.E.S. Covered Core
+19C5    Gokipon
+19C7    Chainsaw Insect
+19C8    Anteatereatingant
+19C9    Saber Beetle
+19CA    Doom Dozer
+19CB    Treeborn Frog
+19CC    Beelze Frog
+19CD    Princess Pikeru
+19CE    Princess Curran
+19CF    Memory Crusher
+19D2    Sand Moth
+19D4    Ruin, Queen of Oblivion
+19D5    Demise, King of Armageddon
+19D6    D.3.S. Frog
+19D7    Symbol of Heritage
+19D8    Trial of the Princesses
+19D9    End of the World
+19DA    Samsara
+19DB    Karma Cut
+19DC    Next to be Lost
+19DD    Generation Shift
+19DE    Full Salvo
+19DF    Success Probability 0%
+19E0    Option Hunter
+19E1    Goblin Out of the Frying Pan
+19E2    Malfunction
+19EC    The Flute of Summoning Kuriboh
+19EF    Elemental Hero Electrum
+19F0    Exxod, Master of The Guard
+19F1    Great Spirit
+19F2    Canyon
+19F3    Elemental Hero Wild Wingman
+19F4    Elemental Hero Necroid Shaman
+19F5    Golden Homunculus
+19F6    Helios - The Primordial Sun
+19F7    Helios Duo Megistus
+19F8    Helios Trice Megistus
+19FD    Elemental Hero Neos
+19FE    Dandylion
+19FF    Elemental Hero Phoenix Enforcer
+1A00    Elemental Hero Shining Phoenix Enforcer
+1A01    Elemental Hero Mariner
+1A02    Destiny Hero - Doom Lord
+1A03    Destiny Hero - Captain Tenacious
+1A04    Destiny Hero - Diamond Dude
+1A05    Destiny Hero - Dreadmaster
+1A07    Cyber Phoenix
+1A08    Cyber Tutu
+1A0B    Guard Penalty
+1A0C    Clock Tower Prison
+1A0D    Misfortune
+1A0E    Grand Convergence
+1A0F    H - Heated Heart
+1A10    E - Emergency Call
+1A11    R - Righteous Justice
+1A12    O - Oversoul
+1A13    HERO Flash!!
+1A14    Elemental Recharge
+1A15    Destruction of Destiny
+1A16    D - Time
+1A17    Destiny Signal
+1A18    D - Shield
+1A19    Elemental Absorber
+1A1A    Macro Cosmos
+1A1B    Searchlightman
+1A1C    Victory Viper XX03
+1A1D    Super-Electromagnetic Voltech Dragon
+1A1E    Harpie's Pet Baby Dragon
+1A20    Majestic Mech - Ohka
+1A21    Majestic Mech - Goryu
+1A22    Bountiful Artemis
+1A23    Royal Knight
+1A24    Herald of Purple Light
+1A25    Herald of Green Light
+1A26    Layard the Liberator
+1A27    Banisher of the Radiance
+1A28    Voltanis the Adjudicator
+1A29    Guard Dog
+1A2B    Avalanching Aussa
+1A2C    Raging Eria
+1A2D    Blazing Hiita
+1A2E    Storming Wynn
+1A2F    Batteryman D
+1A30    Swift Birdman Joe
+1A31    Celestial Transformation
+1A32    Power Capsule
+1A33    Dimensional Fissure
+1A34    Life Equalizer
+1A35    Icarus Attack
+1A36    Miraculous Descent
+1A38    Forced Back
+1A40    Simorgh, Bird of Divinity
+1A41    Sonic Shooter
+1A42    Hysteric Party
+1A43    Puppet King
+1A47    Cyber Dinosaur
+1A48    Elemental Hero Woodsman
+1A4B    Elemental Hero Terra Firma
+1A4D    Elemental Hero Ocean
+1A4E    Chimeratech Overdragon
+1A4F    Expressroid
+1A51    Cyber Summon Blaster
+1A52    Submarineroid
+1A53    Super Vehicroid Jumbo Drill
+1A55    Stealthroid
+1A57    Truckroid
+1A5A    No Entry!!
+1A5B    Supercharge
+1A5C    Vehicroid Connection Zone
+1A5D    Wonder Garage
+1A60    Destiny Hero - Blade Master
+1A61    Destiny Hero - Dasher
+1A62    Destiny Hero - Double Dude
+1A63    Destiny Hero - Defender
+1A64    Destiny Hero - Fear Monger
+1A65    Destiny Hero - Dogma
+1A66    Dark City
+1A67    Mausoleum of the Emperor
+1A69    D - Chain
+1A6A    D - Spirit
+1A6B    Destiny Mirage
+1A6C    Chrysalis Dolphin
+1A6D    Elemental Hero Dark Neos
+1A6E    Elemental Hero Aqua Neos
+1A6F    Elemental Hero Flare Neos
+1A70    Neo-Spacian Aqua Dolphin
+1A71    Neo-Spacian Air Hummingbird
+1A72    Neo-Spacian Grand Mole
+1A73    Neo-Spacian Glow Moss
+1A74    Neo-Spacian Dark Panther
+1A75    Neo-Spacian Flare Scarab
+1A76    Contact
+1A77    Neo Space
+1A78    Black Stego
+1A79    Ultimate Tyranno
+1A7A    Rallis the Star Bird
+1A7B    Fake Hero
+1A7C    Common Soul
+1A7D    Spell Calling
+1A7E    Future Fusion
+1A7F    Overload Fusion
+1A80    Elemental Hero Stratos
+1A81    Hero's Bond
+1A8C    Sabersaurus
+1A8D    Miracle Jurassic Egg
+1A8E    Black Ptera
+1A8F    Babycerasaurus
+1A90    Alien Grey
+1A91    Alien Mars
+1A92    Alien Skull
+1A93    Alien Hunter
+1A94    Alien Warrior
+1A95    Alien Mother
+1A96    Cosmic Horror Gangi'el
+1A97    Flying Saucer Muusik'i
+1A98    Crop Circles
+1A99    The Paths of Destiny
+1A9A    Orbital Bombardment
+1A9B    Fossil Excavation
+1A9C    Brainwashing Beam
+1A9D    Royal Writ of Taxation
+1A9E    Cyclone Blade
+1AA0    Super Conductor Tyranno
+1AA1    Hunting Instinct
+1AA2    Survival Instinct
+1AA3    Big Evolution Pill
+1AA5    Light and Darkness Dragon
+1AA6    Tail Swipe
+1AA7    Jurassic World
+1AA8    Volcanic Eruption
+1AA9    Seismic Shockwave
+1AAE    Cyberdark Horn
+1AAF    Cyberdark Edge
+1AB0    Cyberdark Keel
+1AB1    Cyberdark Dragon
+1AB3    Super Vehicroid - Stealth Union
+1AB9    Ancient Gear Engineer
+1ABA    Ancient Gear Tank
+1ABB    Ancient Gear Explosive
+1ABC    Ancient Gear Fist
+1AC6    Cyber Ogre
+1AC8    Cyber Ogre 2
+1ACA    Cyber Shadow Gardna
+1ACB    Byroad Sacrifice
+1ACC    Trojan Blast
+1ACF    Elemental Hero Knospe
+1AD1    Rose Bud
+1AD2    Elemental Hero Poison Rose
+1AD5    Greed Quasar
+1AD6    Allure Queen LV3
+1AD7    Allure Queen LV5
+1AD8    Allure Queen LV7
+1ADC    Dark Lucius LV4
+1ADD    Dark Lucius LV6
+1ADE    Dark Lucius LV8
+1ADF    Snipe Hunter
+1AE0    Blast Asmodian
+1AE1    Vanity's Fiend
+1AE2    Barrier Statue of the Abyss
+1AE3    Barrier Statue of the Torrent
+1AE4    Barrier Statue of the Inferno
+1AE5    Barrier Statue of the Stormwinds
+1AE6    Barrier Statue of the Drought
+1AE7    Barrier Statue of the Heavens
+1AE8    Vanity's Ruler
+1AEB    Queen's Bodyguard
+1AF1    Alien Infiltrator
+1AF2    Corruption Cell "A"
+1AF3    Flash of the Forbidden Spell
+1AF4    Ritual Foregone
+1AF5    Instant Fusion
+1AF6    Counter Cleaner
+1AF7    Linear Accelerator Cannon
+1AF8    Chain Strike
+1AF9    Miraculous Rebirth
+1AFA    Mystical Wind Typhoon
+1AFB    Level Down!?
+1AFC    Degenerate Circuit
+1AFD    Senet Switch
+1AFE    Blasting Fuse
+1AFF    Straight Flush
+1B00    Justi-Break
+1B01    Dimensional Inversion
+1B02    Chain Healing
+1B03    Chain Detonation
+1B04    Accumulated Fortune
+1B05    Vanity's Call
+1B06    Black Horn of Heaven
+1B08    Goka, the Pyre of Malice
+1B0A    Terra Firma Gravity
+1B0F    Elemental Hero Heat
+1B10    Cold Enchanter
+1B14    Ancient Gear Gadjiltron Dragon
+1B15    Ancient Gear Gadjiltron Chimera
+1B16    Boot-Up Soldier - Dread Dynamo
+1B17    Ancient Gear Workshop
+1B1B    Card Trooper
+1B1C    Light Laser
+1B1D    Burial from a Different Dimension
+1B1E    Edge Hammer
+1B1F    Kid Guard
+1B20    Infernal Dragon
+1B21    Ruthless Denial
+1B22    Return Soul
+1B23    Damage Polarizer
+1B24    Fusion Guard
+1B25    Destiny Hero - Malicious
+1B26    Destiny Draw
+1B27    Over Destiny
+1B28    D - Counter
+1B29    Eternal Dread
+1B2A    Phantom Beast Cross-Wing
+1B2B    Phantom Beast Wild-Horn
+1B2C    Phantom Beast Thunder-Pegasus
+1B2D    Phantom Beast Rock-Lizard
+1B30    Gene-Warped Warwolf
+1B31    Frostosaurus
+1B32    Spiral Serpent
+1B33    The Six Samurai - Yariza
+1B34    The Six Samurai - Zanji
+1B35    The Six Samurai - Nisashi
+1B36    The Six Samurai - Yaichi
+1B37    The Six Samurai - Kamon
+1B38    The Six Samurai - Irou
+1B39    Great Shogun Shien
+1B3A    Shien's Footsoldier
+1B3D    Reign-Beaux, Overlord of Dark World
+1B3E    Kahkki, Guerilla of Dark World
+1B3F    Gren, Tactician of Dark World
+1B41    Electric Virus
+1B43    Marionette Mite
+1B44    D.D. Crow
+1B4B    Alien Psychic
+1B4C    Elemental Hero Glow Neos
+1B4D    Elemental Hero Air Neos
+1B4E    Elemental Hero Grand Neos
+1B4F    Lycanthrope
+1B50    Cú Chulainn the Awakened
+1B51    Neos Force
+1B52    "A" Cell Scatter Burst
+1B53    Ancient Rules
+1B54    Advanced Ritual Art
+1B55    Synthesis Spell
+1B56    Emblem of the Awakening
+1B57    Twister
+1B58    Legendary Ebon Steed
+1B59    Card Trader
+1B5A    Dark World Dealings
+1B5B    Shien's Castle of Mist
+1B5C    Skyscraper 2 - Hero City
+1B5D    Change of Hero - Reflector Ray
+1B5E    Hero Medal
+1B5F    Return of the Six Samurai
+1B60    Eliminating the League
+1B61    Flashbang
+1B62    The Transmigration Prophecy
+1B63    Anti-Fusion Device
+1B64    Ritual Sealing
+1B65    Birthright
+1B66    Swift Samurai Storm!
+1B67    Cloak and Dagger
+1B68    Pulling the Rug
+1B69    Blizzard Dragon
+1B6A    Metal Shooter
+1B70    Elemental Hero Lady Heat
+1B71    Ice Master
+1B72    Elemental Hero Inferno
+1B7B    Angel O7
+1B7E    Hunter Owl
+1B7F    Masked Chopper
+1B86    Neo-Parshath, the Sky Paladin
+1B87    Meltiel, Sage of the Sky
+1B88    Harvest Angel of Wisdom
+1B89    Freya, Spirit of Victory
+1B8A    Nova Summoner
+1B8B    Radiant Jeral
+1B8C    Gellenduo
+1B8D    Aegis of Gaia
+1B90    Carrierroid
+1B91    Armoroid
+1B92    Elemental Hero Voltic
+1B98    Mosaic Manticore
+1B9C    Belial - Marquis of Darkness
+1B9F    Crystal Beast Amethyst Cat
+1BA0    Crystal Beast Amber Mammoth
+1BA1    Crystal Beacon
+1BA2    Crystal Beast Ruby Carbuncle
+1BA3    Crystal Beast Emerald Tortoise
+1BA4    Crystal Beast Topaz Tiger
+1BA5    Crystal Beast Cobalt Eagle
+1BA6    Crystal Beast Sapphire Pegasus
+1BA7    Ancient City - Rainbow Ruins
+1BA8    Rare Value
+1BA9    Last Resort
+1BAA    Volcanic Shell
+1BAB    Volcanic Scattershot
+1BAC    Triggered Summon
+1BAD    Volcanic Doomfire
+1BAE    Blaze Accelerator
+1BAF    Soul of Fire
+1BB0    Tri-Blaze Accelerator
+1BB2    Firewall
+1BB3    The Wicked Avatar
+1BB4    The Wicked Eraser
+1BB5    Spell Striker
+1BB6    Exploder Dragon
+1BB7    Destiny Hero - Disk Commander
+1BB8    Destiny Hero - Plasma
+1BBF    Volcanic Slicer
+1BC0    Volcanic Hammerer
+1BC1    Elemental Hero Captain Gold
+1BC2    Gravekeeper's Commandant
+1BC3    Warrior of Atlantis
+1BC4    Destroyersaurus
+1BC5    Zeradias, Herald of Heaven
+1BC6    Archfiend General
+1BC7    Harpie Lady
+1BC8    Sky Scourge Enrise
+1BC9    Sky Scourge Norleras
+1BCA    Sky Scourge Invicil
+1BCB    Goe Goe the Gallant Ninja
+1BCC    Mei-Kou, Master of Barriers
+1BCD    Raiza the Storm Monarch
+1BD0    Magna-Slash Dragon
+1BD1    Gravi-Crush Dragon
+1BD2    Crystal Blessing
+1BD3    Crystal Abundance
+1BD4    Crystal Promise
+1BD5    Lucky Iron Axe
+1BD6    Tornado
+1BD7    Field Barrier
+1BD8    "A" Cell Breeding Device
+1BD9    Otherworld - The "A" Zone
+1BDA    Crystal Raigeki
+1BDB    Volcanic Recharge
+1BDC    Terrible Deal
+1BDD    Breakthrough!
+1BDE    Backs to the Wall
+1BDF    Introduction to Gallantry
+1BE0    Secrets of the Gallant
+1BE1    Radiant Mirror Force
+1BE2    Hard-sellin' Goblin
+1BE3    Hard-sellin' Zombie
+1BE4    Mass Hypnosis
+1BE5    Gem Flash Energy
+1BE6    Voltic Kong
+1BE7    Botanical Lion
+1BE9    Grandmaster of the Six Samurai
+1BEA    Diabolos, King of the Abyss
+1BEB    Lich Lord, King of the Underworld
+1BEC    Prometheus, King of the Shadows
+1BED    Mist Archfiend
+1BEE    Plague Wolf
+1BEF    Recurring Nightmare
+1BF0    Sword of Dark Rites
+1BF1    Eradicator Epidemic Virus
+1BF2    Cocoon Party
+1BF3    Chrysalis Chicky
+1BF4    Chrysalis Pantail
+1BF5    Chrysalis Pinny
+1BF6    Cocoon Veil
+1BF7    Convert Contact
+1BF8    Hero Counterattack
+1BF9    Fifth Hope
+1BFA    NEX
+1BFB    Reverse of Neos
+1BFC    Venom Swamp
+1BFD    Snake Whistle
+1BFE    Snake Rain
+1BFF    Damage = Reptile
+1C00    Snake Deity's Command
+1C01    Rise of the Snake Deity
+1C02    Mirror Gate
+1C03    Rainbow Dragon
+1C04    Chrysalis Larva
+1C05    Chrysalis Mole
+1C06    Neo-Spacian Marine Dolphin
+1C07    Elemental Hero Marine Neos
+1C08    Elemental Hero Darkbright
+1C09    Elemental Hero Magma Neos
+1C0A    Necro Gardna
+1C0B    Ojama Knight
+1C0C    Venom Snake
+1C0D    Venom Boa
+1C0E    Venom Serpent
+1C0F    Vennominon the King of Poisonous Snakes
+1C10    Vennominaga the Deity of Poisonous Snakes
+1C13    A Hero Lives
+1C14    Ritual Raven
+1C15    Venom Shot
+1C16    Alien Shocktrooper
+1C18    Renge, Gatekeeper of Dark World
+1C19    Hunter Dragon
+1C1A    Venom Cobra
+1C1B    Elemental Hero Neos Alius
+1C1C    Chthonian Emperor Dragon
+1C1D    Aquarian Alessa
+1C1E    Lucky Pied Piper
+1C1F    Grasschopper
+1C21    Dawnbreak Gardna
+1C22    Doom Shaman
+1C23    King Pyron
+1C24    Shadow Delver
+1C25    Flint Lock
+1C26    Gravitic Orb
+1C28    Crystal Seer
+1C29    Neo Space Pathfinder
+1C2A    Frost and Flame Dragon
+1C2B    Desert Twister
+1C2C    Razor Lizard
+1C2D    Light Effigy
+1C2E    Dark Effigy
+1C2F    Zombie Master
+1C30    Cocoon Rebirth
+1C31    Cyberdark Impact!
+1C32    Flint Missile
+1C33    Double Summon
+1C34    Summoner's Art
+1C35    Creature Seizure
+1C36    Phalanx Pike
+1C37    Symbols of Duty
+1C38    Amulet of Ambition
+1C39    Broken Bamboo Sword
+1C3A    Ambush Fangs
+1C3B    Venom Burn
+1C3C    Common Charity
+1C3D    Destructive Draw
+1C3E    Shield Spear
+1C3F    Strike Slash
+1C40    Spell Reclamation
+1C41    Trap Reclamation
+1C42    Gift Card
+1C43    The Gift of Greed
+1C44    Counter Counter
+1C4B    Volcanic Rocket
+1C4C    Felgrand Dragon
+1C4D    Darkblaze Dragon
+1C4E    Herald of Creation
+1C4F    Decoy Dragon
+1C50    Trade-In
+1C53    The Big Saturn
+1C54    Elemental Hero Plasma Vice
+1C56    Over Limit
+1C57    Contact Out
+1C58    Swing of Memories
+1C59    Evil Hero Inferno Wing
+1C5A    Evil Hero Malicious Edge
+1C5B    Evil Hero Infernal Gainer
+1C5C    Evil Hero Lightning Golem
+1C5D    Evil Hero Dark Gaia
+1C5E    Dark Fusion
+1C60    Cloudian - Eye of the Typhoon
+1C61    Cloudian - Ghost Fog
+1C62    Cloudian - Nimbusman
+1C63    Cloudian - Sheep Cloud
+1C64    Cloudian - Poison Cloud
+1C65    Diamond-Dust Cyclone
+1C66    Summon Cloud
+1C67    Lucky Cloud
+1C68    Natural Disaster
+1C69    Rain Storm
+1C6B    Elemental Hero Chaos Neos
+1C6C    Chamberlain of the Six Samurai
+1C6D    Cloudian - Smoke Ball
+1C6E    Cloudian - Acid Cloud
+1C6F    Cloudian - Cirrostratus
+1C70    Cloudian - Altus
+1C71    Cloudian - Turbulence
+1C72    Gladiator Beast Alexander
+1C73    Gladiator Beast Spartacus
+1C74    Gladiator Beast Murmillo
+1C75    Gladiator Beast Bestiari
+1C76    Gladiator Beast Laquari
+1C77    Gladiator Beast Hoplomus
+1C78    Gladiator Beast Dimacari
+1C79    Gladiator Beast Secutor
+1C7A    Test Ape
+1C7B    Witch Doctor of Sparta
+1C7C    Infinity Dark
+1C7D    Magical Reflect Slime
+1C7E    Ancient Gear Knight
+1C7F    Goblin Black Ops
+1C81    Enishi, Shien's Chancellor
+1C82    Spirit of the Six Samurai
+1C83    Alien Telepath
+1C84    Alien Hypno
+1C85    Superalloy Beast Raptinus
+1C86    Gladiator Beast Gaiodiaz
+1C87    Gladiator Beast Heraklinos
+1C88    Fog Control
+1C89    Cloudian Squall
+1C8A    Super Double Summon
+1C8B    Colosseum - Cage of the Gladiator Beasts
+1C8C    Gladiator Beast's Battle Halberd
+1C8D    Gladiator Beast's Battle Gladius
+1C8E    Gladiator Beast's Battle Manica
+1C8F    Gladiator Beast's Respite
+1C90    Gladiator's Return
+1C91    Soul Devouring Bamboo Sword
+1C92    Cunning of the Six Samurai
+1C93    "A" Cell Incubator
+1C94    Updraft
+1C95    Release from Stone
+1C96    Light-Imprisoning Mirror
+1C97    Shadow-Imprisoning Mirror
+1C98    Disarm
+1C99    Parry
+1C9A    Swiftstrike Armor
+1C9B    Double-Edged Sword Technique
+1C9C    Energy-Absorbing Monolith
+1C9D    Cell Explosion Virus
+1C9E    Detonator Circle "A"
+1C9F    Interdimensional Warp
+1CA0    Foolish Revival
+1CA1    An Unfortunate Report
+1CA3    Fiendish Engine 
+1CA4    Gemini Summoner
+1CA5    Ocean's Keeper
+1CA6    Thousand-Eyes Jellyfish
+1CA7    Cranium Fish
+1CA8    Abyssal Kingshark
+1CA9    Mormolith
+1CAA    Fossil Tusker
+1CAB    Phantom Dragonray Bronto
+1CAC    Il Blud
+1CAD    Blazewing Butterfly
+1CAE    Armityle the Chaos Phantom
+1CAF    White Night Dragon
+1CB0    Arcana Force EX - The Light Ruler
+1CB2    Beast King Barbaros
+1CB3    Splendid Venus
+1CB4    Mad Reloader
+1CB5    Dark Bribe
+1CB6    Chaos Burst
+1CB7    Phantom of Chaos
+1CB8    Nurse Reficule the Fallen One
+1CB9    Dark Cure
+1CBA    Brutal Potion
+1CBE    Shutendoji
+1CBF    Mezuki
+1CC5    Gladiator Beast Andal
+1CC6    Atlantean Pikeman
+1CC7    Earth Effigy
+1CC8    Wind Effigy
+1CC9    Gemini Lancer
+1CCA    Imprisoned Queen Archfiend
+1CCB    Dark End Dragon
+1CCC    Light End Dragon
+1CD0    Evil Hero Infernal Prodigy
+1CD1    Armor Breaker
+1CD2    Evil Hero Wild Cyclone
+1CD3    Evil Hero Infernal Sniper
+1CD4    Evil Hero Malicious Fiend
+1CD5    Dark Calling
+1CD6    Revoke Fusion
+1CD7    Hero's Rule 2
+1CD8    Phantom Skyblaster
+1CD9    Grave Squirmer
+1CDA    Grinder Golem
+1CDB    Crystal Counter
+1CDC    Crystal Pair
+1CDD    Hand Destruction
+1CDE    Crystal Release
+1CDF    Crystal Tree
+1CE0    Exodius the Ultimate Forbidden Lord
+1CE5    Thunder King Rai-Oh
+1CE6    Deep Diver
+1CE7    Burden of the Mighty
+1CE8    Dimensional Prison
+1CE9    Vortex Trooper
+1CEB    Chimeratech Fortress Dragon
+1CEC    Fog King
+1CED    Fossil Dyna Pachycephalo
+1CEE    Rainbow Dark Dragon
+1CEF    Samsara Lotus
+1CF0    Regenerating Rose
+1CF1    Yubel
+1CF2    Yubel - Terror Incarnate
+1CF3    Yubel - The Ultimate Nightmare
+1CF4    Armored Cybern
+1CF5    Cyber Valley
+1CF6    Cyber Ouroboros
+1CF7    Volcanic Counter
+1CF8    Destiny Hero - Dunker
+1CF9    Destiny Hero - Departed
+1CFA    Dark Horus
+1CFB    The Dark Creator
+1CFC    Dark Nephthys
+1CFD    Dark Armed Dragon
+1CFE    Dark Crusader
+1CFF    Armageddon Knight
+1D00    Doomsday Horror
+1D01    Obsidian Dragon
+1D02    Shadowpriestess of Ohm
+1D03    Gigaplant
+1D04    Future Samurai
+1D05    Vengeful Shinobi
+1D06    The Immortal Bushi
+1D07    Field-Commander Rahz
+1D08    Gladiator Beast Darius
+1D09    Black Veloci
+1D0A    Superancient Deepsea King Coelacanth
+1D0B    Cannon Soldier MK-2
+1D0C    The Calculator
+1D0D    Sea Koala
+1D0E    Blue Thunder T-45
+1D0F    Magnetic Mosquito
+1D11    Neo-Spacian Twinkle Moss
+1D12    Elemental Hero Storm Neos
+1D13    Rainbow Neos
+1D14    Rainbow Veil
+1D15    Super Polymerization
+1D16    Vicious Claw
+1D17    Instant Neo Space
+1D18    Mirage Tube
+1D19    Spell Chronicle
+1D1A    Dimension Explosion
+1D1B    Cybernetic Zone
+1D1C    The Beginning of the End
+1D1D    Dark Eruption
+1D1E    Fires of Doomsday
+1D1F    Unleash Your Power!
+1D20    Chain Summoning
+1D21    Acidic Downpour
+1D22    Six Samurai United
+1D23    Gladiator Beast's Battle Archfiend Shield
+1D24    Gladiator Proving Ground
+1D25    Dark World Grimoire
+1D26    Rainbow Path
+1D27    Rainbow Life
+1D28    Sinister Seeds
+1D29    Hate Buster
+1D2A    Chain Material
+1D2B    Alchemy Cycle
+1D2C    Cybernetic Hidden Technology
+1D2D    Dark Spirit Art - Greed
+1D2E    Dark Illusion
+1D2F    Escape from the Dark Dimension
+1D30    Gemini Trap Hole
+1D31    Drastic Drop Off
+1D32    All-Out Attacks
+1D33    Double Tag Team
+1D34    Offering to the Snake Deity
+1D35    Cry Havoc!
+1D36    Transmigration Break
+1D37    Fine
+1D38    Gladiator Beast Octavius
+1D39    Gladiator Beast Torax
+1D3A    Test Tiger
+1D3B    Defensive Tactics
+1D3C    Dragon Ice
+1D3D    Tongue Twister
+1D3E    Skreech
+1D3F    Royal Firestorm Guards
+1D40    Veil of Darkness
+1D41    Security Orb
+1D42    Fire Trooper
+1D43    Elemental Hero Prisma
+1D44    Card Ejector
+1D45    Hidden Armory
+1D46    Assault Armor
+1D47    Evil Blast
+1D4A    Ice Queen
+1D5A    Gaap the Divine Soldier
+1D5C    Caius the Shadow Monarch
+1D5D    Dimensional Alchemist
+1D5E    Samsara Kaiser
+1D5F    D.D.R. - Different Dimension Reincarnation
+1D60    By Order of the Emperor
+1D62    Evil Dragon Ananta
+1D66    Winged Kuriboh LV9
+1D67    Blizzed, Defender of the Ice Barrier
+1D68    Blizzard Warrior
+1D69    Cryomancer of the Ice Barrier
+1D6A    Mist Valley Thunderbird
+1D6B    Mist Valley Shaman
+1D6C    Mist Valley Soldier
+1D6D    Flamvell Dragnov
+1D6E    Flamvell Magician
+1D6F    Flamvell Guard
+1D70    X-Saber Axel
+1D71    X-Saber Airbellum
+1D72    X-Saber Uruz
+1D73    Commander Gottoms, Swordmaster
+1D74    Ally of Justice Clausolas
+1D75    Ally of Justice Garadholg
+1D76    Ally of Justice Rudra
+1D77    Worm Apocalypse
+1D78    Worm Barses
+1D79    Worm Cartaros
+1D7A    Worm Dimikles
+1D7B    Worm Erokin
+1D7C    Brionac, Dragon of the Ice Barrier
+1D7D    Mist Wurm
+1D7E    Flamvell Uruquizas
+1D7F    X-Saber Urbellum
+1D80    Ally of Justice Catastor
+1D81    Wrath of Neos
+1D82    Detonate
+1D83    Berserker Crush
+1D84    Evolution Burst
+1D85    Red-Eyes Darkness Metal Dragon
+1D86    Gaia Plate the Earth Giant
+1D87    Sauropod Brachion
+1D88    Tethys, Goddess of Light
+1D89    Dark Grepher
+1D8A    Darklord Zerato
+1D8B    Darknight Parshath
+1D8C    Deepsea Macrotrema
+1D8D    Metabo Globster
+1D8E    Golden Flying Fish
+1D8F    Prime Material Dragon
+1D90    Lonefire Blossom
+1D91    Aztekipede, the Worm Warrior
+1D92    Allure of Darkness
+1D93    Athena
+1D94    Hecatrice
+1D95    Valhalla, Hall of the Fallen
+1D96    Honest
+1D97    Cross Porter
+1D98    Miracle Flipper
+1D99    Destiny Hero - Dread Servant
+1D9A    Volcanic Queen
+1D9B    Jinzo - Returner
+1D9C    Jinzo - Lord
+1D9D    Arcana Force 0 - The Fool
+1D9E    Arcana Force I - The Magician
+1D9F    Arcana Force III - The Empress
+1DA0    Arcana Force IV - The Emperor
+1DA1    Arcana Force VI - The Lovers
+1DA2    Arcana Force VII - The Chariot
+1DA3    Arcana Force XIV - Temperance
+1DA4    Arcana Force XVIII - The Moon
+1DA5    Arcana Force XXI - The World
+1DA6    Arcana Force EX - The Dark Ruler
+1DA7    Jain, Lightsworn Paladin
+1DA8    Lyla, Lightsworn Sorceress
+1DA9    Garoth, Lightsworn Warrior
+1DAA    Lumina, Lightsworn Summoner
+1DAB    Ryko, Lightsworn Hunter
+1DAC    Wulf, Lightsworn Beast
+1DAD    Celestia, Lightsworn Angel
+1DAE    Gragonith, Lightsworn Dragon
+1DAF    Judgment Dragon
+1DB0    Dark Valkyria
+1DB1    Substitoad
+1DB2    Unifrog
+1DB3    Batteryman Charger
+1DB4    Batteryman Industrial Strength
+1DB5    Batteryman Micro-Cell
+1DB7    Interplanetary Invader "A"
+1DB8    Diskblade Rider
+1DB9    Golden Ladybug
+1DBA    DUCKER Mobile Cannon
+1DBB    The Lady in Wight
+1DBC    Simorgh, Bird of Ancestry
+1DBD    Cloudian - Storm Dragon
+1DBE    Phantom Dragon
+1DBF    Destiny End Dragoon
+1DC0    Ultimate Ancient Gear Golem
+1DC1    Gladiator Beast Gyzarus
+1DC2    Hero Mask
+1DC3    Space Gift
+1DC4    Demise of the Land
+1DC5    D - Formation
+1DC6    Spell Gear
+1DC7    Cup of Ace
+1DC8    Light Barrier
+1DC9    Solar Recharge
+1DCA    Realm of Light
+1DCB    Wetlands
+1DCC    Quick Charger
+1DCD    Short Circuit
+1DCE    Light of Redemption
+1DCF    Mystical Cards of Light
+1DD0    Level Tuning
+1DD1    Deck Lockdown
+1DD2    Ribbon of Rebirth
+1DD3    Golden Bamboo Sword
+1DD4    Limit Reverse
+1DD5    Hero Blast
+1DD6    Rainbow Gravity
+1DD7    D - Fortune
+1DD8    Reversal of Fate
+1DD9    Tour of Doom
+1DDA    Arcana Call
+1DDB    Light Spiral
+1DDC    Glorious Illusion
+1DDD    Destruction Jammer
+1DDE    Froggy Forcefield
+1DDF    Portable Battery Pack
+1DE0    Gladiator Lash
+1DE1    Raging Cloudian
+1DE2    Sanguine Swamp
+1DE3    Lucky Chance
+1DE4    Summon Limit
+1DE5    Dice Try!
+1DEA    Emperor Sem
+1DEB    Kuraz the Light Monarch
+1DEC    Maiden of Macabre
+1DED    Hanewata
+1DEE    Nimble Musasabi
+1DEF    Oyster Meister
+1DF0    Dharc the Dark Charmer
+1DF2    Gigantic Cephalotus
+1DF3    Nettles
+1DF4    Queen of Thorns
+1DF5    Horseytail
+1DF6    Cursed Fig
+1DF7    Miracle Fertilizer
+1DF8    Overworked
+1DF9    Herald of Orange Light
+1DFA    Herald of Perfection
+1DFB    Twin-Barrel Dragon
+1DFC    Izanagi
+1DFD    Izanami
+1DFE    B.E.S. Big Core MK-2
+1DFF    Road Warrior
+1E00    Sword of Kusanagi
+1E01    Orb of Yasaka
+1E02    Mirror of Yata
+1E03    Geartown
+1E04    Tune Warrior
+1E05    Water Spirit
+1E06    Sonic Chick
+1E07    Junk Synchron
+1E08    Speed Warrior
+1E09    Magna Drago
+1E0A    Frequency Magician
+1E0B    Synchro Boost
+1E0C    Synchro Blast Wave
+1E0D    Synchronized Realm
+1E0E    Scrap-Iron Scarecrow
+1E0F    Miniaturize
+1E10    Junk Warrior
+1E11    Gaia Knight, the Force of Earth
+1E12    Colossal Fighter
+1E13    Turbo Booster
+1E14    Nitro Synchron
+1E15    Quillbolt Hedgehog
+1E16    Ghost Gardna
+1E17    Shield Warrior
+1E18    Small Piece Golem
+1E19    Medium Piece Golem
+1E1A    Big Piece Golem
+1E1B    Sinister Sprocket
+1E1C    Dark Resonator
+1E1D    Twin-Shield Defender
+1E1E    Jutte Fighter
+1E1F    Handcuffs Dragon
+1E20    Montage Dragon
+1E21    Gonogo
+1E22    Mind Master
+1E23    Doctor Cranium
+1E24    Krebons
+1E25    Mind Protector
+1E26    Psychic Commander
+1E27    Psychic Snail
+1E28    Telekinetic Shocker
+1E29    Destructotron
+1E2A    Gladiator Beast Equeste
+1E2B    Jenis, Lightsworn Mender
+1E2C    Mecha Bunny
+1E2D    Kunoichi
+1E2E    Beast of the Pharaoh
+1E2F    Dark Hunter
+1E30    Kinka-byo
+1E31    Yamato-no-Kami
+1E32    Silent Strider
+1E33    Noisy Gnat
+1E34    Multiple Piece Golem
+1E35    Nitro Warrior
+1E36    Stardust Dragon
+1E37    Red Dragon Archfiend
+1E38    Goyo Guardian
+1E39    Magical Android
+1E3A    Thought Ruler Archfiend
+1E3B    Fighting Spirit
+1E3C    Domino Effect
+1E3D    Junk Barrage
+1E3E    Battle Tuned
+1E3F    De-Synchro
+1E40    Lightwave Tuning
+1E41    Psi-Station
+1E42    Psi-Impulse
+1E43    Emergency Teleport
+1E45    Lightsworn Sabre
+1E46    Unstable Evolution
+1E47    Recycling Batteries
+1E48    Book of Eclipse
+1E49    Equip Shot
+1E4A    Graceful Revival
+1E4B    Defense Draw
+1E4C    Remote Revenge
+1E4D    Spacegate
+1E4E    Synchro Deflector
+1E4F    Broken Blocker
+1E50    Machine Lord Ür
+1E51    Telepathic Power
+1E52    Mind Over Matter
+1E53    Gladiator Beast War Chariot
+1E54    Lightsworn Barrier
+1E55    Intercept
+1E56    Judgment of Thunder
+1E57    Psychic Rejuvenation
+1E58    Fish Depth Charge
+1E59    Needlebug Nest
+1E5A    Dark Simorgh
+1E66    Alector, Sovereign of Birds
+1E6B    Power Filter
+1E6C    Des Frog
+1E6D    Psychic Overload
+1E6E    Beast Machine King Barbaros Ür
+1E73    Guardian of Order
+1E74    Aurkus, Lightsworn Druid
+1E75    Ehren, Lightsworn Monk
+1E76    Dark General Freed
+1E77    Magical Exemplar
+1E78    Maniacal Servant
+1E79    Flame Spirit Ignis
+1E7A    Super-Ancient Dinobeast
+1E7B    Vanquishing Light
+1E7C    Red Ogre
+1E7D    Neos Wiseman
+1E7E    Elemental Hero Divine Neos
+1E7F    Genex Controller
+1E80    Genex Undine
+1E81    Genex Power Planner
+1E82    Genex Searcher
+1E83    Genex Worker
+1E84    Reese the Ice Mistress
+1E85    Royal Knight of the Ice Barrier
+1E86    Numbing Grub in the Ice Barrier
+1E87    Mist Valley Watcher
+1E88    Mist Condor
+1E89    Mist Valley Windmaster
+1E8A    Flamvell Poun
+1E8B    Flamvell Archer
+1E8C    Flamvell Fiend
+1E8D    X-Saber Anu Piranha
+1E8E    X-Saber Galahad
+1E8F    X-Saber Palomuro
+1E90    X-Saber Pashuul
+1E91    Ally Salvo
+1E92    Ally of Justice Thousand Arms
+1E93    Ally of Justice Unknown Crusher
+1E94    Worm Falco
+1E95    Worm Gulse
+1E96    Worm Hope
+1E97    Worm Illidan
+1E98    Worm Jetelikpse
+1E99    Worm King
+1E9A    Hydro Genex
+1E9B    X-Saber Wayne
+1E9C    Ally of Justice Light Gazer
+1E9D    Chaos-End Master
+1E9E    Sphere of Chaos
+1E9F    Genex Neutron
+1EA0    Ally of Justice Cyclone Creator
+1EA1    Road Synchron
+1EA2    Goblin Decoy Squad
+1EA3    Jade Knight
+1EA4    Tree Otter
+1EA5    Koalo-Koala
+1EA6    Zombie Mammoth
+1EA8    Doomkaiser Dragon
+1EA9    Plaguespreader Zombie
+1EAA    The White Stone of Legend
+1EAB    Revived King Ha Des
+1EAC    Cyber Shark
+1EAD    Hand of the Six Samurai
+1EAE    Red-Eyes Zombie Dragon
+1EAF    Malevolent Mech - Goku En
+1EB0    Paladin of the Cursed Dragon
+1EB1    Zombie World
+1EB2    Imperial Iron Wall
+1EB8    Avenging Knight Parshath
+1EB9    Counselor Lily
+1EBA    Grapple Blocker
+1EBB    Telekinetic Charging Cell
+1EBC    Charge of the Light Brigade
+1EBD    Healing Wave Generator
+1EBE    Turbo Synchron
+1EBF    Mad Archfiend
+1EC0    Wall of Ivy
+1EC1    Copy Plant
+1EC2    Morphtronic Celfon
+1EC3    Morphtronic Magnen
+1EC4    Morphtronic Datatron
+1EC5    Morphtronic Boomboxen
+1EC6    Morphtronic Cameran
+1EC7    Morphtronic Radion
+1EC8    Morphtronic Clocken
+1EC9    Gadget Hauler
+1ECA    Gadget Driver
+1ECB    Search Striker
+1ECC    Pursuit Chaser
+1ECD    Iron Chain Repairman
+1ECE    Iron Chain Snake
+1ECF    Iron Chain Blaster
+1ED0    Iron Chain Coil
+1ED1    Power Injector
+1ED2    Storm Caller
+1ED3    Psychic Jumper
+1ED4    Botanical Girl
+1ED5    Tytannial, Princess of Camellias
+1ED6    Fabled Raven
+1ED7    Comrade Swordsman of Landstar
+1ED8    Tiger Dragon
+1ED9    Turbo Warrior
+1EDA    Black Rose Dragon
+1EDB    Iron Chain Dragon
+1EDC    Psychic Lifetrancer
+1EDD    Card Rotator
+1EDE    Seed of Deception
+1EDF    Mark of the Rose
+1EE0    Black Garden
+1EE1    Factory of 100 Machines
+1EE2    Morphtronic Accelerator
+1EE3    Morphtronic Cord
+1EE4    Morphtronic Engine
+1EE5    Poison Chain
+1EE6    Paralyzing Chain
+1EE7    Teleport
+1EE8    Psychokinesis
+1EE9    Fragrance Storm
+1EEA    The World Tree
+1EEB    Everliving Underworld Cannon
+1EEC    Secret Village of the Spellcasters
+1EED    Omega Goggles
+1EEE    Battle Mania
+1EEF    Confusion Chaff
+1EF0    Urgent Tuning
+1EF1    Synchro Strike
+1EF2    Prideful Roar
+1EF3    Revival Gift
+1EF4    Lineage of Destruction
+1EF5    Doppelganger
+1EF6    Morphtransition
+1EF7    Morphtronic Monitron
+1EF8    Psychic Trigger
+1EF9    Pollinosis
+1EFA    Bamboo Scrap
+1EFB    Plant Food Chain
+1EFC    Trap of the Imperial Tomb
+1EFD    DNA Checkup
+1EFE    Gozen Match
+1EFF    Giant Trap Hole
+1F01    Kasha
+1F06    Parallel World Fusion
+1F07    Flip Flop Frog
+1F08    Naturia Beetle
+1F09    Naturia Rock
+1F0A    Naturia Guardian
+1F0B    Naturia Vein
+1F0C    Genex Furnace
+1F0D    Genex Gaia
+1F0E    Genex Spare
+1F0F    Genex Turbine
+1F10    Genex Doctor
+1F11    Genex Solar
+1F12    Dai-sojo of the Ice Barrier
+1F13    Medium of the Ice Barrier
+1F14    Mist Valley Baby Roc
+1F15    Mist Valley Executor
+1F16    Flamvell Grunika
+1F17    Flamvell Baby
+1F18    Ally Mind
+1F19    Ally of Justice Nullfier
+1F1A    Ally of Justice Searcher
+1F1B    Ally of Justice Enemy Catcher
+1F1C    Ally of Justice Thunder Armor
+1F1D    Ally of Justice Cosmic Gateway
+1F1E    Worm Linx
+1F1F    Worm Millidith
+1F20    Worm Noble
+1F21    Naturia Beast
+1F22    Dewloren, Tiger King of the Ice Barrier
+1F23    Thermal Genex
+1F24    Geo Genex
+1F25    Ally of Justice Field Marshal
+1F2A    Genesis Dragon
+1F2D    Gallis the Star Beast
+1F2E    Red-Eyes Wyvern
+1F2F    Darkness Destroyer
+1F30    White Night Queen
+1F31    Fortress Warrior
+1F32    Tuningware
+1F33    Armory Arm
+1F34    Give and Take
+1F35    Limiter Overload
+1F36    Shield Wing
+1F37    Vice Dragon
+1F3E    Summon Reactor ·SK
+1F3F    Flying Fortress SKY FIRE
+1F40    Trap Reactor ·Y FI
+1F41    Black Salvo
+1F42    Spell Reactor ·RE
+1F43    Rose Tentacles
+1F44    Turret Warrior
+1F45    Debris Dragon
+1F46    Hyper Synchron
+1F47    Red Dragon Archfiend/Assault Mode
+1F48    Trap Eater
+1F49    Twin-Sword Marauder
+1F4A    Dark Tinker
+1F4B    Blackwing - Gale the Whirlwind
+1F4C    Blackwing - Bora the Spear
+1F4D    Blackwing - Sirocco the Dawn
+1F4E    Twilight Rose Knight
+1F4F    Morphtronic Boarden
+1F50    Morphtronic Slingen
+1F51    Doomkaiser Dragon/Assault Mode
+1F52    Hyper Psychic Blaster/Assault Mode
+1F53    Arcanite Magician/Assault Mode
+1F54    Arcane Apprentice
+1F55    Assault Mercenary
+1F56    Assault Beast
+1F57    Night Wing Sorceress
+1F58    Lifeforce Harmonizer
+1F59    Gladiator Beast Samnite
+1F5A    Inmato
+1F5B    Scanner
+1F5C    Dimension Fortress Weapon
+1F5D    Desert Protector
+1F5E    Cross-Sword Beetle
+1F5F    Bee List Soldier
+1F60    Hydra Viper
+1F61    Alien Overlord
+1F62    Alien Ammonite
+1F63    Dark Strike Fighter
+1F64    Blackwing Armor Master
+1F65    Hyper Psychic Blaster
+1F66    Arcanite Magician
+1F67    Cosmic Fortress Gol'gar
+1F68    Prevention Star
+1F69    Vengeful Servant
+1F6A    Star Blast
+1F6B    Raptor Wing Strike
+1F6C    Morphtronic Rusty Engine
+1F6D    Morphtronic Map
+1F6E    Assault Overload
+1F6F    Assault Teleport
+1F70    Assault Revival
+1F71    Psychic Sword
+1F72    Telekinetic Power Well
+1F73    Indomitable Gladiator Beast
+1F74    Seed Cannon
+1F75    Super Solar Nutrient
+1F76    Six Scrolls of the Samurai
+1F77    Verdant Sanctuary
+1F78    Arcane Barrier
+1F79    Mysterious Triangle
+1F7A    Assault Mode Activate
+1F7B    Spirit Force
+1F7C    Descending Lost Star
+1F7D    Shining Silver Force
+1F7E    Half or Nothing
+1F7F    Nightmare Archfiends
+1F80    Ebon Arrow
+1F81    Ivy Shackles
+1F82    Fake Explosion
+1F83    Morphtronic Forcefield
+1F84    Morphtronic Mix-up
+1F85    Assault Slash
+1F86    Assault Counter
+1F87    Psychic Tuning
+1F88    Metaphysical Regeneration
+1F89    Trojan Gladiator Beast
+1F8A    Wall of Thorns
+1F8B    Planet Pollutant Virus
+1F8C    Victoria
+1F8D    Rose, Warrior of Revenge
+1F8E    Seed of Flame
+1F8F    Cactus Fighter
+1F90    Overdrive Teleporter
+1F91    Rai-Jin
+1F92    Rai-Mei
+1F93    Gladiator Beast Retiari
+1F94    Night's End Sorcerer
+1F95    Tempest Magician
+1F96    Treacherous Trap Hole
+1F97    Ido the Supreme Magical Force
+1F98    Violet Witch
+1F99    Tragoedia
+1F9A    Ancient Fairy Dragon
+1F9B    Stardust Dragon/Assault Mode
+1F9C    Fabled Lurrie
+1F9D    Fabled Grimro
+1F9E    Fabled Gallabas
+1F9F    Fabled Kushano
+1FA0    Jurrac Protops
+1FA1    Jurrac Velo
+1FA2    Jurrac Monoloph
+1FA3    Jurrac Tyrannus
+1FA4    Naturia Antjaw
+1FA5    Naturia Spiderfang
+1FA6    Naturia Rosewhip
+1FA7    Naturia Cosmobeet
+1FA8    Genex Blastfan
+1FA9    Genex Recycled
+1FAA    Genex Army
+1FAB    Pilgrim of the Ice Barrier
+1FAC    Geomancer of the Ice Barrier
+1FAD    Mist Valley Falcon
+1FAE    Mist Valley Apex Avian
+1FAF    Ally of Justice Reverse Break
+1FB0    Ally of Justice Unlimiter
+1FB1    Worm Opera
+1FB2    Worm Prince
+1FB3    Worm Queen
+1FB4    Worm Rakuyeh
+1FB5    Fabled Valkyrus
+1FB6    Jurrac Giganoto
+1FB7    Naturia Leodrake
+1FB8    Windmill Genex
+1FB9    Mist Valley Thunder Lord
+1FBA    Elemental Hero Gaia
+1FBE    Elemental Hero Ice Edge
+1FC1    Elemental Hero Absolute Zero
+1FC4    Endymion, the Master Magician
+1FC5    Disenchanter
+1FC6    Defender, the Magical Knight
+1FC7    Magical Citadel of Endymion
+1FC8    Spell Power Grasp
+1FC9    Power Tool Dragon
+1FCA    Colossal Fighter/Assault Mode
+1FCB    Dark Voltanis
+1FCC    Prime Material Falcon
+1FCD    Bone Crusher
+1FCE    Alien Kid
+1FCF    Totem Dragon
+1FD0    Royal Swamp Eel
+1FD1    Submarine Frog
+1FD2    Code A Ancient Ruins
+1FD3    Synchro Change
+1FDA    Rockstone Warrior
+1FDB    Level Warrior
+1FDC    Strong Wind Dragon
+1FDD    Dark Verger
+1FDE    Phoenixian Seed
+1FDF    Phoenixian Cluster Amaryllis
+1FE0    Hedge Guard
+1FE1    Evil Thorn
+1FE2    Blackwing - Blizzard the Far North
+1FE3    Blackwing - Shura the Blue Flame
+1FE4    Blackwing - Kalut the Moon Shadow
+1FE5    Blackwing - Elphin the Raven
+1FE6    Morphtronic Remoten
+1FE7    Morphtronic Videon
+1FE8    Morphtronic Scopen
+1FE9    Gadget Arms
+1FEA    Torapart
+1FEB    Earthbound Immortal Aslla piscu
+1FEC    Earthbound Immortal Ccapac Apu
+1FED    Koa'ki Meiru Valafar
+1FEE    Koa'ki Meiru Powerhand
+1FEF    Koa'ki Meiru Guardian
+1FF0    Koa'ki Meiru Drago
+1FF1    Koa'ki Meiru Ice
+1FF2    Koa'ki Meiru Doom
+1FF3    Brain Golem
+1FF4    Minoan Centaur
+1FF5    Reinforced Human Psychic Borg
+1FF6    Master Gig
+1FF7    Emissary from Pandemonium
+1FF8    Gigastone Omega
+1FF9    Alien Dog
+1FFA    Spined Gillman
+1FFB    Deep Sea Diva
+1FFC    Mermaid Archer
+1FFD    Lava Dragon
+1FFE    Vanguard of the Dragon
+1FFF    G.B. Hunter
+2000    Exploder Dragonwing
+2001    Blackwing Armed Wing
+2003    Trident Dragion
+2004    Sea Dragon Lord Gishilnodon
+2005    One for One
+2006    Mind Trust
+2007    Thorn of Malice
+2008    Magic Planter
+2009    Wonder Clover
+200A    Against the Wind
+200B    Black Whirlwind
+200C    Junk Box
+200D    Double Tool C&D
+200E    Morphtronic Repair Unit
+200F    Iron Core of Koa'ki Meiru
+2010    Iron Core Immediate Disposal
+2011    Urgent Synthesis
+2012    Psychic Path
+2013    Natural Tune
+2014    Supremacy Berry
+2015    Forbidden Chalice
+2016    Calming Magic
+2017    Miracle Locus
+2018    Crimson Fire
+2019    Tuner Capture
+201A    Overdoom Line
+201B    Wicked Rebirth
+201C    Delta Crow - Anti Reverse
+201D    Level Retuner
+201E    Fake Feather
+201F    Trap Stun
+2020    Morphtronic Bind
+2021    Reckoned Power
+2022    Automatic Laser
+2023    Attack of the Cornered Rat
+2024    Proof of Powerlessness
+2025    Bone Temple Block
+2026    Grave of the Super Ancient Organism
+2027    Swallow Flip
+2028    Mirror of Oaths
+2029    Fabled Urustos
+202A    Fabled Krus
+202B    Fabled Topi
+202C    Fabled Soulkius
+202D    Fabled Miztoji
+202E    Jurrac Ptera
+202F    Jurrac Iguanon
+2030    Jurrac Brachis
+2031    Jurrac Spinos
+2032    Naturia Dragonfly
+2033    Naturia Sunflower
+2034    Naturia Cliff
+2035    Naturia Tulip
+2036    R-Genex Turbo
+2037    R-Genex Overseer
+2038    R-Genex Crusher
+2039    R-Genex Magma
+203A    Shock Troops of the Ice Barrier
+203B    Samurai of the Ice Barrier
+203C    Dewdark of the Ice Barrier
+203D    Caravan of the Ice Barrier
+203E    Worm Solid
+203F    Worm Tentacles
+2040    Worm Ugly
+2041    Worm Victory
+2042    Fabled Leviathan
+2043    Jurrac Velphito
+2044    Naturia Barkion
+2045    Locomotion R-Genex
+2046    Gungnir, Dragon of the Ice Barrier
+2047    Snowman Eater
+2048    Ojama Red
+2049    Ojama Blue
+204A    Ojama Country
+204B    Shiba-Warrior Taro
+204C    Supersonic Skull Flame
+204D    Skull Flame
+204E    Burning Skull Head
+204F    Skull Conductor
+2050    Infernity Archfiend
+2051    Infernity Dwarf
+2052    Infernity Guardian
+2053    Infernity Destroyer
+2054    Coat of Justice
+2058    Powered Tuner
+2059    Pride of the Weak
+205A    Gottoms' Emergency Call
+205B    Archlord Kristya
+205F    Darklord Asmodeus
+2060    Darklord Superbia
+2061    Darklord Edeh Arae
+2064    Kuribon
+2065    Sunny Pixie
+2066    Sunlight Unicorn
+2067    Blackwing - Mistral the Silver Shield
+2068    Blackwing - Vayu the Emblem of Honor
+2069    Blackwing - Fane the Steel Chain
+206A    Morphtronic Magnen Bar
+206B    Jester Lord
+206C    Jester Confit
+206D    Fortune Lady Light
+206E    Fortune Lady Fire
+206F    Infernity Beast
+2070    Darksea Rescue
+2071    Darksea Float
+2072    Turbo Rocket
+2073    Earthbound Immortal Cusillu
+2074    Earthbound Immortal Chacu Challhua
+2075    Koa'ki Meiru Boulder
+2076    Koa'ki Meiru Crusader
+2077    Koa'ki Meiru Speeder
+2078    Koa'ki Meiru Tornado
+2079    Koa'ki Meiru Hydro Barrier
+207A    Scary Moth
+207B    Shiny Black "C"
+207C    Armed Sea Hunter
+207D    Divine Dragon Aquabizarre
+207E    Fishborg Blaster
+207F    Shark Cruiser
+2080    Armored Axon Kicker
+2081    Genetic Woman
+2082    Magicat
+2083    Cyborg Doctor
+2084    White Potan
+2085    Minefieldriller
+2086    XX-Saber Faultroll
+2087    XX-Saber Ragigura
+2088    Flamvell Firedog
+2089    Ancient Crimson Ape
+208A    Falchionß
+208B    Turbo Cannon
+208C    Archfiend Zombie-Skull
+208D    Ancient Sacred Wyvern
+208E    XX-Saber Gottoms
+208F    Release Restraint Wave
+2090    Silver Wing
+2091    Advance Draw
+2092    Ancient Forest
+2093    Emergency Assistance
+2094    Spirit Burner
+2095    Future Visions
+2096    Core Compression
+2097    Core Blaster
+2098    Solidarity
+2099    Hydro Pressure Cannon
+209A    Water Hazard
+209B    Brain Research Lab
+209C    Saber Slash
+209D    Sword of Sparkles
+209E    Rekindling
+209F    Ancient Leaf
+20A0    Fossil Dig
+20A1    Skill Successor
+20A2    Reinforce Truth
+20A3    Pixie Ring
+20A4    Fairy Wind
+20A5    Imperial Custom
+20A6    Discord
+20A7    Slip of Fortune
+20A8    Depth Amulet
+20A9    Damage Translation
+20AA    Battle Teleportation
+20AB    Core Reinforcement
+20AC    Iron Core Luster
+20AD    Battle of the Elements
+20AE    Aegis of the Ocean Dragon Lord
+20AF    Psychic Soul
+20B0    Flamvell Counter
+20B1    At One With the Sword
+20B2    A Major Upset
+20B3    Battlestorm
+20B4    Koa'ki Meiru War Arms
+20B5    Immortal Ruler
+20B6    Hardened Armed Dragon
+20B7    Moja
+20B8    Beast Striker
+20B9    King of the Beasts
+20BA    Swallow's Nest
+20BB    Overwhelm
+20BC    Berserking
+20C2    Darklord Desire
+20C4    Dragunity Dux
+20C5    Dragunity Legionnaire
+20C6    Dragunity Tribus
+20C7    Dragunity Darkspear
+20C8    Dragunity Phalanx
+20C9    Fabled Dyf
+20CA    Fabled Ashenveil
+20CB    Fabled Oltro
+20CC    Jurrac Titano
+20CD    Jurrac Guaiba
+20CE    Jurrac Stauriko
+20CF    Naturia Horneedle
+20D0    Naturia Fruitfly
+20D1    Naturia Hydrangea
+20D2    R-Genex Accelerator
+20D3    R-Genex Oracle
+20D4    R-Genex Ultimum
+20D5    Spellbreaker of the Ice Barrier
+20D6    General Grunard of the Ice Barrier
+20D7    Ally of Justice Omni-Weapon
+20D8    Ally of Justice Quarantine
+20D9    Ally of Justice Cycle Reader
+20DA    Worm Warlord
+20DB    Worm Xex
+20DC    Worm Yagan
+20DD    Worm Zero
+20DE    Dragunity Knight - Gae Bulg
+20DF    Fabled Ragin
+20E0    Vindikite R-Genex
+20E1    Ally of Justice Decisive Armor
+20E2    Lancer Lindwurm
+20E4    Golem Dragon
+20E5    Cyber Larva
+20E6    Dragonic Tactics
+20EB    Dragunity Knight - Gae Dearg
+20EE    Cyber Eltanin
+20EF    Phoenix Gearfried
+20F0    Evocator Chevalier
+20F1    Featherizer
+20F2    Gemini Soldier
+20F3    Supervise
+20F4    Majestic Dragon
+20F5    Stardust Xiaolong
+20F6    Max Warrior
+20F7    Quickdraw Synchron
+20F8    Level Eater
+20F9    Zero Gardna
+20FA    Regulus
+20FB    Infernity Necromancer
+20FC    Fortune Lady Wind
+20FD    Fortune Lady Water
+20FE    Fortune Lady Dark
+20FF    Fortune Lady Earth
+2100    Solitaire Magician
+2101    Catoblepas and the Witch of Fate
+2102    Dark Spider
+2103    Ground Spider
+2104    Relinquished Spider
+2105    Spyder Spider
+2106    Mother Spider
+2107    Reptilianne Gorgon
+2108    Reptilianne Medusa
+2109    Reptilianne Scylla
+210A    Reptilianne Viper
+210B    Earthbound Immortal Ccarayhua
+210C    Earthbound Immortal Uru
+210D    Earthbound Immortal Wiraqocha Rasca
+210E    Koa'ki Meiru Sea Panther
+210F    Koa'ki Meiru Rooklord
+2110    Tuned Magician
+2111    Crusader of Endymion
+2112    Woodland Archer
+2113    Knight of the Red Lotus
+2114    Energy Bravery
+2115    Swap Frog
+2116    Lord British Space Fighter
+2117    Oshaleon
+2118    Djinn Releaser of Rituals
+2119    Djinn Presider of Rituals
+211A    Divine Grace - Northwemko
+211B    Majestic Star Dragon
+211C    Blackwing - Silverwind the Ascendant
+211D    Reptilianne Hydra
+211E    Black Brutdrago
+211F    Explosive Magician
+2120    Spider Web
+2121    Earthbound Whirlwind
+2122    Savage Colosseum
+2123    Attack Pheromones
+2124    Molting Escape
+2125    Reptilianne Spawn
+2126    Fortune's Future
+2127    Time Passage
+2128    Iron Core Armor
+2129    Herculean Power
+212A    Gemini Spark
+212B    Ritual of Grace
+212C    Preparation of Rites
+212D    Moray of Greed
+212E    Spiritual Forest
+212F    Raging Mad Plants
+2130    Insect Neglect
+2131    Faustian Bargain
+2132    Slip Summon
+2133    Synchro Barrier
+2134    Enlightenment
+2135    Bending Destiny
+2136    Inherited Fortune
+2137    Spider Egg
+2138    Wolf in Sheep's Clothing
+2139    Earthbound Wave
+213A    Roar of the Earthbound
+213B    Limit Impulse
+213C    Infernity Force
+213D    Nega-Ton Corepanel
+213E    Gemini Counter
+213F    Gemini Booster
+2140    Ritual Buster
+2141    Stygian Dirge
+2142    Seal of Wickedness
+2143    Appointer of the Red Lotus
+2144    Koa'ki Meiru Bergzak
+2145    Warm Worm
+2146    Worm Bait
+2147    Regretful Rebirth
+2148    Shield Worm
+2149    XX-Saber Gardestrike
+214A    XX-Saber Fulhelmknight
+214B    Koa'ki Meiru Ghoulungulate
+214C    Koa'ki Meiru Gravirose
+214D    Psychic Emperor
+214E    Card Guard
+214F    Flamvell Commando
+2150    Pseudo Space
+2151    Greed Grado
+2152    Revival of the Immortals
+2157    Orichalcos Shunoros
+2158    Guardian Eatos
+2159    Darkness Neosphere
+215A    Clear Vice Dragon
+215B    Clear World
+215F    Elemental Hero Flash
+2161    Elemental Hero The Shining
+2162    Genex Ally Duradark
+2163    The Fabled Rubyruda
+2164    Dragunity Knight - Vajrayana
+2165    Genex Ally Remote
+2166    Genex Ally Powercell
+2167    Genex Ally Changer
+2168    Genex Ally Volcannon
+2169    Genex Ally Solid
+216A    The Fabled Chawa
+216B    The Fabled Catsith
+216C    The Fabled Cerburrel
+216D    The Fabled Ganashia
+216E    The Fabled Nozoochee
+216F    Dragunity Militum
+2170    Dragunity Primus Pilus
+2171    Dragunity Brandistock
+2172    Dragunity Javelin
+2173    Jurrac Dino
+2174    Jurrac Gallim
+2175    Jurrac Aeolo
+2176    Jurrac Herra
+2177    Naturia Butterfly
+2178    Naturia Ladybug
+2179    Naturia Strawberry
+217A    Defender of the Ice Barrier
+217B    Warlock of the Ice Barrier
+217C    Sacred Spirit of the Ice Barrier
+217D    General Raiho of the Ice Barrier
+217E    Genex Ally Triarm
+217F    The Fabled Unicore
+2180    Dragunity Knight - Trident
+2181    Jurrac Meteor
+2182    Naturia Landoise
+2183    Gauntlet Warrior
+2184    Eccentric Boy
+2185    Junk Archer
+2186    Scrubbed Raid
+2187    Tuner's Barrier
+2188    Ape Fighter
+2189    Closed Forest
+218A    Roaring Earth
+218B    Ape Magician
+2190    Elemental Hero Great Tornado
+2191    Koa'ki Meiru Beetle
+2192    Koa'ki Meiru Maximus
+2193    Shire, Lightsworn Spirit
+2194    Rinyan, Lightsworn Rogue
+2195    Yellow Baboon, Archer of the Forest
+2196    Gemini Scorpion
+2197    Metabo-Shark
+2198    Earthbound Revival
+2199    Reptilianne Poison
+219A    Gateway of the Six
+219B    Underground Arachnid
+219C    Hundred Eyes Dragon
+219D    Zeman the Ape King
+219E    Junk Collector
+219F    Backup Warrior
+21A0    Miracle's Wake
+21A1    Starlight Road
+21A4    Unicycular
+21A5    Bicular
+21A6    Tricular
+21A7    Drill Synchron
+21A8    Ogre of the Scarlet Sorrow
+21A9    Battle Fader
+21AA    Power Supplier
+21AB    Magic Hole Golem
+21AC    Power Invader
+21AD    Dark Bug
+21AE    Sword Master
+21AF    Witch of the Black Rose
+21B0    Rose Fairy
+21B1    Dragon Queen of Tragic Endings
+21B2    Reptilianne Servant
+21B3    Reptilianne Gardna
+21B4    Reptilianne Naga
+21B5    Reptilianne Vaskii
+21B6    Oracle of the Sun
+21B7    Fire Ant Ascator
+21B8    Weeping Idol
+21B9    Apocatequil
+21BA    Supay
+21BB    Informer Spider
+21BC    Koa'ki Meiru Urnight
+21BD    XX-Saber Garsem
+21BE    Gravekeeper's Visionary
+21BF    Gravekeeper's Descendant
+21C0    Black Potan
+21C1    Shreddder
+21C2    Pandaborg
+21C3    Codarus
+21C4    Consecrated Light
+21C5    Gundari
+21C6    Cyber Dragon Zwei
+21C7    Oilman
+21C8    Djinn Cursenchanter of Rituals
+21C9    Djinn Prognosticator of Rituals
+21CA    Garlandolf, King of Destruction
+21CB    Majestic Red Dragon
+21CC    Drill Warrior
+21CD    Sun Dragon Inti
+21CE    Moon Dragon Quilla
+21CF    XX-Saber Hyunlei
+21D0    Cards of Consonance
+21D1    Variety Comes Out
+21D2    Reptilianne Rage
+21D3    Advance Force
+21D4    Viper's Rebirth
+21D5    Temple of the Sun
+21D6    Rocket Pilder
+21D7    Break! Draw!
+21D8    Power Pickaxe
+21D9    Spiders' Lair
+21DA    Iron Core Specimen Lab
+21DB    Gravekeeper's Stele
+21DC    Machine Assembly Line
+21DD    Ritual of Destruction
+21DE    Ascending Soul
+21DF    Ritual Cage
+21E0    Pot of Benevolence
+21E1    Synchro Control
+21E2    Changing Destiny
+21E3    Fiendish Chain
+21E4    Nature's Reflection
+21E5    Serpent Suppression
+21E6    Meteor Flare
+21E7    Offering to the Immortals
+21E8    Destruct Potion
+21E9    Call of the Reaper
+21EA    Lair Wire
+21EB    Core Blast
+21EC    Saber Hole
+21ED    Machine King - 3000 B.C.
+21EE    Alien Brain
+21EF    Forgotten Temple of the Deep
+21F0    Tuner's Scheme
+21F1    Psi-Curse
+21F2    Widespread Dud
+21F3    Inverse Universe
+21F4    Machina Fortress
+21F5    Machina Gearframe
+21F6    Machina Peacekeeper
+21F7    Scrap Recycler
+21F8    Machina Armored Unit
+21FA    Lion Alligator
+21FC    Transforming Sphere
+21FE    Spawn Alligator
+21FF    Neo Flamvell Origin
+2200    Neo Flamvell Hedgehog
+2201    Neo Flamvell Shaman
+2202    Neo Flamvell Garuda
+2203    Neo Flamvell Sabre
+2204    Genex Ally Chemistrer
+2205    Genex Ally Birdman
+2206    Genex Ally Bellflame
+2207    Genex Ally Crusher
+2208    Genex Ally Reliever
+2209    The Fabled Peggulsus
+220A    The Fabled Kokkator
+220B    Fabled Dianaira
+220C    Dragunity Corsesca
+220D    Dragunity Partisan
+220E    Dragunity Pilum
+220F    Dragunity Angusticlavii
+2210    Naturia Stinkbug
+2211    Naturia Mantis
+2212    Naturia Ragweed
+2213    Naturia White Oak
+2214    Strategist of the Ice Barrier
+2215    Secret Guards of the Ice Barrier
+2216    General Gantala of the Ice Barrier
+2217    Naturia Exterio
+2218    Ancient Flamvell Deity
+2219    Genex Ally Triforce
+221A    The Fabled Kudabbi
+221B    Dragunity Knight - Barcha
+221C    Trishula, Dragon of the Ice barrier
+221D    The Tyrant Neptune
+221E    The Atmosphere
+221F    Junk Blader
+2220    Lightning Warrior
+2221    Samurai Sword Baron
+2222    Stygian Security
+2223    Stygian Sergeants
+2224    Stygian Street Patrol
+2226    Armored Bee
+2229    Poseidon Giant Beetle
+222A    Quick-Span Knight
+2231    XX-Saber Emmersblade
+2232    Alchemist of Black Spells
+2233    Super-Nimble Mega Hamster
+2234    Cactus Bouncer
+2235    Dragonic Guard
+2236    The Dragon Dwelling in the Deep
+2237    Djinn Disserere of Rituals
+2238    Earthbound Linewalker
+2239    Gravekeeper's Priestess
+223A    Core Transport Unit
+223B    Genex Ally Axel
+2249    Blackwing - Ghibli the Searing Wind
+224A    Blackwing - Gust the Backblast
+224B    Blackwing - Breeze the Zephyr
+224C    Changer Synchron
+224D    Card Breaker
+224E    Second Booster
+224F    Archfiend Interceptor
+2250    Dread Dragon
+2251    Trust Guardian
+2252    Flare Resonator
+2253    Synchro Magnet
+2254    Infernity Mirage
+2255    Infernity Randomizer
+2256    Infernity Beetle
+2257    Infernity Avenger
+2258    Revival Rose
+2259    Morphtronic Vacuumen
+225A    Bird of Roses
+225B    Spore
+225C    Fairy Archer
+225D    Biofalcon
+225E    Cherry Inmato
+225F    Magidog
+2260    Lyna the Light Charmer
+2261    Wattgiraffe
+2262    Wattfox
+2263    Wattwoodpecker
+2264    Koa'ki Meiru Sandman
+2265    Memory Crush King
+2266    Delta Tri
+2267    Trigon
+2268    Testudo erat Numen
+2269    Des Frog
+226A    Batteryman AAA
+226B    Batteryman Fuel Cell
+226C    Key Mouse
+226D    Ally of Justice Core Destroyer
+226E    Hunter of Black Feathers
+226F    Black-Winged Dragon
+2270    Chaos King Archfiend
+2271    Infernity Doom Dragon
+2272    Splendid Rose
+2273    Chaos Goddess
+2274    Black-Winged Strafe
+2275    Cards for Black Feathers
+2276    ZERO-MAX
+2277    Infernity Launcher
+2278    Into the Void
+2279    Intercept Wave
+227A    Pyramid of Wonders
+227B    The Fountain in the Sky
+227C    Dragon Laser
+227D    Wattcube
+227E    Electromagnetic Shield
+227F    Worm Call
+2280    Magic Triangle of the Ice Barrier
+2281    Koa'ki Meiru Initialize!
+2282    Dawn of the Herald
+2283    Forbidden Graveyard
+2284    Leeching the Light
+2285    Corridor of Agony
+2286    Power Frame
+2287    Blackwing - Backlash
+2288    Blackwing - Bombardment
+2289    Black Thunder
+228A    Guard Mines
+228B    Infernity Reflector
+228C    Infernity Break
+228D    Damage Gate
+228E    Infernity Inferno
+228F    Phantom Hand
+2290    Assault Spirits
+2291    Blossom Bombardment
+2292    Morphtronics, Scramble!
+2293    Power Break
+2294    Koa'ki Meiru Shield
+2295    Crevice Into the Different Dimension
+2296    Synchro Ejection
+2297    Chaos Trap Hole
+2298    Danipon
+2299    Sweet Corn
+229A    Vampire Koala
+229B    Wild Tornado
+229C    Junk Destroyer
+229D    Rapid Warrior
+229E    Synchron Explorer
+229F    Half Shut
+22A0    Malefic Blue-Eyes White Dragon
+22A1    Malefic Stardust Dragon
+22A2    Elemental Hero Neos Knight
+22A3    Malefic Paradox Dragon
+22BB    Blizzard Princess
+22BC    Malefic Red-Eyes B. Dragon
+22BD    Gem-Knight Garnet
+22BE    Gem-Knight Sapphire
+22BF    Gem-Knight Tourmaline
+22C0    Gem-Knight Alexandrite
+22C1    Gem-Armadillo
+22C2    Gem-Merchant
+22C3    Laval Miller
+22C4    Soaring Eagle Above the Searing Land
+22C5    Laval Warrior
+22C6    Magflare the Molten Swordsman
+22C7    Laval Forest Sprite
+22C8    Kayenn, the Master Magma Blacksmith
+22C9    Laval Burner
+22CA    Laval Judgment Lord
+22CB    Vylon Cube
+22CC    Vylon Vanguard
+22CD    Vylon Charger
+22CE    Vylon Soldier
+22CF    Gem-Knight Ruby
+22D0    Gem-Knight Aquamarine
+22D1    Gem-Knight Topaz
+22D2    Lavalval Dragon
+22D3    Laval the Greater
+22D4    Vylon Sigma
+22D5    Vylon Epsilon
+22D6    Gem-Knight Fusion
+22D7    Searing Fire Wall
+22D8    Vylon Material
+22D9    Gem-Enhancement
+22DA    Molten Whirlwind Wall
+22E4    Earthquake Giant
+22E5    Effect Veiler
+22E6    Dash Warrior
+22E7    Damage Eater
+22E8    A/D Changer
+22E9    Stronghold Guardian
+22EA    Playful Possum
+22EB    Egotistical Ape
+22EC    Uni-Horned Familiar
+22ED    Monoceros
+22EE    D.D. Unicorn Knight
+22EF    Unibird
+22F0    Bicorn Re'em
+22F1    Mine Mole
+22F2    Trident Warrior
+22F3    Delta Flyer
+22F4    Rhinotaurus
+22F5    Hypnocorn
+22F6    Scrap Chimera
+22F7    Scrap Goblin
+22F8    Scrap Beast
+22F9    Scrap Hunter
+22FA    Scrap Golem
+22FB    Wattbetta
+22FC    Wattlemur
+22FD    Wattpheasant
+22FE    Naturia Mosquito
+22FF    Naturia Beans
+2300    Naturia Bamboo Shoot
+2301    Amazoness Sage
+2302    Amazoness Trainee
+2303    Amazoness Queen
+2304    Lock Cat
+2305    Elephun
+2306    Synchro Fusionist
+2307    Ambitious Gofer
+2308    Final Psychic Ogre
+2309    Dragon Knight Draco-Equiste
+230A    Ultimate Axon Kicker
+230B    Thunder Unicorn
+230C    Voltic Bicorn
+230D    Lightning Tricorn
+230E    Scrap Dragon
+230F    Wattchimera
+2310    Blind Spot Strike
+2311    Double Cyclone
+2312    Scrapyard
+2313    Scrapstorm
+2314    Scrap Sheen
+2315    Wattcine
+2316    Naturia Forest
+2317    Landoise's Luminous Moss
+2318    Amazoness Village
+2319    Amazoness Fighting Spirit
+231A    Unicorn Beacon
+231B    Beast Rage
+231C    Miracle Synchro Fusion
+231D    Pestilence
+231E    Cursed Armaments
+231F    Wiseman's Chalice
+2320    Summoning Curse
+2321    Pot of Duality
+2322    Desperate Tag
+2323    Battle Instinct
+2324    Howl of the Wild
+2325    Parallel Selection
+2326    Reanimation Wave
+2327    Barrier Wave
+2328    Chain Whirlwind
+2329    Scrap Rage
+232A    Wattcannon
+232B    Amazoness Willpower
+232C    Queen's Pawn
+232D    Beast Rising
+232E    Horn of the Phantom Beast
+232F    Paradox Fusion
+2330    Solemn Warning
+2331    Anti-Magic Prism
+2332    Chivalry
+2333    Light of Destruction
+2334    Dust Lord Ash Gash
+2335    Junk Forward
+2338    Scarred Warrior
+233E    Sergeant Electro
+2350    Dark Highlander
+2351    Malefic Cyber End Dragon
+2352    Malefic Truth Dragon
+2353    Malefic Parallel Gear
+2354    Malefic Rainbow Dragon
+2355    Junk Gardna
+2356    Dragunity Arma Leyvaten
+2357    Dragunity Arma Mystletainn
+2358    Dragunity Aklys
+2359    Dragon Ravine
+235A    Dragon Mastery
+2361    Phantom Magician
+2364    Rose Witch
+2366    Queen Angel of Roses
+236A    Mask Change
+236B    Masked Hero Goka
+236D    Masked Hero Vapor
+2374    Vision Hero Adoration
+2376    Swift Scarecrow
+2377    Mirror Ladybug
+2378    Reed Butterfly
+2379    Needle Soldier
+237A    Necro Linker
+237B    Rescue Warrior
+237C    Power Giant
+237D    Vice Berserker
+237E    Lancer Archfiend
+237F    Power Breaker
+2380    Extra Veiler
+2381    Synchro Soldier
+2382    Creation Resonator
+2383    Attack Gainer
+2384    Blackwing - Etesian of Two Swords
+2385    Blackwing - Aurora the Northern Lights
+2386    Blackwing - Abrolhos the Megaquake
+2387    Glow-Up Bulb
+2388    Karakuri Soldier mdl 236 "Nisamu"
+2389    Karakuri Merchant mdl 177 "Inashichi"
+238A    Karakuri Strategist mdl 248 "Nishipachi"
+238B    Karakuri Ninja mdl 339 "Sazank"
+238C    Karakuri Bushi mdl 6318 "Muzanichiha"
+238D    Scrap Soldier
+238E    Scrap Searcher
+238F    Wattkiwi
+2390    Watthopper
+2391    Wattdragonfly
+2392    Wattsquirrel
+2393    Naturia Cherries
+2394    Naturia Pumpkin
+2395    Naturia Stag Beetle
+2396    Dance Princess of the Ice Barrier
+2397    Chain Dog
+2398    Wightmare
+2399    Anarchist Monk Ranshin
+239A    Delg the Dark Monarch
+239B    Supreme Arcanite Magician
+239C    Gaia Drake, the Universal Force
+239D    Shooting Star Dragon
+239E    Formula Synchron
+239F    Red Nova Dragon
+23A0    Karakuri Shogun mdl 00 "Burei"
+23A1    Scrap Twin Dragon
+23A2    Tuning
+23A3    Karakuri Showdown Castle
+23A4    Golden Gearbox
+23A5    Karakuri Anatomy
+23A6    Scrap Lube
+23A7    Wattcastle
+23A8    Wattjustment
+23A9    Barkion's Bark
+23AA    Leodrake's Mane
+23AB    Medallion of the Ice Barrier
+23AC    Mirror of the Ice Barrier
+23AD    Koa'ki Ring
+23AE    Darkworld Shackles
+23AF    Axe of Fools
+23B0    Cursed Bill
+23B1    Tokkosho of Ghost Destroying
+23B2    White Elephant's Gift
+23B3    Heat Wave
+23B4    D2 Shield
+23B5    Red Screen
+23B6    Blackback
+23B7    Defenders Intersect
+23B8    Gravity Collapse
+23B9    Blackwing - Boobytrap
+23BA    Star Siphon
+23BB    Half Counter
+23BC    Karakuri Trick House
+23BD    Karakuri Klock
+23BE    Scrap Crash
+23BF    Wattkeeper
+23C0    Exterio's Fang
+23C1    Vanity's Emptiness
+23C2    Different Dimension Ground
+23C3    Powersink Stone
+23C4    Tyrant's Temper
+23C5    Dark Trap Hole
+23C6    Gishki Abyss
+23C7    Gishki Vanity
+23C8    Gishki Marker
+23C9    Gishki Chain
+23CA    Gishki Erial
+23CB    Gishki Shadow
+23CC    Gusto Gulldo
+23CD    Gusto Egul
+23CE    Gusto Thunbolt
+23CF    Wynnda, Priestess of Gusto
+23D0    Caam, Serenity of Gusto
+23D1    Windaar, Sage of Gusto
+23D2    Steelswarm Cell
+23D3    Steelswarm Scout
+23D4    Steelswarm Gatekeeper
+23D5    Steelswarm Caller
+23D6    Steelswarm Mantis
+23D7    Steelswarm Moth
+23D8    Steelswarm Girastag
+23D9    Steelswarm Caucastag
+23DA    Evigishki Mind Augus
+23DB    Evigishki Soul Ogre
+23DC    Daigusto Gulldos
+23DD    Daigusto Eguls
+23DE    Gishki Ceremonial Mirror
+23DF    Contact with Gusto
+23E0    First Step Towards Infestation
+23E1    Ceremonial Mirror Meditation
+23E2    Blessings for Gusto
+23E3    Infestation Wave
+23E4    Vylon Delta
+23EA    Seven Swords Warrior
+23EB    Ignition Beast Volcannon
+23EC    Vision Hero Trinity
+23ED    Troposphere
+23EE    Fleur Synchron
+23EF    Chevalier de Fleur
+23F0    Liberty at Last!
+23F1    Sacred Knight Joan
+23FC    Gem-Knight Emerald
+23FD    Vylon Ohm
+23FE    Laval Twin Slayer
+23FF    Junk Defender
+2400    Frozen Fitzgerald
+2401    Dark Diviner
+2402    Dark Flattop
+2403    Driven Daredevil
+2404    Crimson Mefist
+2410    Malefic World
+2411    Malefic Claw Stream
+2412    Boost Warrior
+2413    Justice Bringer
+2414    Bri Synchron
+2415    Big One Warrior
+2416    Battle Waltz
+2417    Synchro Gift
+2418    Card of Sacrifice
+2419    Synchro Material
+241A    Blackwing - Kochi the Daybreak
+241B    Blackwing - Jetstream the Blue Sky
+241C    Blackwing - Zephyrus the Elite
+241D    Black Feather Beacon
+241E    Black Return
+2428    Blaze Fenix, the Burning Bombardment Bird
+2430    Meklord Emperor Wisel 
+2431    Meklord Emperor Granel 
+2432    Meklord Emperor Skiel 
+2433    Meklord Fortress
+2447    Master Hyperion
+2448    The Agent of Mystery - Earth
+2449    The Agent of Miracles - Jupiter
+244A    Cards from the Sky
+244B    Divine Punishment
+244C    Cosmic Compass
+244D    Doppelwarrior
+244E    Stardust Phantom
+244F    D.D. Sprite
+2450    Top Runner
+2451    Barrier Resonator
+2452    Blackwing - Boreas the Sharp
+2453    Blackwing - Brisote the Tailwind
+2454    Blackwing - Calima the Haze
+2455    Tanngrisnir of the Nordic Beasts
+2456    Guldfaxe of the Nordic Beasts
+2457    Garmr of the Nordic Beasts
+2458    Tanngnjostr of the Nordic Beasts
+2459    Ljosalf of the Nordic Alfar
+245A    Svartalf of the Nordic Alfar
+245B    Dverg of the Nordic Alfar
+245C    Valkyrie of the Nordic Ascendant
+245D    Mimir of the Nordic Ascendant
+245E    Tyr of the Nordic Champions
+245F    Legendary Six Samurai - Kizan
+2460    Legendary Six Samurai - Enishi
+2461    Legendary Six Samurai - Kageki
+2462    Legendary Six Samurai - Shinai
+2463    Legendary Six Samurai - Mizuho
+2464    Kagemusha of the Six Samurai
+2465    Shien's Squire
+2466    Karakuri Watchdog mdl 313 "Saizan"
+2467    Karakuri Ninja mdl 919 "Kuick"
+2468    Scrap Worm
+2469    Scrap Shark
+246A    Wattberyx
+246B    Wattmole
+246C    Symphonic Warrior Basses
+246D    Symphonic Warrior Drumss
+246E    Symphonic Warrior Piaano
+246F    Majioshaleon
+2470    Yaksha
+2471    Thor, Lord of the Aesir
+2472    Loki, Lord of the Aesir
+2473    Odin, Father of the Aesir
+2474    Legendary Six Samurai - Shi En
+2475    Karakuri Steel Shogun mdl 00X "Bureido"
+2476    Atomic Scrap Dragon
+2477    Watthydra
+2478    Nordic Relic Draupnir
+2479    Gotterdammerung
+247A    March Towards Ragnarok
+247B    Shien's Smoke Signal
+247C    Six Strike - Triple Impact
+247D    Asceticism of the Six Samurai
+247E    Temple of the Six
+247F    Karakuri Cash Cache
+2480    Karakuri Gold Dust
+2481    Wattkey
+2482    Stardust Shimmer
+2483    Resonator Engine
+2484    Token Sundae
+2485    Foolish Return
+2486    Divine Wind of Mist Valley
+2487    Vylon Matter
+2488    Forbidden Lance
+2489    Terminal World
+248A    Hope for Escape
+248B    Zero Force
+248C    Blackboost
+248D    Divine Relic Mjollnir
+248E    Solemn Authority
+248F    Nordic Relic Brisingamen
+2490    Nordic Relic Laevateinn
+2491    Nordic Relic Gungnir
+2492    The Golden Apples
+2493    Odin's Eye
+2494    Gleipnir, the Fetters of Fenrir
+2495    Musakani Magatama
+2496    Shien's Scheme
+2497    Token Stampede
+2498    Xing Zhen Hu Replica
+2499    Tyrant's Tirade
+249A    Tiki Curse
+249B    Tiki Soul
+249C    Gem-Knight Crystal
+249D    Tender of the Laval Volcano
+249E    Laval Cannoneer
+249F    Vylon Sphere
+24A0    Vylon Tetrah
+24A1    Vylon Stella
+24A2    Vylon Prism
+24A3    Vylon Hapt
+24A4    Gishki Eater
+24A5    Gishki Noelia
+24A6    Gusto Skwirl
+24A7    Reeze, Whirlwind of Gusto
+24A8    Steelswarm Genesoid
+24A9    Steelswarm Sentinel
+24AA    Steelswarm Needle
+24AB    Steelswarm Longhorn
+24AC    Steelswarm Hercules
+24AD    Evigishki Tetrogre
+24AE    Gem-Knight Citrine
+24AF    Gem-Knight Prism Aura
+24B0    Laval Stannon
+24B1    Vylon Alpha
+24B2    Vylon Omega
+24B3    Daigusto Sphreeze
+24B4    Vylon Component
+24B5    Vylon Element
+24B6    Forbidden Arts of the Gishki
+24B7    Pyroxene Fusion
+24B8    Infestation Ripples
+24B9    Means of Infestation
+24BA    Barbaroid, the Ultimate Battle Machine
+24CC    Fallen Angel of Roses
+24DA    Machina Cannon
+24DB    Snap Dragon
+24DC    Gladiator Beast Lanista
+24DD    Blackwing - Jin the Rain Shadow
+24DE    Scrap Orthros
+24DF    Elemental Hero Nova Master
+24E0    Naturia Eggplant
+24E1    Gem-Turtle
+24E2    Laval Lancelord
+24E3    Gishki Beast
+24E4    X-Saber Souza
+24E5    Necro Fleur
+24E6    Sorciere de Fleur
+24E7    Z-ONE
+24E8    Blue Rose Dragon

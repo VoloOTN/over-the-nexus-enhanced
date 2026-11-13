@@ -1,0 +1,7 @@
+# The Monarchs Awaken (Normal Trap) -- live findings (2026-11-11) -- PROPOSAL, nothing built
+
+Text (scratch/ygoprodeck_cache.json): "If you have no cards in your Extra Deck: Target 1 face-up Tribute Summoned monster you control; its effects are negated, also it is unaffected by the effects of cards other than this card."
+Clauses: C1 activation condition = no cards in your Extra Deck. C2 target 1 face-up Tribute Summoned monster you control. C3 negate its effects. C4 it is unaffected by the effects of cards other than this card.
+Why this card next: smallest of the deferred Monarch Spells/Traps; every mechanism already exists in the repo: Tribute-Summoned test = zone flag bit 3 (March leaf, measured); negate = kind-3 node + negate-reader precheck (Restoration, trace-confirmed 2026-11-11); "unaffected" = affect-predicate front 0x021B059C / Majestic Red Dragon arm (Infernoble Ogier precedent); Extra Deck count = player+0x18 (KB otn-extra-deck-array).
+Donor candidates (Normal Traps, not in any ROM deck, scratch/_trap_donors.py; each owns only its cls0 row): Disarmament 0x1633, Exhausting Spell 0x162F, Solar Ray 0x1767, Armored Glass 0x134E. Per-cid gates / name blob lengths / the CLAUDE.md pre-build checklist NOT yet run.
+Open design questions (UNPROVEN): does the negate node persist after the Trap leaves? (kind-3 node: yes per rider.turn_sweeper; "unaffected" must then be permanent too, keyed on the node); target step = Tribute-Summoned filter on the generic own-monster target step.
