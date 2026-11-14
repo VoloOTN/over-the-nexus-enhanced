@@ -1,0 +1,143 @@
+### Ground-truth economy assertions.
+###
+### Any edit to params.toml that breaks one of these is rejected.  The first four
+### are the cases the model was specified against and are asserted exactly; the
+### rest are sanity anchors with a wider tolerance.
+###
+### Fields: exp / min / max / gross_max (floats), context_sensitive (bool),
+### tol (float, default 0.15), tags (list of tags that must be present),
+### want (a predicate the card must produce -- see validate_golden).
+
+[["Smashing Ground"]]
+exp = 0.00
+tol = 0.001
+note = "spends itself to remove exactly one monster: a clean 1-for-1"
+
+[["Share the Pain"]]
+exp = -1.00
+tol = 0.001
+note = "spends itself AND tributes one of ours to remove one of theirs"
+
+[["Dark Hole"]]
+min = 0.00
+gross_max = 5.00
+tol = 0.001
+note = "floor is net 0 (you never play it into an empty field); ceiling is the colloquial 5-for-1 gross"
+
+[["Rekindling"]]
+context_sensitive = true
+want_attribute = ["FIRE"]
+want_def = 200
+want_level_absent = true
+note = "the real text has NO level clause -- a level key here is a parser bug"
+
+# ── wider-tolerance anchors ────────────────────────────────────────────────
+[["Pot of Greed"]]
+exp = 1.00
+note = "-1 self, draw 2"
+
+[["Monster Reborn"]]
+exp = 0.00
+note = """-1 self, +1 body from a GY = card-neutral, by the same accounting that
+makes Smashing Ground a 0.  Reborn is *better* than Smashing Ground, but that
+difference is a power difference (a 2500 ATK body), not an economy one -- which
+is exactly why the two axes are scored separately."""
+
+[["Heavy Storm"]]
+min = 0.00
+note = "symmetric S/T wipe: same shape as Dark Hole"
+
+[["Foolish Burial"]]
+exp = -1.00
+tol = 0.35
+note = "pure setup: -1 self, sends from Deck to GY for no immediate card"
+
+[["Mystical Space Typhoon"]]
+exp = 0.00
+note = "1-for-1 removal"
+
+[["Mirror Force"]]
+min = 0.00
+note = "symmetric-shaped mass removal, opponent side only"
+
+[["Card Destruction"]]
+tags = ["discard_outlet"]
+note = "must be recognised as a discard outlet for the discard-payoff synergy"
+
+[["Charge of the Light Brigade"]]
+tags = ["searcher", "gy_filler"]
+want_level = 4
+want_archetype = "Lightsworn"
+note = "mill 3 as a cost, then a restricted search"
+
+[["Mystic Tomato"]]
+tags = ["summoner"]
+want_attribute = ["DARK"]
+want_atk = 1500
+note = "recruiter: DARK, 1500 or less ATK, from the Deck"
+
+[["Genex Undine"]]
+tags = ["searcher", "gy_filler"]
+note = "send 1 WATER from Deck as a cost, then search Genex Controller"
+
+# ── added 2026-07-28 with the blind-spot fixes ─────────────────────────────
+# Each of these locks in a mechanism that was silently wrong, so a future edit
+# that reverts one fails loudly instead of quietly costing accuracy.
+
+[["Solemn Judgment"]]
+exp = -0.50
+tol = 0.05
+note = """Spends itself (-1.00), pays half its controller's LP (-0.80), negates
+AND destroys (+1.30).
+
+CORRECTED 2026-07-30, and the correction is the point.  This asserted 0.00 on
+the reasoning "negate AND destroy is a clean 1-for-1", and it held that value
+through four separate fits that all wanted gain.negate_destroy at 1.30 -- which
+is why the coefficient was suppressed each time.  The 0.00 was TWO errors
+cancelling: negate+destroy was underpriced, and "Pay half your LP" matched no
+clause rule at all (the pattern wanted literal digits), so eight cards paid that
+cost for free.  Both are fixed; the card-movement half of the old note is still
+true, it just was never the whole card.
+
+Not a downgrade of the card: negating a Summon or activation stops the effect
+from ever resolving, which is worth more than the 1-for-1 the cards alone
+suggest -- that is what 1.30 buys.  The LP is a real cost on top.  Solemn
+Judgment still ranks **11th of 4,076** by impact and appears in 67% of the era
+corpus; its value lives in power (summon_answer, opponent_turn), not in cards."""
+
+[["Moray of Greed"]]
+exp = 1.10
+tol = 0.15
+note = """shuffle 2 WATER from HAND into the Deck, then draw 3.  The shuffle is a
+gain-kind clause aimed at our own side, so _gain_key returned None and _cost_key
+was never consulted: it was free and the card scored +2.00.  See
+economy._uncharged_own_cost -- and note the guard cards below, which that fix
+must NOT touch."""
+
+[["Call of the Haunted"]]
+exp = 0.65
+tol = 0.10
+note = """GUARD for _uncharged_own_cost, and a fix in its own right.  "destroy
+that monster" when this leaves the field must stay free (it is the revived
+monster, priced by mod.temporary) -- charging it is the obvious generalisation
+and it is wrong.  Separately: "Activate this card by TARGETING 1 monster in your
+GY" only matched the imperative "Target", so this raised no target at all and
+fell back to ss_unspecified (0.35) instead of ss_from_gy; it scored 0.00."""
+
+[["Book of Moon"]]
+tags = ["tempo"]
+note = """neutralising a monster without removing a card is invisible to both
+axes -- no card changes hands, no stat changes -- so this scored a flat -1.00
+self-spend despite appearing in 28% of the ROM's era decks."""
+
+[["Trap Dustshoot"]]
+exp = -0.46
+tol = 0.15
+note = """the most-played card in the era corpus (72%).  "return that card to ITS
+OWNER'S Deck" matched no rule at all, so only the target condition survived."""
+
+[["One for One"]]
+exp = -0.85
+tol = 0.10
+note = """"Special Summon 1 Level 1 monster from your hand OR DECK" -- the
+disjunctive zone resolved to "hand" (0.15) rather than the Deck (1.15)."""

@@ -1,0 +1,91 @@
+# ROM card name -> ygoprodeck card name, for cards the automatic resolver cannot
+# reach.  The resolver already handles, in order: exact normalized name, the
+# konami_id TSV's alternate spelling, this table, then an exact ROM-stat match
+# (ATK/DEF/level/attribute/race) which resolves every *monster*.  So this file
+# only ever needs Spell/Trap entries — they carry no stats to match on.
+#
+# Over the Nexus shipped pre-TCG-release translations of OCG cards, which is why
+# so many names drifted.  Each entry below was resolved by matching card class +
+# spell/trap subtype and confirming the effect text describes the same card.
+
+[alias]
+"Eternal Draught" = "Eternal Drought"
+"Hidden Book of Spell" = "Hidden Spellbook"
+"Judgment of Pharaoh" = "Judgment of the Pharaoh"
+"Coat of Justice" = "Court of Justice"
+"Roar of the Earthbound" = "Roar of the Earthbound Immortal"
+"Earthbound Revival" = "Earthbound Immortal Revival"
+"Forbidden Graveyard" = "Silent Graveyard"
+"Dark Trap Hole" = "Deep Dark Trap Hole"
+"Gishki Ceremonial Mirror" = "Gishki Aquamirror"
+"Ceremonial Mirror Meditation" = "Aquamirror Meditation"
+"Metaphysical Regeneration" = "Supernatural Regeneration"
+
+# ---------------------------------------------------------------------------
+# Resolved ONCE by exact ROM-stat match (ATK/DEF/level/attribute/race) against
+# ygoprodeck, then recorded here.  Doing that lookup at build time made name
+# resolution depend on the very properties a randomiser rewrites: shuffle the
+# stats and these 35 cards silently lose their effect text.  Baked in, the
+# resolver never needs stats and the pool is identical on a randomised ROM.
+# Regenerate with tools/deckgen: see the note in namematch.Resolver._by_stats.
+"Armityle the Chaos Phantom" = "Armityle the Chaos Phantasm"
+"Big Core" = "B.E.S. Big Core"
+"Blackwing - Zephyrus the Elite" = "Blackwing - Zephyros the Elite"
+"Cliff the Trap Remover" = "Dark Scorpion - Cliff the Trap Remover"
+"Crimson Mefist" = "Blood Mefist"
+"Daigusto Sphreeze" = "Daigusto Sphreez"
+"Dust Lord Ash Gash" = "Gash the Dust Lord"
+"Falchionﾟ" = "Falchion Beta"
+"Fiendish Engine �" = "Fiendish Engine Omega"
+"Gem-Knight Prism Aura" = "Gem-Knight Prismaura"
+"Gishki Eater" = "Gishki Reliever"
+"Gishki Erial" = "Gishki Ariel"
+"Gishki Noelia" = "Gishki Noellia"
+"Gusto Skwirl" = "Gusto Squirro"
+"Kinetic Soldier" = "Cipher Soldier"
+"Laval Cannoneer" = "Laval Cannon"
+"Laval Stannon" = "Laval Stennon"
+"Laval Twin Slayer" = "Laval Dual Slasher"
+"Magflare the Molten Swordsman" = "Prominence, Molten Swordsman"
+"Marie the Fallen One" = "Darklord Marie"
+"Nurse Reficule the Fallen One" = "Darklord Nurse Reficule"
+"Poseidon Giant Beetle" = "Great Poseidon Beetle"
+"Rancer Dragonute" = "Lancer Dragonute"
+"Red-Eyes B. Chick" = "Black Dragon's Chick"
+"Red-Moon Baby" = "Vampire Baby"
+"Sacred Knight Joan" = "Noble Knight Joan"
+"Snap Dragon" = "Snapdragon"
+"Steelswarm Genesoid" = "Steelswarm Genome"
+"Steelswarm Needle" = "Steelswarm Sting"
+"Tender of the Laval Volcano" = "Laval Volcano Handmaiden"
+"Vampire Koala" = "Vampiric Koala"
+"Vampire Orchis" = "Vampiric Orchis"
+"Vylon Hapt" = "Vylon Hept"
+"Vylon Tetrah" = "Vylon Tetra"
+"Wynnda, Priestess of Gusto" = "Winda, Priestess of Gusto"
+
+# Cards deliberately excluded from the deck-building pool.  Turbo Duel (Speed
+# World) support cards cannot be played in a normal duel, and Tokens are not
+# deck cards at all.  Every "Speed Spell - X" is excluded automatically by
+# prefix, but these carry no such marker.
+[exclude]
+"Slip Stream" = "turbo duel only"
+"Acceleration Zone" = "turbo duel only"
+"Des Accelerator" = "turbo duel only"
+"Full Throttle" = "turbo duel only"
+"Slowdown Trap" = "turbo duel only"
+"Speed World" = "turbo duel only"
+"Speed World 2" = "turbo duel only"
+"Speed Booster" = "turbo duel only"
+"Speed Edge" = "turbo duel only"
+"Grain Corn Token" = "token, not a deck card"
+
+# Unresolved: present in the ROM, no confident ygoprodeck match found.  These
+# stay in the pool with no effect text (economy falls back to the vanilla
+# stat/power model) and are listed in the build report so they can be resolved
+# later.  Do not guess — a wrong alias silently mis-scores a card.
+[unresolved]
+"Null and Void" = "normal trap, no confident match"
+"Pigeonholing Books of Spell" = "quick-play spell, no confident match"
+"Crystal Counter" = "normal trap, Crystal Beast support, no confident match"
+"Means of Infestation" = "normal trap, Steelswarm support, no confident match"

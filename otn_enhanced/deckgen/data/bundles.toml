@@ -1,0 +1,95 @@
+### Curated card bundles: cards that are dead without a specific partner.
+###
+### Most "dead without a partner" cases need no entry here.  Any card whose
+### context-free economy is <= 0 while it still has unmet wants is penalised
+### automatically by deckscore's `penalty_orphan`, which already covers
+### Rekindling, every recruiter, and Instant Fusion's "Level 5 or lower Fusion".
+###
+### This file is for the cases the *text does not state*.  Future Fusion never
+### mentions Elemental HERO Absolute Zero; nothing in its wording tells you the
+### card is unplayable without a Fusion target worth 1-carding into.
+###
+###   anchor      the card that needs help (ROM or real name)
+###   mode        "hard" -> reject the anchor if no partner can be fitted
+###               "soft" -> allow it, but charge deck.p_bundle per unmet partner
+###   bonus       added to the deck score once the bundle is complete
+###   partners    each needs `zone` ("main" or "extra") and `min_copies`, plus
+###               either `name` or a `predicate` table
+
+[[bundle]]
+id = "future_fusion_absolute_zero"
+anchor = "Future Fusion"
+mode = "hard"
+bonus = 2.5
+note = """Future Fusion sends the Fusion Materials listed on the target from the
+MAIN DECK.  Absolute Zero reads "1 'HERO' monster + 1 WATER monster", so having
+the Fusion in the Extra Deck is not enough -- both materials must be in the main
+deck or the card cannot be activated at all.  Listing only Absolute Zero let the
+pair appear in decks with no HERO and no WATER monster to send."""
+[[bundle.partners]]
+name = "Elemental HERO Absolute Zero"
+zone = "extra"
+min_copies = 1
+# Stratos by name: it is the HERO worth running on its own (it searches the
+# rest), so it is the right one to pull in rather than any HERO body.
+[[bundle.partners]]
+name = "Elemental HERO Stratos"
+zone = "main"
+min_copies = 1
+[[bundle.partners]]
+zone = "main"
+min_copies = 1
+[bundle.partners.predicate]
+card_class = "monster"
+attribute = ["WATER"]
+
+[[bundle]]
+id = "instant_fusion_low_level"
+anchor = "Instant Fusion"
+mode = "hard"
+bonus = 1.5
+note = "1000 LP for a Level <=5 Fusion body: pure Synchro fodder, but only if one is in the Extra Deck"
+[[bundle.partners]]
+zone = "extra"
+min_copies = 1
+[bundle.partners.predicate]
+card_class = "monster"
+monster_flags = ["fusion"]
+level = ["<=", 5]
+
+[[bundle]]
+id = "machine_duplication_targets"
+anchor = "Machine Duplication"
+mode = "soft"
+bonus = 1.2
+note = "needs a Machine with <=500 ATK that is worth having three of"
+[[bundle.partners]]
+zone = "main"
+min_copies = 3
+[bundle.partners.predicate]
+card_class = "monster"
+race = ["Machine"]
+atk = ["<=", 500]
+
+[[bundle]]
+id = "ritual_needs_spell"
+anchor = "Advanced Ritual Art"
+mode = "hard"
+bonus = 1.5
+note = """Advanced Ritual Art needs BOTH: a Ritual Monster to summon, and Normal
+Monsters in the Deck to send as the tribute.  Two separate partners -- a single
+partner cannot carry two predicates, and writing it that way is a duplicate-table
+TOML error that breaks every command which loads bundles."""
+[[bundle.partners]]
+zone = "main"
+min_copies = 1
+[bundle.partners.predicate]
+card_class = "monster"
+monster_flags = ["ritual"]
+
+[[bundle.partners]]
+zone = "main"
+min_copies = 2
+[bundle.partners.predicate]
+card_class = "monster"
+monster_flags = ["normal"]

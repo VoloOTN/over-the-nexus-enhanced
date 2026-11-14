@@ -3,7 +3,8 @@ rom.nds
 rom_enhanced.nds
 
 scratch/
-data/
+data/deckgen
+data/over_the_nexus
 
 *.ydc
 *.ydk

@@ -1,0 +1,647 @@
+### Every tunable coefficient in the deck generator.
+###
+### Economy is denominated in **cards of advantage**.  A Normal Spell that
+### destroys exactly one of the opponent's monsters is 0.00: it spent itself
+### (-1) to remove one card (+1).  Tune against the *fit* half of the stock-deck
+### corpus only, and re-run the golden tests -- any edit that breaks
+### data/golden.toml is rejected.
+###
+### Values under [impact] and parts of [power] are FITTED, not hand-picked:
+###   uv run python -m otn_enhanced.deckgen.cli train --apply
+### fits them against tournament play rate from formatlibrary.com.
+
+[self_spend]
+# What it costs to resolve the card itself.  A monster going hand -> field is
+# still your card, so it spends nothing; a Normal Spell is gone afterwards.
+normal_spell = 1.00
+normal_trap = 1.00
+quick_play = 1.00
+counter_trap = 1.00
+ritual_spell = 1.00
+equip = 0.85          # dies with its host
+continuous = 0.35     # persists, but occupies a zone and eats removal
+field = 0.35
+monster = 0.00
+
+[cost]
+discard = 1.00
+tribute_own = 1.00
+destroy_own = 1.00
+bounce_own = 0.40         # back to hand: tempo, not a card
+shuffle_own = 0.45
+banish_gy = 0.25          # GY resources are cheap unless the deck uses them
+banish_own_field = 0.90
+send_deck = 0.15          # often an upside; synergy handles that separately
+send_hand = 1.00
+mill = 0.12               # per card off the top of your own Deck
+lp_per_1000 = 0.20
+
+[gain]
+draw = 1.00
+search = 1.00
+ss_from_deck = 1.15       # a body *and* a card out of the Deck
+ss_from_gy = 1.00
+ss_from_extra = 0.90
+ss_from_hand = 0.15       # tempo only; the card was already yours
+ss_unspecified = 0.35
+destroy_opp = 1.00
+banish_opp = 1.10
+bounce_opp = 0.55
+shuffle_opp = 0.60
+# Spin (back to the TOP of the Deck) beats a bounce: the card leaves the board
+# AND the opponent's next draw is spent redrawing it, so it is close to removal
+# plus a draw denied.  Phoenix Wing Wind Blast (14% of the era corpus) and Raiza
+# the Storm Monarch (8%) are what this prices.
+#
+# 0.55 -> 1.20, 5/5 seeds (2026-07-30).  The old value was **equal to
+# bounce_opp**, i.e. it contradicted the sentence above it; 1.20 sits just over
+# destroy_opp (1.00), which is the shape the reasoning implies -- removal, plus
+# their next draw spent, minus the fact that the card does come back.
+# Only 4 cards carry it and 2 are played, so a 5-seed consensus is thin on its
+# own; confirmed positive on both by-format era splits, the all-format corpus,
+# and deck AUC on two splits (never negative, all deltas <= +0.0014).
+spin_opp = 1.20
+# A draw the opponent never gets is a card they never get.  Slightly under a
+# full card because it is delayed and they still untap into their turn.
+draw_denial = 1.10
+opp_discard = 0.90
+opp_tribute = 1.00
+# REMOVED: opp_destroy_own.  It was declared here and never referenced in
+# economy.py, and no card in this ROM's pool is worded "your opponent destroys"
+# (checked: 0 of 4,076), so there was nothing for it to price.
+negate = 1.10             # negate alone leaves the card on the field
+# Now reachable: see economy._negates_and_destroys.  Until this session every
+# `negate` was priced at 0.70 regardless, so "negate the Summon AND destroy that
+# card" -- Solemn Judgment, Solemn Warning, Stardust Dragon -- was billed as if
+# the card stayed on the field.
+# 1.00 -> 1.30 (2026-07-30).  Wanted by FOUR independent fits before it could be
+# applied; the blocker was golden.toml asserting Solemn Judgment at exactly 0.00,
+# which turned out to be two errors cancelling -- this coefficient was low AND
+# "Pay half your LP" matched no clause rule, so eight cards paid that cost for
+# free.  Both fixed together; see the note on the Solemn Judgment assertion.
+# Confirmed 5/5 afterwards.  User's reasoning, and it is the right one: negating
+# stops the effect from ever resolving, which beats removing the same card later
+# -- most of all against a boss monster or a high-impact spell.
+negate_destroy = 1.30
+take_control = 1.20
+# Creature Swap: you trade a body rather than gaining one, so it is worth well
+# under take_control -- but you choose the trade, so it is not neutral either.
+control_swap = 0.70
+damage_per_1000 = 0.18
+gain_lp_per_1000 = 0.10
+
+[mod]
+temporary = 0.60          # "banished during the End Phase"
+optional = 0.95
+recurrence = 1.00         # a persistent card with a repeatable gain
+# How reliable the trigger is.  Being destroyed by battle is far less
+# controllable than choosing to Normal Summon.
+cond_none = 1.00
+cond_summon = 0.85
+cond_activation = 0.90
+cond_battle = 0.60
+cond_leave = 0.65
+cond_phase = 0.70
+cond_opponent_action = 0.65
+# Fires only if the opponent activates one named card (Anti Raigeki wants them
+# to play "Raigeki").  Strong on resolution, almost never resolves.
+cond_named_card = 0.12
+# Target breadth.  "1 card on the field" always has something to hit; "1 face-up
+# monster your opponent controls" does not.  Multiplied into the expected count,
+# because a narrower filter is a clause that resolves less often.
+target_monster_only = 0.90
+target_face_up_only = 0.90
+
+### Activation-conditioned board states.
+###
+### These are NOT unconditional board distributions -- they are the boards you
+### would *choose* to activate on.  That is what makes Dark Hole's floor 0.00
+### rather than -5.00: nobody plays it into an empty enemy field.
+[board.pessimistic]
+own_mon = 0.0
+opp_mon = 1.0
+own_st = 0.0
+opp_st = 1.0
+
+[board.expected]
+own_mon = 0.5
+opp_mon = 2.2
+own_st = 0.6
+opp_st = 1.4
+
+[board.optimistic]
+own_mon = 0.0
+opp_mon = 5.0
+own_st = 0.0
+opp_st = 5.0
+
+[economy]
+# Cap on how many cards an open-ended count ("as many as possible") can move.
+mass_cap = 5.0
+# Expected fraction of matching copies already available when an open-ended
+# recursion effect resolves.  Rekindling with 9 live targets summons ~3.
+live_fraction = 0.35
+# "net" makes the search optimise net advantage; "gross" makes it optimise raw
+# cards removed.  Reports always show both.
+mass_removal_max_mode = "net"
+# "all cards with the same name in the Graveyard" and friends: Graveyard denial,
+# usually one or two copies, NOT a board wipe.  See _resolve_count.
+gy_all_count = 1.0
+# How much an "all"-count sweep narrows per extra restriction on its target
+# (Attribute, Race, named archetype, Level, ATK/DEF, monster flag).  "Destroy all
+# monsters" and "destroy all face-up monsters WITH 0 ATK" both resolved to the
+# full board prior of 2.2, so a Synchro that sweeps almost nothing was billed for
+# a board wipe.  Applied ONLY to board-bound counts -- applying breadth to fixed
+# counts is what broke Smashing Ground last time.  See economy._board_breadth.
+all_narrow_factor = 0.45
+
+[power]
+# Level -> what it costs to get the body onto the field.
+tax_level_5_6 = -0.60
+tax_level_7_plus = -1.50
+tax_level_9_plus = -2.50
+# Multiplier on the tribute tax for a card that can Special Summon itself
+# (Gorz).  Not zero -- it can still be hard-cast -- but most of the cost is gone.
+# REVERTED to 0.35 -- see the note on deck.p_orphan.  The all-format fit wanted
+# 1.00 (4/5), the era fit with the leak closed wanted 0.00 (5/5), and the
+# card-level fit called 0.35 robust across every seed.  Three objectives, three
+# answers spanning the whole range: not identified, so it keeps the value that
+# has survived the most scrutiny.
+self_ss_tax_relief = 0.35
+# How much of the tribute tax a DECK-LEVEL cheat refunds.  Call of the Mummy,
+# Valhalla and Lonefire Blossom put big bodies down for free, so a Level 8 Zombie
+# in a Call of the Mummy deck is not paying two tributes for it.
+tax_refund_when_cheatable = 0.30
+tax_extra_per_material = -0.40
+
+### Tag contributions.
+###
+### Power must only score what economy CANNOT see.  Earlier versions also paid
+### for `negate`, `mass_removal`, `searcher`, `summoner`, `draw` and `recursion`
+### -- all of which economy already prices as card advantage.  Double-counting
+### them inflated the impact spread so far (Anti Raigeki 2.69 vs Flamvell Firedog
+### 1.26) that no synergy term could ever change a pick, and every deck came out
+### a goodstuff pile.  Those tags are deliberately absent now.
+tag_floodgate = 0.50      # locks the opponent out; no card-advantage signature
+# 2.20 -> 0.50, evidence-off era fit, 4/5 seeds (2026-07-30).  The old value was
+# not merely high, it was fitted against the WRONG CARDS: the regex tagger's
+# `cannot be (?:Special )?Summoned` matched every Nomi monster, so 292 of its 404
+# "floodgates" were things like Sangan and Black Luster Soldier collecting a
+# floodgate bonus for being hard to Summon.  The tag now comes from the wiki's
+# categories and holds 218 cards that really do lock the opponent out.
+tag_protection = 0.30     # survives removal
+tag_piercing = 0.25       # combat maths, not cards
+tag_direct_attack = 0.35
+tag_double_attack = 0.45
+tag_cannot_attack = -0.80
+tag_nomi = -0.90          # needs a specific board before it does anything
+tag_vanilla = -0.30
+tag_needs_self_copies = -1.00   # needs several copies of ITSELF drawn together
+tag_gy_setup = 0.70             # loading your own GY is setup, not loss
+
+### Combat channel — HAND-SET, NOT FITTED.
+###
+### These price what happens in the Battle Phase, which the economy axis cannot
+### see.  A monster that banishes whatever it fights is not a 1-for-1 trade: it
+### also deters every attack while it sits there, and banishing dodges Graveyard
+### recursion.  All five need fitting against the retro corpus before they are
+### worth more than a starting point.
+tag_battle_removal = 0.90
+tag_battle_immune = 0.40
+tag_combat_trick = 0.00   # Honest-class: a card in hand that wins a combat
+tag_atk_scaling = 0.55    # printed ATK understates the real body
+tag_board_reset = 1.00    # Fiber Jar class: symmetric, decisive, format-warping
+# Tempo: neutralising a monster without removing a card (Book of Moon, Enemy
+# Controller, Tsukuyomi).  Both scoring axes were blind to this -- economy sees
+# no card change hands and power sees no stat -- so these read as a flat -1.00
+# self-spend despite Book of Moon appearing in 28% of the ROM's era decks.
+# Hand-set as a starting point; it is in SEARCH_SPACE with 0.0 in range so the
+# fit can reject it outright.
+tag_tempo = 0.55
+### Mechanic tags, now read off the WIKI's curated categories rather than the
+### regexes that approximated them (2026-07-30).  They started at 0.00 -- they
+### describe until the fit says otherwise -- and economy already prices the card
+### advantage in most of them, so a nonzero value here means the behaviour is
+### worth something BEYOND the cards it trades.
+###
+### The nonzero ones below were fitted with the EVIDENCE CHANNEL OFF
+### (`deckgen train --no-evidence`): `w_staple` is a lookup of the very play rate
+### the objective measures, so with it on the fit returns 0.00 for every tag
+### correlated with being played, which is all of them.  Held-out +0.0363 +/-
+### 0.0073 (5/5 seeds), and confirmed positive on two by-format era splits and on
+### the all-format corpus, none of which the fit saw.  Applied with the channel
+### still ON, where they are worth a further +0.0021 Spearman / +0.0010 deck AUC
+### -- small, but the double-count this was feared to cause does not appear.
+tag_spot_removal = 0.90     # single-target answer (MST, Dimensional Prison)
+tag_control_theft = 0.00    # Mind/Brain Control: also supplies borrowed material
+tag_hand_disruption = 0.00  # strips the opponent's hand
+tag_token_maker = 0.00      # bodies from nowhere: Tribute and Synchro fodder
+tag_banish_payoff = 0.70    # uses the banished zone as a resource
+### These three came from reading the 34 most-played era cards one at a time.
+### Unlike the five above they are NOT restatements of an economy coefficient:
+###   opponent_turn  - acts while the opponent commits, costing you no turn.
+###                    8 of the top 25 era cards do this; economy prices them
+###                    all as flat 1-for-1s.
+###   summon_answer  - stops a threat AS IT ARRIVES, so its on-summon effect
+###                    never resolves.  Strictly better than removing the same
+###                    body later, and identical on the card-advantage axis.
+###   free_body      - arrives without the Normal Summon, the one hard
+###                    per-turn resource the model does not represent at all.
+tag_opponent_turn = 1.20
+tag_summon_answer = 1.50
+tag_free_body = 1.20
+### The largest mechanics that PARSED but had no name, by era-deck weight.
+tag_battle_payoff = 0.00    # fires from combat (Goyo Guardian, Catastor)
+tag_stat_debuff = 0.00      # shrinks their monster; mirror of tag_stat_boost
+tag_recurring = 1.20        # a repeatable per-turn effect is an engine
+tag_lifegain = 0.00
+### Read off the wiki's curated categories (2026-07-30); nothing in the model
+### could derive any of these from text, and none of them is a restatement of an
+### economy coefficient.  0.00 until the fit says otherwise, as above.
+###   damage_block   - Waboku, Threatening Roar: neither card advantage nor a
+###                    stat, so no channel saw them at all.
+###   random_outcome - a coin flip or die roll.  Arcana Force and Barrel Dragon
+###                    are priced as if the good half always happens.
+###   self_damage    - the card hurts its own controller (Solemn Judgment's
+###                    half-LP, Return from the Different Dimension).
+tag_damage_block = 0.00
+tag_random_outcome = 0.00
+tag_self_damage = 0.00
+tag_stat_boost = 0.00       # pumps ATK; 494 cards and nothing scored it
+tag_summon_payoff = 0.00    # fires when something is Summoned
+tag_conditional = 0.00      # needs a board state before it does anything (drawback)
+tag_attack_lock = 0.00      # cannot attack / must pay to attack (drawback)
+tag_equip_effect = 0.00     # equips: dies with its host
+tag_leave_payoff = 0.00     # pays off when it leaves the field
+tag_attack_trigger = 0.00   # activates on attack declaration (Mirror Force)
+tag_attack_redirect = 0.00  # manages who gets attacked
+tag_information = 0.00      # reveals hidden cards
+tag_name_change = 0.00      # treated as another name
+tag_level_mod = 0.00        # moves Levels; feeds Synchro reach
+tag_deck_stack = 0.00       # orders the top of the Deck
+tag_fusion_payoff = 0.00    # wants a Fusion engine to be live
+tag_continuous_effect = 0.00# stays on the field
+tag_extra_normal_summon = 0.00# an extra Normal Summon: the hard per-turn resource
+tag_tribute_cost = 0.00     # REDUNDANT with cost.tribute_own -- expect 0.00
+tag_banish_cost = 0.00      # REDUNDANT with cost.banish_gy -- expect 0.00
+tag_lp_cost = 0.00          # REDUNDANT with cost.lp_per_1000 -- expect 0.00
+tag_generic_material = 0.00 # REDUNDANT with power.w_extra_generic -- expect 0.00
+tag_generic_tuner = 0.00    # REDUNDANT with power.w_extra_generic -- expect 0.00
+tag_generic_nontuner = 0.00 # REDUNDANT with power.w_extra_generic -- expect 0.00
+
+# Normal-Summonable bodies below this ATK are charged for it, scaled by the
+# shortfall, unless their effect earns the slot.  Measured against tournament
+# decks: main-deck monsters below ~1600 ATK are almost always effect cards.
+normal_summon_atk_floor = 1600.0
+p_atk_floor = 1.20
+atk_floor_effect_relief = 0.34  # each qualifying effect tag buys off a third
+
+# Tournament play rate as direct evidence of quality.  Bonus only -- see the
+# note in power.py on why absence is not penalised.
+w_staple = 8.00
+staple_exponent = 0.60
+
+# Weights combining the sub-scores into power.value.  Stats are clipped tightly:
+# a Level 1 with 2500 ATK is remarkable but not three times a good effect.
+w_stat = 0.30
+stat_clip = 2.00
+w_tax = 1.00
+w_tags = 1.00
+# FITTED at the deck level (5/5 neutral seeds, 1.00 -> 0.15).  Card-level
+# findability is largely redundant now that deck.w_search_access prices the same
+# idea where it actually applies -- against the deck you are holding, not the
+# whole pool.
+w_searchability = 0.15
+w_tuner = 0.30
+# Extra Deck accessibility: how freely a Synchro/Fusion's materials can be
+# supplied, so ANY deck can make it.  Brionac and Catastor get the full weight; a
+# "HERO" or "Gladiator Beast" Fusion gets none.  Before this the model had no way
+# to tell them apart at all (AUC 0.442, anti-correlated).
+#
+# Now GRADED 1.0 / 0.5 / 0.0 from the wiki's material categories rather than
+# inferred from "does any parsed want name an archetype".  That inference read
+# the whole card, so Scrap Dragon (179 era decks) counted as locked because its
+# EFFECT names an archetype, though its material line is the fully generic
+# "1 Tuner + 1 or more non-Tuner monsters".  See wikitags.material_genericity --
+# including why the inferred proxy still scores a higher play-rate AUC (0.709 vs
+# 0.686) and why that is the proxy double-counting the archetype lock the
+# orphan/want channel already prices.
+w_extra_generic = 2.00
+
+### Impact = how the two axes combine.
+###
+### FITTED against the deck-level objective (tournament decks should outscore the
+### ROM's AI decks), not by hand -- and NOT against card play rate, which gave the
+### opposite answer.  Measured separately over 941 tournament vs 222 ROM decks:
+###
+###     economy sum   AUC 0.625   <- separates good decks from bad
+###     power sum     AUC 0.393   <- ANTI-correlated with deck quality
+###
+### Summing stat_eff across 40 cards rewards big-beater piles, which is exactly
+### what the ROM's AI decks are.  Hence w_power 1.10 -> 0.10.  A card-level fit
+### was fooled by this; the deck-level one is the objective that matters.
+###
+### Only their *ratio* is identifiable -- the training objective is a rank
+### correlation and cannot see scale -- so score_pool normalises the resulting
+### impact distribution to `target_spread`.  Do not delete that normalisation:
+### without it, refitting silently rescales impact and drowns out every synergy
+### term in deckscore.
+[impact]
+w_economy = 1.00
+w_power = 0.10
+# Evidence channel (tournament play rate, ATK floor, hard drawbacks) at full
+# weight.  These were previously bundled into w_power and therefore multiplied
+# by 0.10 into irrelevance.
+w_evidence = 2.40
+# tanh squash half-width: +/-1 card stays roughly linear, past ~4 saturates.
+econ_scale = 1.00
+# Standard deviation the pool's impact distribution is normalised to, so the
+# deck objective's synergy weights keep their meaning across refits.
+target_spread = 1.00
+
+[deck]
+size = 40
+extra_size = 15
+max_copies = 3
+min_monsters = 18
+max_monsters = 22
+max_traps = 12
+max_searchers = 12
+
+# Synergy weight.  The search restarts across several values (see restarts) so
+# it explores both a generic-goodstuff and a hard-theme build.
+lambda_synergy = 1.00
+restarts = [0.60, 1.00, 1.60]
+beam_width = 8
+
+# Saturation constants.  SAT(n, tau) = 1 - exp(-n/tau): the first copy of a
+# payoff is worth a lot, the ninth almost nothing.  This is what stops the
+# search filling 40 slots with searchers.
+tau_want = 6.0
+tau_want_open = 9.0        # "as many as possible" wants scale with copy count
+tau_tag = 3.0
+tau_concentration = 8.0
+
+### Synergy weights: a judgement call, and flagged as one.
+###
+### Fitting these against "tournament decks should outscore ROM AI decks" drives
+### every one of them to ~0.  That result is CONFOUNDED: the ROM's decks are
+### mono-archetype builds (Gladiator Beast, Six Samurai) while the tournament
+### corpus is mostly Goat/Edison goodstuff, so `concentration` correlates with
+### *being a ROM deck* rather than with being weak.  Zeroing it improves the AUC
+### by exploiting that correlation, not by measuring deck strength.
+###
+### These are set to intermediate values: well below the hand-picked numbers they
+### replace (which nothing justified -- attribute concentration was 6.00), but not
+### the zero the confounded fit asks for, because building a coherent deck around
+### a seed is the generator's purpose and not something this AUC can measure.
+w_want_scale = 4.00
+
+# Tag-pair channels: these are the synergies not written as a card filter.
+w_archetype = 2.00
+w_gy_cycle = 1.50          # gy_filler  <-> gy_payoff
+w_discard_cycle = 1.50     # discard_outlet <-> discard_payoff
+# Future Fusion milling a Graveyard payoff it NAMED, on top of w_gy_cycle.
+# Distinct from a plain mill because the enabler chooses what it sends: it shows
+# a Fusion and mills that Fusion's materials, so a payoff which is one of those
+# materials is deliberate rather than lucky.  Gated on the payoff being some
+# Fusion's material, so a Spell with a GY effect cannot claim it.  Exactly one
+# card in this pool qualifies as the enabler (Future Fusion); the term is
+# written to generalise rather than to name it.
+w_fusion_mill = 1.50
+w_tuner_reach = 1.50
+# Graveyard denial (Dimensional Fissure, Banisher of the Radiance) cancelling the
+# deck's own GY engine.  An anti-synergy: charged against how much gy_filler and
+# gy_payoff it voids, so it is free in a deck that does not use the Graveyard.
+p_gy_denial = 6.00
+# Deck-out as an alternate win condition.  Worthless in ones and twos, real in
+# bulk, so it pays nothing below deckout_min and saturates after that.
+w_deckout = 0.00
+tau_deckout = 4.0
+deckout_min = 3
+# Burn, same shape as deck-out: nothing below the floor, saturating above it.
+w_burn = 4.00
+burn_min = 6
+# FLIP monsters plus a way to flip them on demand.
+w_flip_cycle = 1.20
+# Interaction density: share of the main deck that answers the opponent.  A soft
+# band, penalised on BOTH sides -- an all-engine deck bricks, an all-answers deck
+# has nothing to protect.  Measured against tournament lists, not chosen.
+interaction_min = 0.20
+interaction_max = 0.50
+p_role_balance = 1.50
+# A one-card Synchro line, times how played the Synchros at that Level are.
+w_one_card_combo = 8.00
+# P(opening hand can actually Synchro): >=1 Tuner AND >=1 non-Tuner.
+w_synchro_ready = 12.00
+# Opening-hand consistency: P(open at least one card that starts the deck).
+# Worth a lot -- it is most of what separates a deck from a pile.
+w_consistency = 5.00
+# Search access: the extra P(open the payoff) that the deck's own searchers buy.
+# Three Hecatrice make Valhalla six copies deep, 34% -> 58%.  This is the whole
+# reason to run a card whose economy is a flat 1-for-1 once the self-discard is
+# charged, and nothing measured it before.  Weighted by want exclusivity, so it
+# pays for making "1 Valhalla" findable and not "1 monster".
+#
+# NOT fitted.  The 5-seed deck fit split 3/5 for 0.00 against 2/5 for 3.00, and
+# on its own this term has AUC(tournament > ROM) = 0.487 with ROM decks scoring
+# HIGHER.  That is the same confound documented for the concentration weights:
+# the ROM ships mono-archetype structure decks (Gadget, Machina) whose whole
+# identity is cards fetching each other.  Kept at the hand-set value because the
+# mechanism is real and charging the self-discard removed the only other channel
+# that priced it -- exactly the "intermediate value, stated as a judgement call"
+# treatment the standing tension below describes.  Revisit with a corpus that is
+# not confounded this way.
+w_search_access = 6.00
+# Expected combo targets stranded in the opening hand.  Running 3 Flamvell
+# Magician means drawing one ~34% of the time, and a drawn Magician is close to
+# a blank; this is what stops the search over-running search targets.
+p_dead_draw = 0.00       # tuner + non-tuner summing to a real Synchro level
+w_attribute_concentration = 2.00
+w_race_concentration = 1.00
+
+# Penalties.
+p_payoff = 0.10            # k in k*max(0, searchers - rho*payoffs)^2
+rho_payoff = 0.80
+# A card whose own wants are unmet.
+#
+# REVERTED to 3.00.  A 5/5 deck fit moved this to 8.00, but that fit ran against
+# all ~100 formats with the evidence channel leaking play rate into its own
+# objective.  Re-measured on held-out splits of the ROM's own era with the leak
+# closed, 8.00 is WORSE: 0.9349 against 0.9455 for the three coefficients this
+# note covers.  The era fit then asked for 1.00, i.e. the opposite direction
+# again, and per-parameter that is worth +0.0016 -- noise.  Weakly identified by
+# either corpus; left at the value that predates both.
+#
+# 2026-07-30: the deck fit asked for **1.00 at 5/5** on the 5.9x-larger corpus,
+# and it was REJECTED.  The confound is no longer a suspicion, it is measured.
+# `p_orphan` + `p_role_balance` alone account for +0.0078 of the deck fit's
+# +0.0101 by-format gain -- but on the one instrument with no ROM decks in it
+# (does a top-2 deck outscore a 9th+ deck?) the same pair is **-0.0024**.  They
+# earn their keep only against Konami's AI decks, which are mono-archetype and
+# therefore leave few wants unmet; a goodstuff tournament deck orphans more, so
+# this objective pays to switch the penalty off whether or not that is right.
+p_orphan = 3.00
+# A card whose trigger the deck cannot produce.  Divine Wind of Mist Valley needs
+# a WIND monster to return to your hand; with no bounce in the deck it never
+# turns on, however good its payoff looks.
+p_enabler = 4.00
+# A card promising card advantage the deck cannot actually unlock, charged in
+# proportion to how much it promises.  Rain Storm reads as +2.00 of removal and
+# needs a "Cloudian" monster; the flat orphan rate left it worth playing anyway.
+#
+# REVERTED to 2.00 -- see the note on deck.p_orphan.  The all-format fit wanted
+# 0.50 (5/5) and the era fit wanted 4.00 (5/5): two unanimous fits pointing in
+# OPPOSITE directions, which is what an unidentified coefficient looks like.
+p_dead_advantage = 2.00
+# Floor on seed affinity, so a card unrelated to the seed still earns *some*
+# synergy credit -- staples are legitimately theme-neutral.
+affinity_floor = 0.25
+# How much theme a single refinement swap may cost before bootstrap stops.
+# Unguarded, every swap it made traded a themed card for a staple -- it was
+# climbing the scorer rather than improving the deck.
+bootstrap_theme_tolerance = 0.25
+# How far down the ranked swap list to look for one that keeps the theme, before
+# concluding there is nothing left worth doing.
+bootstrap_lookahead = 40
+# Per COPY of an Extra Deck card this deck cannot legally Summon.
+#
+# DEFAULT 0.00 -- BUILT, MEASURED, AND TURNED OFF.  The idea is sound and the
+# machinery is correct on hand-built cases (Marine Dolphin without NEX = 1,
+# with NEX = 0; Heraklinos without its GBs = 1, with them = 0).  As a *scoring*
+# penalty it makes deck ranking WORSE:
+#
+#   mean unsummonable copies/deck   tournament 0.24   ROM AI 0.14
+#   deck AUC   0.9444 (off) / 0.9441 (1.50) / 0.9435 (3.00)
+#
+# The false-positive rate came down 3x once decks that can BORROW the opponent's
+# monsters were exempted (Mind Control 123 era decks, Brain Control 129) -- a
+# stolen monster is legal Fusion material, so "do I run these materials" is the
+# wrong question for a third of the format.  That narrowed the wrong-direction
+# gap from 4.6x to 1.7x and took the penalty from harmful to roughly neutral,
+# but it still does not IMPROVE deck ranking, so it stays off.
+#
+# It fires on the wrong decks.  Real lists Summon Fusions through effects the
+# parser cannot see -- Overload Fusion, Power Bond, Chimeratech Fortress using
+# Cyber Dragon from either field -- so what it actually measures is the model's
+# own blind spots, not the deck's.  An earlier version also checked Synchro Level
+# reach and was twice as bad (2.02 vs 0.41).
+#
+# The same logic IS right at CONSTRUCTION time, where being conservative is
+# correct because we are choosing what to put in rather than judging a deck
+# someone else built: see search._fusion_ready, which uses it to fill the Extra
+# Deck and is what got Heraklinos into the Gladiator Beast build.
+#
+# Left wired and in DECK_SEARCH_SPACE so the fit can revisit it if the parser
+# ever learns those alternative Fusion routes.
+p_unsummonable = 0.00
+p_bundle = 0.75            # per unmet partner of a soft bundle
+p_curve = 0.00             # level-curve health
+p_ratio = 1.00             # monster/spell/trap ratio outside the guards
+# Target share of monsters at Level 4 or below.  Decks that cannot open with a
+# playable body lose to decks that can, regardless of raw card quality.
+low_level_target = 0.70
+
+### Coefficients for the OTHER feature set — see Params.with_profile.
+###
+### Selected automatically when the pool is randomised (cardpool.is_randomised),
+### or explicitly with `deckgen gen --no-use-evidence`.  In that mode a cid no
+### longer holds the card that earned its tournament statistic, so score_pool
+### swaps monsters' per-cid play rate for per-TAG rates.  That is a different
+### feature on a different scale — tag rates top out around 0.25 where per-cid
+### rates reach 0.97 — and until now it was read through the coefficients fitted
+### for the per-cid one.
+###
+### FITTED leave-one-format-out over the four era formats: fit on three, test on
+### the fourth, with the tag-rate feature mined from a disjoint quarter of the
+### fitting formats only, so the test format takes no part in fitting, feature
+### mining or selection.  **4/4 folds agreed on all three values and every fold
+### improved** — Crow +0.0378, Edison +0.0252, Tengu +0.0232, Trishula +0.0392,
+### mean Spearman +0.3283 -> +0.3597.
+###
+### w_staple comes DOWN (the fallback feature is weaker and noisier, so trust it
+### less) while w_power goes UP (reasoning has to carry more).  Note 0.80, not
+### the 1.10 the deck fit wanted for the stock path: every power.tag_* weight was
+### fitted at w_power 0.10, so raising it multiplies all of them, and 1.10 was
+### measured to wreck deck synergy outright.
+[profile.randomised]
+"power.w_staple" = 5.00
+"impact.w_power" = 0.80
+"power.w_stat" = 0.10
+
+### Tag weights refit AT THIS PROFILE'S SCALE.
+###
+### Every power.tag_* was fitted with impact.w_power = 0.10; this profile runs
+### them at 0.80, multiplying all of them by eight at once — the same defect that
+### made w_power 1.10 wreck the stock deck.  Refit leave-one-format-out on top of
+### the three values above, so the question asked was specifically "does
+### rescaling the tags for this mode beat leaving them at the stock numbers".
+### **All four folds positive** (Crow +0.0030, Edison +0.0105, Tengu +0.0052,
+### Trishula +0.0022), mean +0.3597 -> +0.3649.  Only the five that >=3 of 4
+### folds agreed on are written; `spot_removal` split 2/4 and is left alone.
+###
+### The two that are interesting rather than mechanical:
+###   random_outcome  - a coin flip was worth 0.00 with evidence ON, because the
+###                     lookup already knew Arcana Force are unplayed.  With the
+###                     lookup gone the unreliability has to be priced directly.
+###   nomi            - harsher here for the same reason: without knowing WHICH
+###                     Nomi monsters turned out playable, the drawback is worth
+###                     more.
+"power.tag_nomi" = -1.60
+"power.tag_lifegain" = -0.30
+"power.tag_random_outcome" = -0.70
+"power.tag_atk_scaling" = 0.00
+"power.tag_hand_disruption" = 1.20
+
+### Second pass, 2026-07-30: the 21 wiki tags that nothing could price, plus the
+### four that were scored but never fitted, all offered to the same
+### leave-one-format-out protocol.  53 coefficients, 4 folds, 3 rounds.
+### **All four folds positive** (Crow +0.0034, Edison +0.0111, Tengu +0.0242,
+### Trishula +0.0116), mean +0.3680 -> +0.3806.  Only >=3 of 4 is written.
+###
+### `impact.w_power` reached 1.50 at 3/4 and is deliberately NOT here -- see the
+### note below the block.
+###
+### Four of the six predicted-redundant tags did refuse, as they should:
+### tribute_cost, banish_cost, lp_cost and generic_material never reached
+### consensus.  The two that did are the *half*-generic Synchro categories, and
+### that reads as a correction rather than double counting: material_genericity
+### scores "generic in one half only" at 0.5, and the fit is saying 0.5 is too
+### low.  The fully-generic case it already prices at 1.0 was left alone.
+"power.tag_gy_setup" = 1.10
+"power.tag_name_change" = 0.70
+"power.tag_fusion_payoff" = 0.30
+"power.tag_generic_nontuner" = 0.70
+"power.tag_generic_tuner" = 0.70
+"power.tag_equip_effect" = -0.60
+"power.tag_piercing" = 0.00
+"power.staple_exponent" = 1.00
+
+### impact.w_power reached 1.50 at 3/4 folds and is deliberately NOT written.
+###
+### This is the third time this coefficient has been asked for and the second
+### time it has been refused.  The metric wants it; the deck does not care.
+### Measured over 10 archetype seeds x 3 RNG seeds at 0.80 vs 1.50:
+###   seed-archetype share 38.2% -> 37.2%   (slightly WORSE)
+###   pairwise Jaccard     0.234 -> 0.209   (slightly better)
+### i.e. a wash on the only criterion that has ever caught this coefficient out,
+### against 3/4 rather than 4/4 agreement, and applying it would run the tag
+### weights at nearly twice the scale they were just fitted at.  Left at 0.80.
+
+
+
+### ── every remaining wiki tag, made fittable (2026-07-30) ─────────────────
+###
+### 21 of the 59 tags the wiki supplies were assigned to cards and then read by
+### NOTHING — no params key, no _TAG_KEYS entry, so no fit could ever price
+### them.  They are declared here at 0.00 and put in the search space, which is
+### this repo's standing pattern: describe first, let the fit decide.
+###
+### Several are expected to stay 0.00 and that is a result, not a failure.
+### `tribute_cost`, `banish_cost` and `lp_cost` are already priced by economy
+### through their clauses, and `generic_material` / `generic_tuner` /
+### `generic_nontuner` are already read by power.w_extra_generic via
+### wikitags.material_genericity().  If the fit pays them a second time that is
+### double counting — the grids include 0.0 precisely so it can refuse.
+###
+### Grids point the way the mechanic points: a drawback searches negative.
