@@ -120,8 +120,8 @@ CARDS: list[CardArt] = [
     CardArt(0x181C, 'unknown_synchron',       'unknown_synchron'),
     CardArt(0x11A3, 'accel_synchron',         'accel_synchron'),
     CardArt(0x107F, 'coral_dragon',           'coral_dragon'),   # Coral Dragon on B. Skull Dragon (shipped; art was prepared but never registered -- added 2026-11-12 on the user's request)
-    # The Monarch set (shipped 2026-11-12, steps.py). Art lives in card_arts/<slug>/ (NOT implemented/), hence the "../" folders.
-    *[CardArt(cid, "../" + slug, slug) for cid, slug in (
+    # The Monarch set (shipped 2026-11-12, steps.py).
+    *[CardArt(cid, slug, slug) for cid, slug in (
         (0x0FD7, "granmarg_the_mega_monarch"), (0x0FF3, "mobius_the_mega_monarch"), (0x139B, "zaborg_the_mega_monarch"), (0x1E87, "raiza_the_mega_monarch"),
         (0x0FC5, "caius_the_mega_monarch"), (0x127B, "thestalos_the_mega_monarch"), (0x14D8, "angmarl_the_fiendish_monarch"), (0x1313, "erebus_the_underworld_monarch"),
         (0x1312, "ehther_the_heavenly_monarch"), (0x1230, "eidos_the_underworld_monarch"), (0x0FDC, "edea_the_heavenly_squire"), (0x1123, "tessera_the_primal_squire"),

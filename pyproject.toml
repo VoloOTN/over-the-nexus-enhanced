@@ -1,6 +1,6 @@
 [project]
 name = "otn-enhanced"
-version = "0.1.0"
+version = "1.0.1"
 description = "Over the Nexus Vanilla+ / Enhanced ROM hack and randomiser"
 requires-python = ">=3.14,<3.15"
 # Pinned exactly: ndspy and capstone change the built ROM's bytes (docs/SETUP.md).

@@ -31,6 +31,9 @@ LIST_CRITERIA_ROW_OFFSET = Table(0x0227134C, 0x3B, 2, "<H", label="criteria row-
 LIST_LEAVE_CLEANUP = Table(0x0226E940, 40, 2, "<H", label="leave-cleanup list")
 
 
+TEMPLE_ARM, TEMPLE_STOCK, TEMPLE_OFF = 0x021B3408, bytes.fromhex("be42"), bytes.fromhex("28e0")
+
+
 @dataclass(frozen=True)
 class continuous_spell_fusion_summon_from_deck_stats_zeroed_destroyed_on_leave:
     """'When this card is activated: Fusion Summon 1 <archetype> Fusion Monster from your Extra Deck, using monsters from your
@@ -264,6 +267,13 @@ class continuous_spell_fusion_summon_from_deck_stats_zeroed_destroyed_on_leave:
         cls3_rec = (cid, self.c3res | 1, 0, self.c3cond | 1, C3_COST, 0)
 
         def install(rom, view):
+            # Temple of the Sun's own printed effect ("face-up monsters Special Summoned from the GY gain 300 ATK") is an arm of the
+            # S/T stat switch, entered ONLY by the `b 0x021B3408` at 0x021B32B4 (cid = pool 0x21DC - 7). Its first halfword
+            # `cmp r6,r7` becomes `b 0x021B345C` (the arm's own no-op exit), so the donor keeps no old effect.
+            cur = view.blob(TEMPLE_ARM, 2)
+            if cur != TEMPLE_OFF:
+                assert cur == TEMPLE_STOCK, f"{TEMPLE_ARM:#010x} is {cur.hex()}, not the stock Temple arm"
+                view.write(TEMPLE_ARM, TEMPLE_OFF)
             riderhook.install(rom, latch_arms=LATCH_ARMS)
             riderhook.apply(view.buf, latch_arms=LATCH_ARMS)
             recs = list(rows(view, CRITERIA))
@@ -289,6 +299,7 @@ class continuous_spell_fusion_summon_from_deck_stats_zeroed_destroyed_on_leave:
                 view.write(DECKGY_SITE, want)
 
         def check(c, rom, view):
+            c.eq(view.blob(TEMPLE_ARM, 2), TEMPLE_OFF, "Temple of the Sun's +300 ATK arm 0x021B3408 -> no-op exit")
             recs = rows(view, CRITERIA)
             cids = [r[0] for r in recs]
             i = cids.index(cid) if cid in cids else -1
