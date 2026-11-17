@@ -83,7 +83,7 @@ def mirror(a):
     n2c = _names(src)
     cid = int(a.cid, 0)
     kit, missing = [], []
-    for part in filter(None, (a.kit or '').split(',')):
+    for part in filter(None, (a.kit or '').split(';' if ';' in (a.kit or '') else ',')):
         name, _, n = part.rpartition(':') if ':' in part else (part, '', '3')
         (kit if name in n2c else missing).append((name, int(n or 3)))
     extra = [n for n in filter(None, (a.extra or '').split(','))]
@@ -112,6 +112,7 @@ def mirror(a):
     B.OUT = B.REPO / 'build/cpu_battery' / (a.work or f'cardtest_{cid:#06x}')           # workers under <work>/w*, never the shared w0..w5
     games = [(f'{i}', B.seed_of('cardtest', f'{cid}|{i}'), False, words, words) for i in range(a.duels)]
     tot = {'card': [0, 0, 0], 'kit': [0, 0, 0]}
+    per = {}                                 # cid -> [drawn, summoned, activated], every card in the deck
     done = [0]
 
     def on_result(key, r, k):
@@ -124,6 +125,7 @@ def mirror(a):
                 t = tot['card'] if c == cid else tot['kit']
                 for j in range(3):
                     t[j] += r['stats'][s][j][idx]
+                    per.setdefault(c, [0, 0, 0])[j] += r['stats'][s][j][idx]
         print(f'[w{k}] {done[0]}/{len(games)}', flush=True)
 
     B.play(games, a.jobs, a.timeout, False, on_result)
@@ -133,6 +135,9 @@ def mirror(a):
         w.writerow(['what', 'drawn', 'summoned', 'activated'])
         w.writerow([f'card 0x{cid:04X} (x3, both seats)', *tot['card']])
         w.writerow(['kit', *tot['kit']])
+    c2n = {v: k for k, v in n2c.items()}
+    for c, v in sorted(per.items(), key=lambda kv: -kv[1][2]):
+        print(f'  {c2n[c]:<40} drawn/summoned/activated = {v}')
     print(f'MIRROR {cid:#06x}: {a.duels} duels, card drawn/summoned/activated = {tot["card"]}, kit = {tot["kit"]} -> {out}')
 
 

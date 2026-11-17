@@ -634,9 +634,14 @@ ov5_slots:
     owner: gdw_mover
     flags: []
   - name: CAVE_GDW_COND
-    addr: 0x0239D170
+    addr: 0x0239D144
     size: null
     owner: gdw_cond
+    flags: []
+  - name: CAVE_GDW_PICK
+    addr: 0x0239D178
+    size: null
+    owner: gdw_pick
     flags: []
   - name: CAVE_SNOWW_RES
     addr: 0x0239D1C0

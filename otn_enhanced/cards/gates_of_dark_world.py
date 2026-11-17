@@ -603,6 +603,52 @@ class field_spell_fiend_monsters_gain_300_atk_def_banish_fiend_from_graveyard_di
             return blob
 
 
+        PICK_SITE = 0x02367B3E          # ov5 picker 0x02367AD8: `subs r2,r7,#5 ; adds r1,r0,#0` right after bl 0x02367A0C
+        PICK_SITE_BYTES = bytes.fromhex("7a1f011c")  # 1f7a / 1c01 -- asserted against the ROM
+        GRAPHA_CID = 0x1961
+        CAND_BASE = 0x02299458          # the picker's candidate words, one u32 per candidate (cid = low 14 bits)
+
+        def build_gdw_pick(base: int) -> bytes:
+            """The CPU never banishes Grapha with Gates.
+
+            Hooked at 0x02367B3E, just after the picker chose index r0.  r6 = candidate count, r7 = 4,
+            the picker's key is at [sp,#0x10] of the hooked frame.  For key == Gates, while the chosen
+            candidate is Grapha, step to the next candidate (wrapping); all-Grapha leaves the pick alone.
+            Replays the two displaced instructions on the way out.
+            """
+            assert base % 4 == 0
+            b = EffectBuilder()
+            b.insn("PUSH", "{R5, LR}")
+            b.insn("LDR", "R1, [SP, #0x18]")             # the key (0x10 + the 8 B pushed)
+            b.ldr_const(2, DONOR_CID)
+            b.insn("CMP", "R1, R2")
+            b.insn("BNE", "out")
+            b.ldr_const(1, CAND_BASE)
+            b.ldr_const(3, GRAPHA_CID)
+            b.insn("ADD", "R5, R0, #0x0")                # remember the original pick
+            b.label("loop")
+            b.insn("LSL", "R2, R0, #0x2")
+            b.insn("LDR", "R2, [R1, R2]")
+            b.insn("LSL", "R2, R2, #0x12")
+            b.insn("LSR", "R2, R2, #0x12")               # the candidate's cid
+            b.insn("CMP", "R2, R3")
+            b.insn("BNE", "out")
+            b.insn("ADD", "R0, #0x1")
+            b.insn("CMP", "R0, R6")
+            b.insn("BLT", "chk")
+            b.insn("MOV", "R0, #0x0")
+            b.label("chk")
+            b.insn("CMP", "R0, R5")
+            b.insn("BNE", "loop")
+            b.label("out")
+            b.insn("ADD", "R1, R0, #0x0")                # displaced: adds r1,r0,#0
+            b.insn("SUB", "R2, R7, #0x5")                # displaced: subs r2,r7,#5
+            b.insn("POP", "{R5, PC}")
+            blob = b.assemble(base)
+            assert len(blob) <= 0x48, f"pick stub is {len(blob)} B"
+            return blob
+
+
         def _bl_words(site: int, target: int) -> tuple[int, int]:
             """The two halfwords of an ARMv4T long `BL` at *site* targeting *target*."""
             delta = (target & ~1) - (site + 4)
@@ -844,8 +890,10 @@ class field_spell_fiend_monsters_gain_300_atk_def_banish_fiend_from_graveyard_di
             rom = ndspy.rom.NintendoDSRom.fromFile(out_path)
             wrote = False
             for addr, reserve, build, what in (
-                    (ov5_cave.CAVE_GDW_COND, 0x50, build_gdw_condition,
+                    (ov5_cave.CAVE_GDW_COND, 0x34, build_gdw_condition,
                      "N  slot3 gate (once per turn + at least one Fiend in the GY)"),
+                    (ov5_cave.CAVE_GDW_PICK, 0x48, build_gdw_pick,
+                     "R  CPU pick: never banish Grapha"),
                     (ov5_cave.CAVE_GDW_MOVER, 0x40, build_gdw_mover,
                      "P  discard mover (cost -> EFFECT, cid-scoped)")):
                 blob = build(addr)
@@ -1204,9 +1252,34 @@ class field_spell_fiend_monsters_gain_300_atk_def_banish_fiend_from_graveyard_di
                   "   the banish cost still defaults to r4 = 1 (banish exactly one)")
             check(struct.unpack_from("<I", ov, _off(0x021E5080))[0] == 0x00000FB6,
                   "   the banish cost still stamps the 0x0FB6 once-per-turn rider")
+            check(ov5_cave.read_cave(rom3, AI_ROW + 4, 4) == struct.pack("<I", AI_ALWAYS),
+                  f"Q  ov5 CPU row @0x{AI_ROW:08X} evaluator = always-true 0x{AI_ALWAYS:08X}")
+            check(ov5_cave.read_cave(rom3, PICK_SITE, 4) == struct.pack("<HH", *_bl_words(PICK_SITE, ov5_cave.CAVE_GDW_PICK)),
+                  f"R  CPU picker hook @0x{PICK_SITE:08X} -> CAVE_GDW_PICK")
+            blob_r = build_gdw_pick(ov5_cave.CAVE_GDW_PICK)
+            check(ov5_cave.read_cave(rom3, ov5_cave.CAVE_GDW_PICK, len(blob_r)) == blob_r, "R  CPU pick stub installed")
 
 
-        return Compiled(installs=(install,), posts=(apply_ov5_stubs, apply_gb_setcode, apply_legacy_text),
+        def apply_cpu_row(out_path: str) -> None:
+            """PART Q -- CPU row.  The donor's stock ov5 row {0x3DC8B, 0x023140D5} is a hand-play evaluator that never offers the
+            field ignition (CPU used it 1 turn in ~50, notes/gates-of-dark-world-findings.md "CPU").  Evaluator -> always-true
+            (the card's own cond decides), the edit Pantheism / Erebus / Strike make.  Idempotent."""
+            rom = ndspy.rom.NintendoDSRom.fromFile(out_path)
+            ov5 = ov5_cave._load_ov5_decompressed(rom)
+            data = bytearray(ov5.data)
+            o = AI_ROW - ov5.ramAddress
+            assert struct.unpack_from("<I", data, o)[0] == AI_ID, f"ov5 CPU row @0x{AI_ROW:08X} is not the donor row"
+            struct.pack_into("<I", data, o + 4, AI_ALWAYS)
+            # PART R -- hook the CPU's candidate picker (never banish Grapha)
+            so = PICK_SITE - ov5.ramAddress
+            want = struct.pack("<HH", *_bl_words(PICK_SITE, ov5_cave.CAVE_GDW_PICK))
+            cur = bytes(data[so:so + 4])
+            assert cur == want or cur == PICK_SITE_BYTES, f"ov5 picker site 0x{PICK_SITE:08X} is {cur.hex()}, not the native pair"
+            data[so:so + 4] = want
+            ov5_cave._save_ov5(rom, ov5, bytes(data))
+            rom.saveToFile(out_path)
+
+        return Compiled(installs=(install,), posts=(apply_ov5_stubs, apply_gb_setcode, apply_legacy_text, apply_cpu_row),
                         checks=(check_fn,))
 
 
@@ -1217,6 +1290,7 @@ SPEC = card(0x1C8B, gates_effects())
 main, verify = dsl.make(SPEC, None, out="data/over_the_nexus/working/rom_gates_dark_world.nds")
 
 DONOR_CID = 0x1C8B          # Colosseum - Cage of the Gladiator Beasts
+AI_ROW, AI_ID, AI_ALWAYS = 0x02396BBC, 0x0003DC8B, 0x023107C1   # the donor's ov5 CPU row {id, evaluator}; always-true evaluator
 
 if __name__ == "__main__":
     verify() if "--verify" in sys.argv else main(write_text="--text" in sys.argv)

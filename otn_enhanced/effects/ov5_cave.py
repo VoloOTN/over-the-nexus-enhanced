@@ -769,7 +769,7 @@ CAVE_GDW_MOVER   = 0x0239D120  # PART P: make the donor's discard an EFFECT disc
                                #  wrapper FROZE the game -- hooking three pickers whose
                                #  role was not established -- and neither is needed once
                                #  the discard is a one-argument change at the mover.)
-CAVE_GDW_COND    = 0x0239D170  # slot3: the once-per-turn gate PLUS a candidate-existence
+CAVE_GDW_COND    = 0x0239D144  # (moved up from 0x0239D170 to make room for CAVE_GDW_PICK) slot3: the once-per-turn gate PLUS a candidate-existence
                                # test.  0x021F01C1's body (no 0x0FB6 rider) AND
                                # 0x02243FE0(side, cid, 1<<28) > 0 -- a Fiend in the GY,
                                # criteria ROW 1.  Without it the card is activatable with
@@ -777,7 +777,10 @@ CAVE_GDW_COND    = 0x0239D170  # slot3: the once-per-turn gate PLUS a candidate-
                                # candidate list.  ⚠️ it must NOT test the hand with a bare
                                # param -- see
                                # dispatch.candidate_count_param_is_family_dependent.
-                               # 52 B used, 0x50 held.
+                               # 52 B used, 0x34 held.
+CAVE_GDW_PICK    = 0x0239D178  # Gates's CPU pick fix: after the CPU's candidate picker 0x02367ad8 chooses an index for
+                               # key 0x1C8B (the banish-from-Graveyard cost), a card that is Grapha is swapped for the next
+                               # candidate that is not.  Hooked at 0x02367B3E.  <= 0x48 B held (ends at CAVE_SNOWW_RES).
 CAVE_SNOWW_RES   = 0x0239D1C0  # Snoww CLAUSE 2, cls2 +04: the resolver.  Goldd 0x0221FB50's
                                # 2-phase skeleton with clause 1 grafted in -- phase 0x7F is
                                # UNUSED by the add-to-hand resolver (its jump table sends
