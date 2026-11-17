@@ -70,7 +70,7 @@ OV5_NATIVE_LEN = OV5_NATIVE_END - OV5_RAM_BASE  # 0xD4820
 # See notes/ov5-cave-capacity-findings.md and the KB fact mem.ov5_cave_can_grow.
 # 0x10000 -> 0x14000 (+16 KB). Scan of the 62 duel-arena savestates in data/over_the_nexus/working: 61 use
 # 33.1..35.6 KB, the outlier rom_ov5_canary.ml1 109.2 KB; 0x14000 leaves a 199.7 KB heap = 1.8x even that outlier.
-RESERVE = 0x1B400   # +0xC00 (2026-11-12 session 2) for Eidos E1 GY half + E3, the Monarch never-miss-timing front, the prefind stub growth and Masterplan C2 (0x50 B were free); was 0x1A800; +0xC00 (2026-11-12) for the remaining Monarch cards (Perfection / First Monarch / Prime GY / Erebus halves; only 0x30 B were free); was 0x19C00; +0x1000 (2026-11-11) for Strike + Domain of the Monarchs (~0x310 B were free); was 0x18C00; +0x1000 (2026-11-11) for Edea + the remaining Monarch monsters (only 0x250 B were free); was 0x17C00; +0x800 (2026-11-11) for The Monarchs Revolt (the GY table relocated AGAIN for 19+ virtual rows: GYV2 ROWS 0x180 / HAS 0x100 / POST 0x120); was 0x17400; +0x400 (2026-11-11) for Frost Blast of the Monarchs (a 18th virtual GY row needs the POST stub relocated too); was 0x17000; +0x400 (2026-11-11) for Pantheism's Graveyard effect (a 17th virtual GY row needs a bigger table + HAS stub); was 0x16C00; +0x400 (2026-11-11) for Thestalos the Mega Monarch (+ Restoration / Awaken / the Mega set growing); was 0x16800; +0x400 (2026-11-10) for Return of the Monarchs; was 0x16400 (+0x400 for Tenacity-era slack) ; +0x400 (2026-11-10) for The Monarchs Stormforth; was 0x16000 (+0x400 for March of the Monarchs (protection fronts); was 0x15C00 (Caius), 0x15800 (Raiza), 0x15400 (Zaborg), 0x15000 (mega_monarch E1/E2); +0x800 (2026-11-09) Block Dragon C3, was 0x14400
+RESERVE = 0x1B800   # +0x400 (2026-11-17) for the Gates CPU discard bias (CAVE_GDW_MOVER moved to the old CAVE_FREE); was 0x1B400; +0xC00 (2026-11-12 session 2) for Eidos E1 GY half + E3, the Monarch never-miss-timing front, the prefind stub growth and Masterplan C2 (0x50 B were free); was 0x1A800; +0xC00 (2026-11-12) for the remaining Monarch cards (Perfection / First Monarch / Prime GY / Erebus halves; only 0x30 B were free); was 0x19C00; +0x1000 (2026-11-11) for Strike + Domain of the Monarchs (~0x310 B were free); was 0x18C00; +0x1000 (2026-11-11) for Edea + the remaining Monarch monsters (only 0x250 B were free); was 0x17C00; +0x800 (2026-11-11) for The Monarchs Revolt (the GY table relocated AGAIN for 19+ virtual rows: GYV2 ROWS 0x180 / HAS 0x100 / POST 0x120); was 0x17400; +0x400 (2026-11-11) for Frost Blast of the Monarchs (a 18th virtual GY row needs the POST stub relocated too); was 0x17000; +0x400 (2026-11-11) for Pantheism's Graveyard effect (a 17th virtual GY row needs a bigger table + HAS stub); was 0x16C00; +0x400 (2026-11-11) for Thestalos the Mega Monarch (+ Restoration / Awaken / the Mega set growing); was 0x16800; +0x400 (2026-11-10) for Return of the Monarchs; was 0x16400 (+0x400 for Tenacity-era slack) ; +0x400 (2026-11-10) for The Monarchs Stormforth; was 0x16000 (+0x400 for March of the Monarchs (protection fronts); was 0x15C00 (Caius), 0x15800 (Raiza), 0x15400 (Zaborg), 0x15000 (mega_monarch E1/E2); +0x800 (2026-11-09) Block Dragon C3, was 0x14400
 OV5_NEW_LEN = OV5_NATIVE_LEN + RESERVE
 
 # ---------------------------------------------------------------------------
@@ -749,7 +749,7 @@ CAVE_HAIPA_BPFLIP  = 0x0239D0F0  # moved to ov3 cave3.CAVE3_HAIPA_BPFLIP: clause
                                  # that flips WITHOUT attaching the position lock).
                                  # Hooked at 0x02252F9A.  28 B used, 0x30 reserved.
 # --- The Gates of Dark World clause 2 (gates_of_dark_world, donor 0x1C8B) ---
-CAVE_GDW_MOVER   = 0x0239D120  # PART P: make the donor's discard an EFFECT discard.
+CAVE_GDW_MOVER   = 0x023B5520  # (moved 2026-11-17 from 0x0239D120, which is now a free 0x24 B hole; grew to hold PART S: a CPU seat discards Grapha, else Snoww.  <= 0xA0 B held) PART P: make the donor's discard an EFFECT discard.
                                # 0x021C6D90 and 0x021C6DB4 are the SAME function twice,
                                # byte-identical except that the former inserts
                                # `movs r0,#2` so [sp+4] = 2 where the latter leaves 1;
@@ -2829,7 +2829,7 @@ CAVE_MP_DATA    = 0x023B5460  # (0x10 bytes) masterplan C2: DATA: +0 MODE, +4 ch
 CAVE_MP_VREC    = 0x023B5470  # (0x20 bytes) masterplan C2: DATA: virtual cls2 record for the banished zone
 CAVE_MP_H6F     = 0x023B5490  # (0x20 bytes) masterplan C2: front on the GY->banished gate 0x021C71C8 (0x0D6A -> post), tails to the Dragon Rulers' H6
 CAVE_MP_H7F     = 0x023B54B0  # (0x30 bytes) masterplan C2: front on the banish override switch 0x021D1B98 (0x0D6A to 0xF -> the banish leaf), tails to the Rulers' H7
-CAVE_FREE        = 0x023B5520  # first free address for FUTURE patches (the ceiling: 0 B left at RESERVE 0x1B400)
+CAVE_FREE        = 0x023B55C0  # first free address for FUTURE patches (the ceiling: 0 B left at RESERVE 0x1B400)
 # *** NEVER TRUST A BYTE COUNT WRITTEN IN THIS COMMENT. ***  The ceiling is
 #  OV5_RAM_BASE + OV5_NEW_LEN, which MOVES with RESERVE, and the live answer is
 #  always that minus CAVE_FREE.  With RESERVE = 0x10000 the ceiling is

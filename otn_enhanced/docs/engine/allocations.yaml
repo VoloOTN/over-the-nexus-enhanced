@@ -628,11 +628,6 @@ ov5_slots:
     size: null
     owner: haipa_bpflip
     flags: []
-  - name: CAVE_GDW_MOVER
-    addr: 0x0239D120
-    size: null
-    owner: gdw_mover
-    flags: []
   - name: CAVE_GDW_COND
     addr: 0x0239D144
     size: null
@@ -5232,6 +5227,11 @@ ov5_slots:
     addr: 0x023B54E0
     size: 0x40
     owner: ec_front
+    flags: []
+  - name: CAVE_GDW_MOVER
+    addr: 0x023B5520
+    size: null
+    owner: gdw_mover
     flags: []
 
 phantom_cids:

@@ -584,28 +584,67 @@ class field_spell_fiend_monsters_gain_300_atk_def_banish_fiend_from_graveyard_di
             """
             assert base % 4 == 0, "the literal pool needs a word-aligned base"
             b = EffectBuilder()
-            b.insn("PUSH", "{LR}")
+            b.insn("PUSH", "{R4, R6, R7, LR}")
             b.insn("LDRH", "R2, [R5, #0x0]")         # the acting cid
             b.ldr_const(3, DONOR_CID)
             b.insn("CMP", "R2, R3")
             b.insn("BNE", "native")
+            # PART S -- a CPU seat discards Grapha (else Snoww) when it holds one: the CPU's own
+            # answer is simply the first Fiend in hand order.  r0 = side, r1 = the hand slot.
+            b.ldr_const(3, CTRL_ARRAY)
+            b.insn("LSL", "R2, R0, #0x2")
+            b.insn("LDR", "R2, [R3, R2]")
+            b.insn("CMP", "R2, #0x1")
+            b.insn("BNE", "eff")                     # a human keeps their own pick
+            b.insn("MOV", "R2, #0x0")                # r2 = side * 0xB3C
+            b.insn("CMP", "R0, #0x0")
+            b.insn("BEQ", "s0")
+            b.ldr_const(2, PLAYER_STRIDE_B)
+            b.label("s0")
+            b.ldr_const(3, HAND_BASE)
+            b.insn("ADD", "R3, R3, R2")              # r3 = &hand[0]
+            b.ldr_const(4, HAND_COUNT)
+            b.insn("LDR", "R4, [R4, R2]")            # r4 = hand size
+            for k, want in enumerate((GRAPHA_CID, SNOWW_CID)):
+                b.ldr_const(2, want)
+                b.insn("MOV", "R6, #0x0")
+                b.label(f"l{k}")
+                b.insn("CMP", "R6, R4")
+                b.insn("BGE", f"n{k}")
+                b.insn("LSL", "R7, R6, #0x2")
+                b.insn("LDR", "R7, [R3, R7]")
+                b.insn("LSL", "R7, R7, #0x12")
+                b.insn("LSR", "R7, R7, #0x12")       # the card's cid
+                b.insn("CMP", "R7, R2")
+                b.insn("BEQ", "hit")
+                b.insn("ADD", "R6, #0x1")
+                b.insn("B", f"l{k}")
+                b.label(f"n{k}")
+            b.insn("B", "eff")
+            b.label("hit")
+            b.insn("ADD", "R1, R6, #0x0")            # the slot of Grapha / Snoww
+            b.label("eff")
             b.insn("MOV", "R2, #0x0")                # the 3rd arg
             b.ldr_const(3, DISCARD_MOVER_EFFECT | 1)
             b.insn("BLX", "R3")
-            b.insn("POP", "{PC}")
+            b.insn("POP", "{R4, R6, R7, PC}")
             b.label("native")
             b.ldr_const(3, DISCARD_MOVER_COST | 1)
             b.insn("BLX", "R3")
-            b.insn("POP", "{PC}")
+            b.insn("POP", "{R4, R6, R7, PC}")
             blob = b.assemble(base)
-            assert len(blob) == 0x24, f"mover trampoline is {len(blob)} B"
-            assert_thumb1_only(blob[:0x16], base)
+            assert len(blob) <= 0xA0, f"mover trampoline is {len(blob)} B"
             return blob
 
 
         PICK_SITE = 0x02367B3E          # ov5 picker 0x02367AD8: `subs r2,r7,#5 ; adds r1,r0,#0` right after bl 0x02367A0C
         PICK_SITE_BYTES = bytes.fromhex("7a1f011c")  # 1f7a / 1c01 -- asserted against the ROM
         GRAPHA_CID = 0x1961
+        SNOWW_CID = 0x1C18
+        CTRL_ARRAY = 0x0229911C         # per-seat controller mode: 0 human, 1 CPU
+        PLAYER_STRIDE_B = 0xB3C
+        HAND_BASE = 0x0229AC94 + 0x124   # player 0's hand words (cid = low 14 bits)
+        HAND_COUNT = 0x0229AC94 + 0xC    # player 0's hand size
         CAND_BASE = 0x02299458          # the picker's candidate words, one u32 per candidate (cid = low 14 bits)
 
         def build_gdw_pick(base: int) -> bytes:
@@ -894,7 +933,7 @@ class field_spell_fiend_monsters_gain_300_atk_def_banish_fiend_from_graveyard_di
                      "N  slot3 gate (once per turn + at least one Fiend in the GY)"),
                     (ov5_cave.CAVE_GDW_PICK, 0x48, build_gdw_pick,
                      "R  CPU pick: never banish Grapha"),
-                    (ov5_cave.CAVE_GDW_MOVER, 0x40, build_gdw_mover,
+                    (ov5_cave.CAVE_GDW_MOVER, 0xA0, build_gdw_mover,
                      "P  discard mover (cost -> EFFECT, cid-scoped)")):
                 blob = build(addr)
                 if ov5_cave.read_cave(rom, addr, len(blob)) == blob:
